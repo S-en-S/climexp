@@ -71,6 +71,10 @@ case ${FORM_sum:-1} in
 13) sum_13_selected="selected";;
 14) sum_14_selected="selected";;
 15) sum_15_selected="selected";;
+16) sum_16_selected="selected";;
+17) sum_17_selected="selected";;
+18) sum_18_selected="selected";;
+19) sum_19_selected="selected";;
 20) sum_20_selected="selected";;
 25) sum_25_selected="selected";;
 30) sum_30_selected="selected";;
@@ -93,6 +97,10 @@ case ${FORM_sel:-1} in
 11) sel_11_selected="selected";;
 12) sel_12_selected="selected";;
 15) sel_15_selected="selected";;
+16) sel_16_selected="selected";;
+17) sel_17_selected="selected";;
+18) sel_18_selected="selected";;
+19) sel_19_selected="selected";;
 20) sel_20_selected="selected";;
 25) sel_25_selected="selected";;
 30) sel_30_selected="selected";;
@@ -116,6 +124,10 @@ case ${FORM_sum2:-same} in
 11) sum2_11_selected="selected";;
 12) sum2_12_selected="selected";;
 15) sum2_15_selected="selected";;
+16) sum2_16_selected="selected";;
+17) sum2_17_selected="selected";;
+18) sum2_18_selected="selected";;
+19) sum2_19_selected="selected";;
 20) sum2_20_selected="selected";;
 25) sum2_25_selected="selected";;
 30) sum2_30_selected="selected";;
@@ -444,7 +456,15 @@ else
 	echo "<option $sum_8_selected>8"
 	echo "<option $sum_9_selected>9"
 	echo "<option $sum_10_selected>10"
+	echo "<option $sum_11_selected>11"
+	echo "<option $sum_12_selected>12"
+	echo "<option $sum_13_selected>13"
+	echo "<option $sum_14_selected>14"
 	echo "<option $sum_15_selected>15"
+	echo "<option $sum_16_selected>16"
+	echo "<option $sum_17_selected>17"
+	echo "<option $sum_18_selected>18"
+	echo "<option $sum_19_selected>19"
 	echo "<option $sum_20_selected>20"
 	echo "<option $sum_25_selected>25"
 	echo "<option $sum_30_selected>30"
@@ -466,7 +486,15 @@ else
 		echo "<option $sum2_8_selected>8"
 		echo "<option $sum2_9_selected>9"
 		echo "<option $sum2_10_selected>10"
+		echo "<option $sum2_11_selected>11"
+		echo "<option $sum2_12_selected>12"
+		echo "<option $sum2_13_selected>13"
+		echo "<option $sum2_14_selected>14"
 		echo "<option $sum2_15_selected>15"
+		echo "<option $sum2_16_selected>16"
+		echo "<option $sum2_17_selected>17"
+		echo "<option $sum2_18_selected>18"
+		echo "<option $sum2_19_selected>19"
 		echo "<option $sum2_20_selected>20"
 		echo "<option $sum2_25_selected>25"
 		echo "<option $sum2_30_selected>30"

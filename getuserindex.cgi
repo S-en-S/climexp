@@ -9,7 +9,7 @@ n=0
 if [ ${NPERYEAR:-12} = 12 ]; then
 [ -n "$FORM_co2" ] && corrargs="$corrargs file CDIACData/co2_monthly.dat" \
                                                       && let n=n+1 && index="$index CO2"
-[ -n "$FORM_gmst" ] && corrargs="$corrargs file NASAData/giss_al_gl_m.dat" \
+[ -n "$FORM_gmst" ] && corrargs="$corrargs file NASAData/giss_al_gl_m_4yrlo.dat" \
                                                       && let n=n+1 && index="$index GMST"
 elif [ $NPERYEAR = 1 -o $NPERYEAR = -1 ]; then
 [ -n "$FORM_co2" ] && corrargs="$corrargs file CDIACData/co2_annual.dat" \

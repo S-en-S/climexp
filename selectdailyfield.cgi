@@ -23,15 +23,7 @@ cat <<EOF
 <table class="realtable" width="100%" border=0 cellpadding=0 cellspacing=0>
 EOF
 cat selectdailyfield_rea.html
-cat <<EOF
-</table>
-<table class="realtable" width="100%" border=0 cellpadding=0 cellspacing=0>
-<tr><th colspan=13>Note that these are vintage CMIP3 models from circa 2004. More modern daily climate model data is available under <a hre="selectfield_att.cgi?id=EMAIL">Attribution runs</> 
-EOF
-cat selectdailyfield_ipcc.html
-cat <<EOF
-</table>
-</form>
-EOF
+echo "</table>"
+echo "Please contact <a href=\"mailto:oldenborgh@knmi.nl\">me</a> if you would like to have other areas of ERA5 at high resolution."
 
 . ./myvinkfoot.cgi

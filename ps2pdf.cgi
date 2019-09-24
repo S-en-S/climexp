@@ -1,12 +1,14 @@
 #!/bin/bash
 . ./init.cgi
 . ./getargs.cgi
+. ./nosearchenginewithheader.cgi
 
 echo "Content-Type: text/html"
 echo
 . ./myvinkhead.cgi "Generating PDF file"
 
 epsfile=data/`basename $FORM_file .gz`
+###echo "epsfile=$epsfile<br>"
 if [ ! \( -s $epsfile.gz -o -s $epsfile \) ]; then
     epsfile=`echo $epsfile | tr '%' '+'`
     if [ ! \( -s $epsfile.gz -o -s $epsfile \) ]; then

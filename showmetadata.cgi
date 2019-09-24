@@ -25,7 +25,7 @@ EOF
 file0=`echo "$file" | tr '%+' '00'`
 [ "$splitfield" = true ] && file0=`ls $file0 | head -n 1`
 if [ ! -s $file0 ]; then
-    file0= `echo "$file | sed -e 's/%%%/001/' -e s/%%/01/' -e 's/+++/001/' -e s/++/01/'`
+    file0=`echo "$file" | sed -e 's/%%%/001/' -e 's/%%/01/' -e 's/+++/001/' -e s/++/01/'`
     if [ ! -s $file0 ]; then
         echo "Error: cannot find file $file"
         echo '</table>'

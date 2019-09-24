@@ -25,10 +25,10 @@ if [ $EMAIL = ec8907341dfc63c526d08e36d06b7ed8 ]; then
     lwrite=false # true
 fi
 if [ $save_preferences = true -a $EMAIL != someone@somewhere ]; then
-  if [ -n "$FORM_name" ]; then
-    FORM_NAME=`echo "$FORM_name" | tr ' ' '_'`
-  fi
-  cat > prefs/$EMAIL.getstations <<EOF
+    if [ -n "$FORM_name" ]; then
+        FORM_NAME=`echo "$FORM_name" | tr ' ' '_'`
+    fi
+    cat > prefs/$EMAIL.getstations <<EOF
 FORM_climate=$FORM_climate;
 FORM_min=$FORM_min;
 FORM_sum=$FORM_sum;
@@ -51,244 +51,254 @@ EOF
 fi
 
 if [ -z "$FORM_climate" ]; then
-  . ./myvinkhead.cgi "Search station data" ""
-  cat <<EOF
+    . ./myvinkhead.cgi "Search station data" ""
+    cat <<EOF
 <div class="alineakop">Error</div>
 Please specify which database to search
 EOF
-  . ./myvinkfoot.cgi
-  exit
+    . ./myvinkfoot.cgi
+    exit
 fi
 
 if [ -z "$NPERYEAR" ]; then
-  NPERYEAR=12
-  if [ "${FORM_climate#eca}" != "$FORM_climate" -o \
-       "${FORM_climate#beca}" != "$FORM_climate" ]; then
-    NPERYEAR=366
-  fi
-  if [ "${FORM_climate#gdcn}" != "$FORM_climate" ]; then
-    NPERYEAR=366
-  fi
-  if [ "${FORM_climate%daily}" != "$FORM_climate" ]; then
-    NPERYEAR=366
-  fi
+    NPERYEAR=12
+    if [ "${FORM_climate#eca}" != "$FORM_climate" -o \
+         "${FORM_climate#beca}" != "$FORM_climate" ]; then
+        NPERYEAR=366
+    fi
+    if [ "${FORM_climate#gdcn}" != "$FORM_climate" ]; then
+        NPERYEAR=366
+    fi
+    if [ "${FORM_climate%daily}" != "$FORM_climate" ]; then
+        NPERYEAR=366
+    fi
 fi
 . ./nperyear2timescale.cgi
 if [ -n "$FORM_name" ]; then
-  FORM_name=`echo "$FORM_name" | tr ' ' '_'`
+    FORM_name=`echo "$FORM_name" | tr ' ' '_'`
 fi
 
 if [ -z "$listname" ]; then
-  # not sourced from another script that already set a lot of things
-  if [ -n "$FORM_name" ]; then
-    fortargs=`echo "$FORM_name" | tr '[:lower:]' '[:upper:]'`
-    . ./myvinkhead.cgi "Found station data" "$timescale$FORM_climate station $fortargs"
-  elif [ -n "$FORM_maskmetadata" ] ; then
-      polygonfile=`head -1 $FORM_maskmetadata`
-      polygonname=`head -2 $FORM_maskmetadata | tail -n 1`
-      location="inside $polygonname"
-      . ./myvinkhead.cgi "Found station data" "$timescale$FORM_climate stations $location"
-      fortargs="polygon $polygonfile"
-  elif [ -z "$FORM_lon" -a -z "$FORM_lat" \
-      -a -z "$FORM_lon1" -a -z "$FORM_lon2" \
-      -a -z "$FORM_lat1" -a -z "$FORM_lat2" -a -n "$FORM_list" ]; then
-    list=data/list$$.txt
-    forbidden='!`;&|#%\$'
-    cat << EOF | tr '\r' '\n' | tr $forbidden '?' > $list
+    # not sourced from another script that already set a lot of things
+    if [ -n "$FORM_name" ]; then
+        fortargs=`echo "$FORM_name" | tr '[:lower:]' '[:upper:]'`
+        . ./myvinkhead.cgi "Found station data" "$timescale$FORM_climate station $fortargs"
+    elif [ -n "$FORM_maskmetadata" ] ; then
+        polygonfile=`head -1 $FORM_maskmetadata`
+        polygonname=`head -2 $FORM_maskmetadata | tail -n 1`
+        location="inside $polygonname"
+        . ./myvinkhead.cgi "Found station data" "$timescale$FORM_climate stations $location"
+        fortargs="polygon $polygonfile"
+    elif [ -z "$FORM_lon" -a -z "$FORM_lat" \
+           -a -z "$FORM_lon1" -a -z "$FORM_lon2" \
+           -a -z "$FORM_lat1" -a -z "$FORM_lat2" -a -n "$FORM_list" ]; then
+        list=data/list$$.txt
+        forbidden='!`;&|#%\$'
+        cat << EOF | tr '\r' '\n' | tr $forbidden '?' > $list
 $FORM_list
 EOF
-    fortargs="list $list"
-    . ./myvinkhead.cgi "Uploaded time series" "$timescale$FORM_climate station list"
-  else
-    if [ -z "$FORM_lat" -o -z "$FORM_lon" ] ; then
-      if [ -z "$FORM_lat1" -o -z "$FORM_lon1" -o \
-           -z "$FORM_lat2" -o -z "$FORM_lon2" ]; then
-        . ./myvinkhead.cgi "Search station data" ""
-        echo '<div class="alineakop">Error</div>'
-        echo 'Please specify both latitude and longitude'
-        . ./myvinkfoot.cgi
-        exit
-      fi
-      location="between ${FORM_lat1}N to ${FORM_lat2}N and ${FORM_lon1}E to ${FORM_lon2}E"
-      . ./myvinkhead.cgi "Found station data" "$timescale$FORM_climate stations $location"
-      fortargs="${FORM_lat1}:${FORM_lat2} ${FORM_lon1}:${FORM_lon2}"
+        fortargs="list $list"
+        . ./myvinkhead.cgi "Uploaded time series" "$timescale$FORM_climate station list"
     else
-      location="near ${FORM_lat}N ${FORM_lon}E"
-      . ./myvinkhead.cgi "Found station data" "$timescale$FORM_climate stations $location"
-      fortargs="$FORM_lat $FORM_lon $FORM_num"
+        if [ -z "$FORM_lat" -o -z "$FORM_lon" ] ; then
+            if [ -z "$FORM_lat1" -o -z "$FORM_lon1" -o \
+                 -z "$FORM_lat2" -o -z "$FORM_lon2" ]; then
+                . ./myvinkhead.cgi "Search station data" ""
+                echo '<div class="alineakop">Error</div>'
+                echo 'Please specify both latitude and longitude'
+                . ./myvinkfoot.cgi
+                exit
+            fi
+            location="between ${FORM_lat1}N to ${FORM_lat2}N and ${FORM_lon1}E to ${FORM_lon2}E"
+            . ./myvinkhead.cgi "Found station data" "$timescale$FORM_climate stations $location"
+            fortargs="${FORM_lat1}:${FORM_lat2} ${FORM_lon1}:${FORM_lon2}"
+        else
+            location="near ${FORM_lat}N ${FORM_lon}E"
+            . ./myvinkhead.cgi "Found station data" "$timescale$FORM_climate stations $location"
+            fortargs="$FORM_lat $FORM_lon $FORM_num"
+        fi
     fi
-  fi
     if [ -n "$FORM_min" ] ; then
-      fortargs="$fortargs min $FORM_min"
-      if [ -n "$FORM_month" -a "$FORM_month" != "-1" ]; then
-        fortargs="$fortargs mon $FORM_month sum $FORM_sum"
-      fi
+        fortargs="$fortargs min $FORM_min"
+        if [ -n "$FORM_month" -a "$FORM_month" != "-1" ]; then
+            fortargs="$fortargs mon $FORM_month sum $FORM_sum"
+        fi
     fi
     if [ -n "$FORM_dist" ] ; then
-      fortargs="$fortargs dist $FORM_dist"
+        fortargs="$fortargs dist $FORM_dist"
     fi
     if [ -n "$FORM_elevmin" ] ; then
-      fortargs="$fortargs elevmin $FORM_elevmin"
+        fortargs="$fortargs elevmin $FORM_elevmin"
     fi
     if [ -n "$FORM_elevmax" ] ; then
-      fortargs="$fortargs elevmax $FORM_elevmax"
+        fortargs="$fortargs elevmax $FORM_elevmax"
     fi
     if [ -n "$FORM_yr1" ] ; then
-      fortargs="$fortargs begin $FORM_yr1"
+        fortargs="$fortargs begin $FORM_yr1"
     fi
     if [ -n "$FORM_yr2" ] ; then
-      fortargs="$fortargs end $FORM_yr2"
+        fortargs="$fortargs end $FORM_yr2"
     fi
-  format=new
-  if [ "$FORM_climate" = "precipitation" ]; then
-    prog=getprcp
-    type=p
-  elif [ "$FORM_climate" = "precipitation_all" ]; then
-    prog=getprcpall
-    type=p
-  elif [ "$FORM_climate" = "temperature" ]; then
-    prog=gettemp
-    type=t
-  elif [ "$FORM_climate" = "min_temperature" ]; then
-    prog=getmin
-    type=n
-  elif [ "$FORM_climate" = "max_temperature" ]; then
-    prog=getmax
-  elif [ "$FORM_climate" = "temperature_all" ]; then
-    prog=gettempall
-    type=t
-  elif [ "$FORM_climate" = "min_temperature_all" ]; then
-    prog=getminall
-    type=n
-  elif [ "$FORM_climate" = "max_temperature_all" ]; then
-    prog=getmaxall
-    type=x
-  elif [ "$FORM_climate" = "sealevel_pressure" ]; then
-    prog=getslp
-  elif [ "$FORM_climate" = "sealevel" ]; then
-    prog=getsealevel
-    type=l
-  elif [ "$FORM_climate" = "sealev" ]; then
-    prog=getsealev
-    type=l
-  elif [ "$FORM_climate" = "runoff" ]; then
-    prog=getrunoff
-    type=r
-  elif [ "$FORM_climate" = "streamflow" ]; then
-    prog=getusrunoff
-    type=r
-  elif [ "$FORM_climate" = "streamflowdaily" ]; then
-    prog=getdailyusrunoff
-    type=r
-  elif [ "$FORM_climate" = "ecaprcp" ]; then
-    prog=ecaprcp
-    type=p
-  elif [ "$FORM_climate" = "ecatemp" ]; then
-    prog=ecatemp
-    type=t
-  elif [ "$FORM_climate" = "ecatmin" ]; then
-    prog=ecatmin
-    type=n
-  elif [ "$FORM_climate" = "ecatmax" ]; then
-    prog=ecatmax
-    type=x
-  elif [ "$FORM_climate" = "ecatave" ]; then
-    prog=ecatave
-    type=t
-  elif [ "$FORM_climate" = "ecapres" ]; then
-    prog=ecapres
-    type=s
-  elif [ "$FORM_climate" = "ecasnow" ]; then
-    prog=ecasnow
-    type=d
-  elif [ "$FORM_climate" = "ecaclou" ]; then
-    prog=ecaclou
-    type=c
-  elif [ "$FORM_climate" = "becaprcp" ]; then
-    prog=becaprcp
-    type=p
-  elif [ "$FORM_climate" = "becatemp" ]; then
-    prog=becatemp
-    type=t
-  elif [ "$FORM_climate" = "becatmin" ]; then
-    prog=becatmin
-    type=n
-  elif [ "$FORM_climate" = "becatmax" ]; then
-    prog=becatmax
-    type=x
-  elif [ "$FORM_climate" = "becapres" ]; then
-    prog=becapres
-    type=s
-  elif [ "$FORM_climate" = "becasnow" ]; then
-    prog=becasnow
-    type=d
-  elif [ "$FORM_climate" = "becaclou" ]; then
-    prog=becaclou
-    type=c
-  elif [ "$FORM_climate" = "gdcnprcp" ]; then
-    prog=gdcnprcp
-    type=p
-  elif [ "$FORM_climate" = "gdcnprcpall" ]; then
-    prog=gdcnprcpall
-    type=p
-  elif [ "$FORM_climate" = "gdcnsnow" ]; then
-    prog=gdcnsnow
-    type=f
-  elif [ "$FORM_climate" = "gdcnsnwd" ]; then
-    prog=gdcnsnwd
-    type=d
-  elif [ "$FORM_climate" = "gdcntmin" ]; then
-    prog=gdcntmin
-    type=n
-  elif [ "$FORM_climate" = "gdcntmax" ]; then
-    prog=gdcntmax
-    type=x
-  elif [ "$FORM_climate" = "gdcntave" ]; then
-    prog=gdcntave
-    type=v
-  elif [ "$FORM_climate" = "eu_sealevel_pressure" ]; then
-    prog=geteuslp
-    type=s
-  elif [ "$FORM_climate" = "snow" ]; then
-    prog=getsnow
-    type=d
-  else
-    echo "<div class=\"alineakop\">Error</div>The database for $FORM_climate is not (yet?) available"
-    . ./myvinkfoot.cgi
-    exit
-  fi
+    format=new
+    if [ "$FORM_climate" = "precipitation" ]; then
+        prog=getprcp
+        type=p
+    elif [ "$FORM_climate" = "precipitation_all" ]; then
+        prog=getprcpall
+        type=p
+    elif [ "$FORM_climate" = "temperature" ]; then
+        prog=gettemp
+        type=t
+    elif [ "$FORM_climate" = "min_temperature" ]; then
+        prog=getmin
+        type=n
+    elif [ "$FORM_climate" = "max_temperature" ]; then
+        prog=getmax
+        type=x
+    elif [ "$FORM_climate" = "temperature_all" ]; then
+        prog=gettempall
+        type=t
+    elif [ "$FORM_climate" = "min_temperature_all" ]; then
+        prog=getminall
+        type=n
+    elif [ "$FORM_climate" = "max_temperature_all" ]; then
+        prog=getmaxall
+        type=x
+    elif [ "$FORM_climate" = "sealevel_pressure" ]; then
+        prog=getslp
+        type=s
+    elif [ "$FORM_climate" = "sealevel" ]; then
+        prog=getsealevel
+        type=l
+    elif [ "$FORM_climate" = "sealev" ]; then
+        prog=getsealev
+        type=l
+    elif [ "$FORM_climate" = "runoff" ]; then
+        prog=getrunoff
+        type=r
+    elif [ "$FORM_climate" = "streamflow" ]; then
+        prog=getusrunoff
+        type=r
+    elif [ "$FORM_climate" = "streamflowdaily" ]; then
+        prog=getdailyusrunoff
+        type=r
+    elif [ "$FORM_climate" = "ecaprcp" ]; then
+        prog=ecaprcp
+        type=p
+    elif [ "$FORM_climate" = "ecatemp" ]; then
+        prog=ecatemp
+        type=t
+    elif [ "$FORM_climate" = "ecatmin" ]; then
+        prog=ecatmin
+        type=n
+    elif [ "$FORM_climate" = "ecatmax" ]; then
+        prog=ecatmax
+        type=x
+    elif [ "$FORM_climate" = "ecatave" ]; then
+        prog=ecatave
+        type=t
+    elif [ "$FORM_climate" = "ecapres" ]; then
+        prog=ecapres
+        type=s
+    elif [ "$FORM_climate" = "ecasnow" ]; then
+        prog=ecasnow
+        type=d
+    elif [ "$FORM_climate" = "ecaclou" ]; then
+        prog=ecaclou
+        type=c
+    elif [ "$FORM_climate" = "becaprcp" ]; then
+        prog=becaprcp
+        type=p
+    elif [ "$FORM_climate" = "becatemp" ]; then
+        prog=becatemp
+        type=t
+    elif [ "$FORM_climate" = "becatmin" ]; then
+        prog=becatmin
+        type=n
+    elif [ "$FORM_climate" = "becatmax" ]; then
+        prog=becatmax
+        type=x
+    elif [ "$FORM_climate" = "becapres" ]; then
+        prog=becapres
+        type=s
+    elif [ "$FORM_climate" = "becasnow" ]; then
+        prog=becasnow
+        type=d
+    elif [ "$FORM_climate" = "becaclou" ]; then
+        prog=becaclou
+        type=c
+    elif [ "$FORM_climate" = "gdcnprcp" ]; then
+        prog=gdcnprcp
+        type=p
+    elif [ "$FORM_climate" = "gdcnprcpall" ]; then
+        prog=gdcnprcpall
+        type=p
+    elif [ "$FORM_climate" = "gdcnsnow" ]; then
+        prog=gdcnsnow
+        type=f
+    elif [ "$FORM_climate" = "gdcnsnwd" ]; then
+        prog=gdcnsnwd
+        type=d
+    elif [ "$FORM_climate" = "gdcntmin" ]; then
+        prog=gdcntmin
+        type=n
+    elif [ "$FORM_climate" = "gdcntmax" ]; then
+        prog=gdcntmax
+        type=x
+    elif [ "$FORM_climate" = "gdcntave" ]; then
+        prog=gdcntave
+        type=v
+    elif [ "$FORM_climate" = "eu_sealevel_pressure" ]; then
+        prog=geteuslp
+        type=s
+    elif [ "$FORM_climate" = "snow" ]; then
+        prog=getsnow
+        type=d
+    else
+        echo "<div class=\"alineakop\">Error</div>The database for $FORM_climate is not (yet?) available"
+        . ./myvinkfoot.cgi
+        exit
+    fi
 
-  listname=data/list_${FORM_climate}_${FORM_lon1:-$FORM_lon}:${FORM_lon2}_${FORM_lat1}:${FORM_lat2:-$FORM_lat}_${FORM_min}_${FORM_sum}_${FORM_month}_${FORM_elevmin}:${FORM_elevmax}_${FORM_dist}_${FORM_name}.txt
-if [ -n "$FORM_yr1" -o -n "$FORM_yr2" ]; then
-    listname=${listname%.txt}_${FORM_yr1}:${FORM_yr2}.txt
-fi
-  if [ "$lwrite" = true ]; then
-    echo "<pre>"
-    echo ./bin/$prog $fortargs
-    echo "</pre>"
-  fi
-  if [ -n "$FORM_yr1" -o -n "$FORM_yr2" ]; then
-      echo "Selecting a period takes quite a bit longer.  Please be patient.<p>"
-  fi
-  if [ ! -z "$listname" ]; then
-    ./bin/$prog $fortargs > "$listname"
-  fi
+    listname=data/list_${FORM_climate}_${FORM_lon1:-$FORM_lon}:${FORM_lon2}_${FORM_lat1}:${FORM_lat2:-$FORM_lat}_${FORM_min}_${FORM_sum}_${FORM_month}_${FORM_elevmin}:${FORM_elevmax}_${FORM_dist}_${FORM_name}.txt
+    if [ -n "$FORM_yr1" -o -n "$FORM_yr2" ]; then
+        listname=${listname%.txt}_${FORM_yr1}:${FORM_yr2}.txt
+    fi
+    if [ -n "$FORM_maskmetadata" ]; then
+        polygonname_=`echo "$polygonnname | tr ' ' '_'` # for safety, make spaces underscores
+        listname=${listname%.txt}_${polygonname_}.txt
+    fi
+    if [ "$lwrite" = true ]; then
+        echo "<pre>"
+        echo ./bin/$prog $fortargs
+        echo "FORM_maskmetadata=$FORM_maskmetadata"
+        echo "polygonname=$polygonname"
+        echo "polygonfile=$polygonfile"
+        echo "listname=$listname"
+        echo "</pre>"
+    fi
+    if [ -n "$FORM_yr1" -o -n "$FORM_yr2" ]; then
+        echo "Selecting a period takes quite a bit longer.  Please be patient.<p>"
+    fi
+    if [ ! -z "$listname" ]; then
+        ./bin/$prog $fortargs > "$listname"
+    fi
 elif [ ${listname#data} = $listname ]; then
-# the list is not in the data directory, so it has been pre-made
-# this is the case for the Indian and Dutch data (maybe more)
-  if [ ! -s "$listname" ]; then
-    . ./myvinkhead.cgi "Internal error"
-    echo "Cannot find $listname"
-    . ./myvinkfoot.cgi
-    exit
-  fi
-  . ./myvinkhead.cgi "Found station data" "$timescale$FORM_climate stations"
-# there are too many scripts (i.e., at least one) that expect that the 
-# list lives in data/
-  cp $listname data/`basename $listname`
+    # the list is not in the data directory, so it has been pre-made
+    # this is the case for the Indian and Dutch data (maybe more)
+    if [ ! -s "$listname" ]; then
+        . ./myvinkhead.cgi "Internal error"
+        echo "Cannot find $listname"
+        . ./myvinkfoot.cgi
+        exit
+    fi
+    . ./myvinkhead.cgi "Found station data" "$timescale$FORM_climate stations"
+    # there are too many scripts (i.e., at least one) that expect that the 
+    # list lives in data/
+    cp $listname data/`basename $listname`
 else
-# called from daily2longerbox.cgi
-  . ./myvinkhead.cgi "Derived time series" "$timescale$FORM_climate stations"
+    # called from daily2longerbox.cgi
+    . ./myvinkhead.cgi "Derived time series" "$timescale$FORM_climate stations"
 fi
 
 if [ -z "$FORM_name" ]; then
@@ -362,10 +372,43 @@ cat <<EOF
 </form>
 EOF
 
+if [ ${listname#data} = $listname ]; then
+    # a form to select based on minimum number of years (later maybe also distance)
+    def=prefs/$EMAIL.minnumyears
+    if [ $EMAIL != someone@somewhere -a -s $def ]; then
+        eval `egrep '^FORM_[A-Za-z0-9]*=[a-zA-Z_]*[-+0-9.]*;$' $def`
+    fi
+    cat <<EOF
+<form action="select_min_years.cgi" method="POST">
+<input type="hidden" name="EMAIL" value="$EMAIL">
+<input type="hidden" name="TYPE" value="$TYPE">
+<input type="hidden" name="type" value="$type">
+<input type="hidden" name="WMO" value="$WMO">
+<input type="hidden" name="STATION" value="series $location">
+<input type="hidden" name="NAME" value="$NAME">
+<input type="hidden" name="extraargs" value="$extraargs">
+<input type="hidden" name="NPERYEAR" value="$NPERYEAR">
+<div class="formheader"><a href="javascript:pop_page('help/timedistance.shtml',568,450)"><img src="images/info-i.gif" align="right"alt="help" border="0"></a>Select stations</div>
+<div class="formbody">
+At least:
+<input type="text" class="forminput" name="min" size=3 value="$FORM_min">years of data,<br>
+<input type="text" step=any class="forminput" name="elevmin" size=4 value="$FORM_elevmin">m
+&lt; elevation &lt;
+<input type="text" step=any class="forminput" name="elevmax" size=4 value="$FORM_elevmax">m,<br>
+<input type="$number" step=any class="forminput" name="lat1" $textsize4 value="$FORM_lat1">&deg;N -
+<input type="$number" step=any class="forminput" name="lat2" $textsize4 value="$FORM_lat2">&deg;N, 
+<input type="$number" step=any class="forminput" name="lon1" $textsize4 value="$FORM_lon1">&deg;E - 
+<input type="$number" step=any class="forminput" name="lon2" $textsize4 value="$FORM_lon2">&deg;E.<br>
+<input type="submit" class="formbutton" value="select stations">
+</div>
+</form>
+EOF
+fi
+
 if [ 1 = 0 ]; then
-echo '<pre>'
-cat $listname
-echo '</pre>'
+    echo '<pre>'
+    cat $listname
+    echo '</pre>'
 fi
 
 if [ "$format" = new ]; then

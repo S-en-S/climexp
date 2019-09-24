@@ -40,7 +40,8 @@ then
         		[ "$lwrite" = true ] && echo "# $DIR/bin/$PROG $args" 1>&2
 	            $DIR/bin/$PROG $args >> $outfile
 	        done
-	        cat $outfile
+	        # collect all the metadata at the top. note it will give duplicate history etc attributes
+	        sed -e 's/^ *//' $outfile | sort | uniq
 	        rm $outfile
 	    fi
 	else
@@ -105,7 +106,9 @@ else
                     fi
                 done
                 # to prevent incomplete series if the process is interrupted (assuming the same pid dpes not come up)
-                mv $ensout.tmp$$ $ensout
+                # also sort to collect all metadata at the top
+                sed -e 's/^ *//' $ensout.tmp$$ | sort | uniq > $ensout
+                rm $ensout.tmp$$
             fi
 			echo "# $ensout"
 		fi

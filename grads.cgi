@@ -14,28 +14,7 @@ if [ "$hiresmap" = true ]; then
 else
 	doublesize="x902 y697"
 fi
-grads=grads
-config=`$grads -b -l -c quit| fgrep Config`
-gradsver=`echo $config | cut -f 2 -d ' '`
-c=`echo $config | fgrep -c v2.`
-[ -z "$FORM_mapformat" ] && FORM_mapformat=png
-if [ ${gradsver#v2.2} != $gradsver ]; then
-	grads20=true
-	gxprint=gxprint
-	gxprintoptions=white
-elif [ ${gradsver#v2.1} != $gradsver ]; then
-	grads20=true
-	gxprint=gxprint
-	gxprintoptions=white
-elif [ ${gradsver#v2.0} != $gradsver ]; then
-	grads20=true
-	gxprint=print
-else
-	if [ "$FORM_mapformat" = geotiff ]; then
-		echo "geotiff export is not supported by GrADS 1.8"
-		exit
-	fi
-fi
+. ./config_grads.cgi
 # expects variables: ...
 #
 # to find netpbm on MacOS X
@@ -168,8 +147,8 @@ run clim ${var:-corr} $NPERYEAR ${date:-$i} ${FORM_plotsum:-1} $FORM_climyear1 $
 fi
 
 # generate GrADS metadata file - should be doing this in perl...
-firstmonth=`echo ${FORM_month:-1:12} | sed -e 's/\:.*//' | tr -d '\'`
-lastmonth=`echo ${FORM_month:-1:12} | sed -e 's/.*\://' | tr -d '\'`
+firstmonth=`echo ${FORM_month:-1:12} | sed -e 's/\:.*//' | tr -d '\\'`
+lastmonth=`echo ${FORM_month:-1:12} | sed -e 's/.*\://' | tr -d '\\'`
 nperyear=${NPERYEAR#-}
 if [ $lastmonth -gt $nperyear ]; then
 	lastmonth=$nperyear
@@ -405,7 +384,12 @@ $sum
 $dano
 quit
 EOF
-$grads -l -b << EOF >> /tmp/grads$uniq.log
+# on the SurfSARA cloud system it can take a while for the netcdf to become avilable on the SSD...
+ok=false
+n=0
+while [ $ok = false -a $n -lt 4 ]; do
+    ((n++))
+    $grads -l -b << EOF >> /tmp/grads$uniq.log
 $openfile
 set xlopts 1 4 0.15
 set ylopts 1 4 0.15
@@ -420,7 +404,16 @@ $clim
 $dano
 quit
 EOF
-
+    f=data/g${uniq}_$i
+    c=`pngtopnm $f.png | pnmcrop | pamfile | fgrep -c PPM`
+    if [ $c = 1 ]; then
+        [ "$lwrite" = true ] && echo "$f.png is non-empty<br>"
+        ok=true
+    else
+        [ "$lwrite" = true ] && echo "$f.png is empty, trying again<br>"
+        sleep 1
+    fi
+done
 if [ "$FORM_mapformat" = kml ]; then
 	alreadyprinted=
 	if [ -n "$map" ]; then
@@ -633,6 +626,8 @@ elif [ "$FORM_mapformat" = png ]; then
 			echo "(<a href=\"$f.eps.gz\">eps</a>,"
 			echo "<a href=\"ps2pdf.cgi?file=$f.eps.gz\">pdf</a>)</div>"
 			if [ -s $f.png ]; then
+			    checkfile=$f.png
+			    ###check_url # use curl to check the png is really here, I have had reports that sometimes it is not.
 				if [ "$hiresmap" = true ]; then
 					pngfile=$f.png
 					getpngwidth

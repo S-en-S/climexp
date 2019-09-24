@@ -1,9 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 # maak oude plaatjes voor de on-line versie
 climexp=http://climexp.knmi.nl
+###climexp=http://localhost
 
 yrnow=`date +%Y`
-yr=1990
+yr=2018
 while [ $yr -lt $yrnow ]
 do
     mkdir -p $yr

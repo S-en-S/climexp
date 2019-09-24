@@ -93,7 +93,13 @@ Boundaries:
 <input type="radio" class="formradio" name="gridpoints" value="false" $average_checked>average
 <input type="radio" class="formradio" name="gridpoints" value="max" $max_checked>max
 <input type="radio" class="formradio" name="gridpoints" value="min" $min_checked>min
+EOF
+if [ "$splitfield" != true ]; then
+    cat <<EOF
 <input type="radio" class="formradio" name="gridpoints" value="true" $gridpoints_checked>set of grid points
+EOF
+fi
+cat <<EOF
 <input type="radio" class="formradio" name="gridpoints" value="field" $outfield_checked>subset of the field
 </td><td align="right"><a href="javascript:pop_page('help/gridpoints.shtml',284,450)"><img src="images/info-i.gif" alt="help" border="0"></a></td></tr>
 EOF

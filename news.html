@@ -1,13 +1,66 @@
-<tr><td>30-jan-2019</td><td>The new server is open for testing at <a href="http://climexp-test.knmi.nl">climexp-test.knmi.nl</a>. Please report problems.</td></tr>
+<tr><td>18-sep-2019</td><td>Added updated and extended AR5 <a href="selectindex.cgi?id=FORM_EMAIL#ERF">forcings</a> (thanks Piers).</td></tr>
+<tr><td>17-sep-2019</td><td>Added MEI v2 (thanks Charlie).</td></tr>
+<tr><td>12-sep-2019</td><td>Added Africa ERA5 region at 0.25º (thanks Geoffrey).</td></tr>
+<tr><td>03-sep-2019</td><td>Fixed a stupid bug in the derivative routine that gave a series that could not be analysed further (the numbers were correct).</td></tr>
+<tr><td>30-aug-2019</td><td>ERA5 fluxes and min/max temperatures are available again.</td></tr>
+<tr><td>30-aug-2019</td><td>The maintenance planned for 10 and 11 September 2019 has been cancelled.</td></tr>
+<tr><td>23-aug-2019</td><td>Fixed bug in running moments that would cause it to get into an infinite loop if the season crossed the December/January boundary.</td></tr>
+<tr><td>22-aug-2019</td><td>ERA5 fluxes have a bug that can only be addressed next week.</td></tr>
+<tr><td>22-aug-2019</td><td>ERA5 daily fields are now available as 0.5&deg; global fields and 0.25&deg; fields for Europe only. Contact me if you need 0.25&deg; fields for another region. Global daily 0.25&deg; fields are too big.</td></tr>
+<tr><td>20-aug-2019</td><td>Updated the Dangendorf et al sea-level reconstruction (thanks Dewi).</td></tr>
+<tr><td>12-jul-2018</td><td>Added options to the extreme value fit page to include the point under study in the fit and to evaluate the fit at a specified return period.</td></tr>
+<tr><td>31-jul-2019</td><td>The Climate Explorer was unreachable 31 July 2019 07:00 - 11:45 CEST due to maintenance work at our cloud provider gone awry.</td></tr>
+<tr><td>19-jul-2018</td><td>Started to add the exact calls into the Climate Explorer to the metadata so you can easily reproduce the whole calculation or write a script tha automatises it. Not yet with Web Processing Services but URLs, the (URLS of the) results are in the HTML output.</td></tr>
+<tr><td>11-jul-2018</td><td>Chromium seems to submit forms twice, which can lead to corrupted data. I am trying to eliminate that but use another browser for the time being.</td></tr>
+<tr><td>24-jun-2019</td><td>Added HadSST 4.0.0.0, Cowtan &amp; Way filled-in HadCRUT4/HadSST4</td></tr>
+<tr><td>11-jun-2019</td><td>GPM/IMERG switched to version 06, my updates have followed suit (with a month delay).</td></tr>
+<tr><td>11-jun-2019</td><td>The Climate Explorer was not working properly due to attacks from 112.133.251.* and 106.220.161.230, which have been blacklisted.</td></tr>
+<tr><td>11-jun-2019</td><td>MERRA has changed its download location a while ago and I cannot find the data back now, so updates are disabled.</td></tr>
+<tr><td>08-jun-2019</td><td>Added 37 aquifer masks (thanks Simon).</td></tr>
+<tr><td>06-jun-2019</td><td>Updated CRU TS to 4.03 1901-2018 (thanks Harry).</td></tr>
+<tr><td>06-jun-2019</td><td><font color=#FF2222>The Climate Explorer runs like normal again.</font></td></tr>
+<tr><td>04-jun-2019</td><td>For urgent work there was a back-up server on http://climexp.knmi.nl (not yet https), with partial data. Please do not analyse or download big datasets.</td></tr>
+<tr><td>04-jun-2019</td><td>Due to security updates of the cloud computing provider the Climate Explorer was unavailable on 4 and 5 June 2019.</td></tr>
+<tr><td>03-jun-2019</td><td>Implemented workaround for bug in GrADS that prevented plotting upper-air variables in ERA reanalyses.</font></td></tr>
+<tr><td>27-may-2019</td><td>Fixed colour scale of Atlas sea level pressure plots (thanks Indrani).</font></td></tr>
+<tr><td>21-may-2019</td><td>The old server is now turned off after almost nine years of faithful duty.</td></tr>
+<tr><td>18-may-2019</td><td>GPCC precipitation and NSIDC sea ice are updated again.</td></tr>
+<tr><td>18-may-2019</td><td>UCAR scPDSI works again (thanks Ed).</td></tr>
+<tr><td>17-may-2019</td><td>The <a href="http://www.jamstec.go.jp/aplinfo/sintexf/e/iod/dipole_mode_index.html">JAMSTEC</a> data files have disappeared from their site, please use the home-computed WIO, SEIO and DMI indices.</td></tr>
+<tr><td>17-may-2019</td><td>Added the LSCE/IPSL bias-corrected EURO-CORDEX 11km experiments tasAdjust and prAdjust (thanks Robert).</td></tr>
+<tr><td>16-may-2019</td><td>The bugfix of two days ago does not work properly and I cannot find one that does, so I turned off PDF generation for Atlas time series for the time being. Please use the EPS or PNG plots.</td></tr>
+<tr><td>14-may-2019</td><td>Fixed a bug in the Atlas time sersies that I called the system ghostscript that does not support transparency, now call the one that does (thanks Michael).</td></tr>
+<tr><td>07-may-2019</td><td>There were occasional malfunctions because of a full /tmp directory. I have moved it to a larger disk and it should be OK now (thanks Alison).</td></tr>
+<tr><td>28-apr-2019</td><td>Luterbacher SLP was shifted by one month, it starts in December 1658, not January 1659 (thanks Petr).</td></tr>
+<tr><td>25-apr-2019</td><td>Fixed GSL crashes in rank correlation, moments calculation (thanks Jasper, Jacques).</td></tr>
+<tr><td>25-apr-2019</td><td>Updated the Met Office EN ocean analysis to 4.2.1 and put on new server (thanks Justine).</td></tr>
+<tr><td>23-apr-2019</td><td><font color=#FF2222>Today, Tuesday 23 April 11:00 CEST the servers have been renamed. The new server at SurfSARA is now <a href="https://climexp.knmi.nl/">climexp.knmi.nl</a>, the old one is reachable as <a href="http://climexp-old.knmi.nl/">climexp-old.knmi.nl</a> for two weeks and will then be switched off. Uploaded data, preferences etc have <b>not</b> been migrated, you can finish your calculations on the old server.</font></td></tr>
+<tr><td>20-apr-2019</td><td>Fixed bugs in handling 360-day calender time series.</td></tr>
+<tr><td>18-apr-2019</td><td>Added Reconstructed scPDSI for Australia/New Zealand Drought Atlas (thanks Jonathan)</td></tr>
+<tr><td>16-apr-2019</td><td>Added Copernicus sealevel fields.</td></tr>
+<tr><td>09-apr-2019</td><td>Added 107 extreme indices based on GLDAS to the reanalysis section (thanks Malcolm)</td></tr>
+<tr><td>09-apr-2019</td><td>The Gauss fit under "trends of extremes" now also generates plots on a logarithmic scale rather than the sqrt-log scale that gives straight lines. This makes it easier to compare with more sensible fits. (Never use a Gauss to extrapolate!)</td></tr>
+<tr><td>03-apr-2019</td><td>ERA5 daily data now avialable (thanks Philippe).</td></tr>
+<tr><td>03-apr-2019</td><td>GLOSS sealevel stations (formerly PSMSL) again up-to-date.</td></tr>
+<tr><td>26-mar-2019</td><td>Test server now also accepts https (encrypted) connections.</td></tr>
+<tr><td>26-mar-2019</td><td>EOF on the test server should work now.</td></tr>
+<tr><td>26-mar-2019</td><td>Fixed station density data in CRU TS 4.02.</td></tr>
+<tr><td>20-feb-2019</td><td>Updated CRU TS to 4.02 (thanks Harry).</td></tr>
+<tr><td>14-feb-2019</td><td>Fixed the CPC update scripts, as they switched to https only.</td></tr>
+<tr><td>12-feb-2019</td><td>The Climate Explorer has been non-functional for a few hours starting 9:00 CET Tuesday 12 February 2019. Please use the <a href="https://climexp-test.knmi.nl">test server</a> instead, or wait.</td></tr>
+<tr><td>11-feb-2019</td><td>The test Climate Explorer was rebooted and unavailable for a few hours starting 18:00 CET Monday 11 February 2019.</td></tr>
+<tr><td>04-feb-2019</td><td>ERA5 monthly data is now complete 1979-dec2018 (thanks Philippe).</td></tr>
+<tr><td>31-jan-2019</td><td>There was a problem on the KNMI load balancer that caused Firefox to consider the connection to the Climate Explorer not secure. This has been fixed.</td></tr>
+<tr><td>30-jan-2019</td><td>The new server is open for testing at <a href="https://climexp-test.knmi.nl">climexp-test.knmi.nl</a>. Please report problems.</td></tr>
 <tr><td>30-jan-2019</td><td>Added an option to make a histogram of correlations/regressions of individual ensemble members.</td></tr>
 <tr><td>30-jan-2019</td><td>Most US data has again been updated (thanks Donald).</td></tr>
 <tr><td>30-jan-2019</td><td>Added the adjusted ERA-interim global and European temperatures (thanks Nic, Adrian).</td></tr>
 <tr><td>21-jan-2019</td><td>Updated Mike Lockwood's Open Solar Flux (thanks Mike, David).</td></tr>
-<tr><td>21-jan-2019</td><td>The <a href="http://climexp-test.knmi.nl/">new server</a> has been indexed again with htdig, which amazingly still exists.</td></tr>
-<tr><td>15-jan-2019</td><td>The old server has been unavailable for a few hours in the morning (Dutch time). Please use the <a href="http://climexp-test.knmi.nl/">new server</a>.</td></tr>
+<tr><td>21-jan-2019</td><td>The <a href="https://climexp-test.knmi.nl/">new server</a> has been indexed again with htdig, which amazingly still exists.</td></tr>
+<tr><td>15-jan-2019</td><td>The old server has been unavailable for a few hours in the morning (Dutch time). Please use the <a href="https://climexp-test.knmi.nl/">new server</a>.</td></tr>
 <tr><td>10-jan-2019</td><td>A lot of data still cannot be updated due to the US government shutdown.</td></tr>
 <tr><td>10-jan-2019</td><td>Scaling series now also works for ensembles.</td></tr>
-<tr><td>01-jan-2019</td><td>You can start testing the <a href="http://climexp-test.knmi.nl/" target=_new>new server</a> in Amsterdam. Please let me know which problems you encounter.</td></tr>
+<tr><td>01-jan-2019</td><td>You can start testing the <a href="https://climexp-test.knmi.nl/" target=_new>new server</a> in Amsterdam. Please let me know which problems you encounter.</td></tr>
 <tr><td>20-dec-2018</td><td>Updated the NSIDC bootstrap sea ice data to v3. Upgradede the download script from one line to fifty with hardcoded assumptions because of the wonderful Earthdata Login system.</td></tr>
 <tr><td>11-dec-2018</td><td>The server has not functioned for a few hours on Tuesday 11 November because of maintenance on the storage server. To minimise impact it was not shut down, so you just got error messages about unavailable data.</td></tr>
 <tr><td>22-nov-2018</td><td>The server has problems, I think accessing its storage. The problem is at the data server side and there is not much I can do about it except setting up the new server (if all goes well a test version should be up in a week or two).</td></tr>

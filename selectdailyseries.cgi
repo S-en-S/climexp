@@ -25,7 +25,7 @@ cat <<EOF
 <table class="realtable" width="100%" border=0 cellpadding=0 cellspacing=0>
 <tr>
 <th>
-<a href="https://www.ncdc.noaa.gov/ghcn-daily-description" target=_new><img align="right" src="images/info-i.gif" alt="help" border="0"></a>GHCN-D v2
+<a href="https://www.ncdc.noaa.gov/ghcn-daily-description" target=_new><img align="right" src="images/info-i.gif" alt="help" border="0"></a>GHCN-D
 </th><th>
 <a href="https://www.ecad.eu" target=_new><img align="right" src="images/info-i.gif" alt="help" border="0"></a>pure ECA&amp;D
 </th><th>
@@ -150,7 +150,7 @@ At least <input type="$number" class="forminput" name="min" $textsize3 value="${
 At least <input type="$number" step=any class="forminput" name="dist" $textsize4 value="$FORM_dist">&deg; apart and with 
 <input type="$number" step=any class="forminput" name="elevmin" $textsize4 value="$FORM_elevmin">m
 &lt; elevation &lt;
-<input type="$number" step=any class="forminput" name="elevmax" $textsize4 value="$FORM_elevmax">
+<input type="$number" step=any class="forminput" name="elevmax" $textsize4 value="$FORM_elevmax">m
 </td></tr><tr><td colspan=4>
 <input type="submit" class="formbutton" value="Get stations">
 <input type="reset" class="formbutton" value="Clear Form" align="right">

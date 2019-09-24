@@ -9,14 +9,14 @@
 echo "<table class=\"realtable\" width=\"100%\" border=0 cellpadding=0 cellspacing=0>"
 echo "<tr><th><a href=\"javascript:pop_page('help/systemseries.shtml',568,450)\"><img align=\"right\" src=\"images/info-i.gif\" alt=\"help\" border=\"0\"></a>System-defined ${timescale}timeseries</th></tr><tr><td>"
 if [ -z "$NPERYEAR" -o "$NPERYEAR" = 12 ]; then
-    cat <<EOF  # coordinate links with 
+    cat <<EOF  # coordinate links with getuserindex.cgi
 <input type="checkbox" class="formcheck" name="nino3"><a href="getindices.cgi?WMO=NCDCData/ersst_nino3a&STATION=NINO3&TYPE=i&id=$EMAIL">NINO3</a>
 <input type="checkbox" class="formcheck" name="nino34"><a href="getindices.cgi?WMO=NCDCData/ersst_nino3.4a&STATION=NINO3.4&TYPE=i&id=$EMAIL">NINO3.4</a>
 <input type="checkbox" class="formcheck" name="nino4"><a href="getindices.cgi?WMO=NCDCData/ersst_nino4a&STATION=NINO4&TYPE=i&id=$EMAIL">NINO4</a>
 <input type="checkbox" class="formcheck" name="soi"><a href="getindices.cgi?WMO=CRUData/soi&STATION=SOI&TYPE=i&id=$EMAIL">SOI</a>
 <input type="checkbox" class="formcheck" name="nao"><a href="getindices.cgi?WMO=CRUData/nao&STATION=NAO-Gibraltar&TYPE=i&id=$EMAIL">NAO</a>
 <input type="checkbox" class="formcheck" name="co2"><a href="getindices.cgi?WMO=CDIACData/co2_monthly&STATION=CO2&TYPE=i&id=$EMAIL">CO2</a>
-<input type="checkbox" class="formcheck" name="gmst"><a href="getindices.cgi?WMO=NASAData/giss_al_gl_m&STATION=GMST&TYPE=i&id=$EMAIL">smoothed GMST</a>
+<input type="checkbox" class="formcheck" name="gmst"><a href="getindices.cgi?WMO=NASAData/giss_al_gl_m_4yrlo&STATION=GMST&TYPE=i&id=$EMAIL">smoothed GMST</a>
 EOF
 elif [ $NPERYEAR = 1 -o $NPERYEAR = -1 ]; then
     cat <<EOF

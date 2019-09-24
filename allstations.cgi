@@ -4,6 +4,12 @@
 
 . ./init.cgi
 . ./getargs.cgi
+if [ -z "$HTTP_USER_AGENT" ]; then
+    echo "Content-Type: text/plain"
+    echo
+    echo "Only for real users and search engines"
+    exit
+fi
 FORM_EMAIL="$EMAIL"
 FORM_email="$EMAIL"
 NPERYEAR="$FORM_n"

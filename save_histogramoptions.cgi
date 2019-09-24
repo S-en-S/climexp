@@ -16,6 +16,7 @@ FORM_assume=$FORM_assume;
 FORM_dgt=$FORM_dgt;
 FORM_year=$FORM_year;
 FORM_xyear=$FORM_xyear;
+FORM_includelast=$FORM_includelast;
 FORM_begin2=$FORM_begin2;
 FORM_end3=$FORM_end3;
 FORM_decor=$FORM_decor;
@@ -30,4 +31,5 @@ FORM_ci=$FORM_ci;
 FORM_minfac=$FORM_minfac;
 FORM_biasmul=$FORM_biasmul;
 FORM_biasadd=$FORM_biasadd;
+FORM_biasrt=$FORM_biasrt;
 EOF

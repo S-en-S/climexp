@@ -76,7 +76,7 @@ if [ -z "$FORM_timeseries" ]; then
 fi
 
 case "$FORM_fit" in
-gauss)  FORM_plot=sqrtlog;;
+gauss)  FORM_plot=log;;
 gumbel) FORM_plot=gumbel;;
 gev)    FORM_plot=gumbel;;
 gpd)    FORM_plot=log;;
@@ -126,12 +126,18 @@ fi
 if [ -n "$FORM_year" ]; then
     corrargs="$corrargs end2 $FORM_year"
 else
-    if [ -n "$FORM_xyear" ]; then
+    if [ -n "$FORM_xyear" -a ! "$FORM_timeseries" = none ]; then
         . ./myvinkhead.cgi "Trends in return times of extremes" "$CLIM $station" "noindex,nofollow"
-        echo "Error: the year for which to evaluate the value"
+        echo "Error: please give the year for which to evaluate the value"
         . ./myvinkfoot.cgi
         exit
     fi
+fi
+if [ -z "$FORM_begin2" -a ! "$FORM_timeseries" = none ]; then
+    . ./myvinkhead.cgi "Trends in return times of extremes" "$CLIM $station" "noindex,nofollow"
+    echo "Error: please give the year with which to compare"
+    . ./myvinkfoot.cgi
+    exit
 fi
 
 if [ "$FORM_TYPE" = "setmap" ]; then
@@ -384,6 +390,9 @@ if [ $FORM_plot = "gumbel" -o $FORM_plot = "log" -o $FORM_plot = "sqrtlog" ]; th
  \"$root.txt\" index 2 u 2:4 title \"$fittext $FORM_assume fit $FORM_end3\" with line lt 7"
         fi
     	plotformyear="$alsoplot, \"$root.txt\" index $indexobs u 2:4 title \"observed $FORM_year\" w lines lt 4" 
+	elif [ -n "$FORM_xyear" ]; then
+        indexobs=1
+		plotformyear=", \"$root.txt\" index $indexobs u 2:4 title \"$FORM_xyear $UNITS\" w lines lt 4" 
 	else
 		plotformyear=""
 	fi

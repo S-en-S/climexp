@@ -6,6 +6,7 @@ c=`echo $file | egrep -c '\+\+|%%'`
 ###echo "c=$c<br>"
 if [ "$c" = 0 ]; then
 	if [ -s ./$file.dat ]; then
+	    [ -n "$SCRIPTURL" ] && echo "# scripturl01 :: $SCRIPTURL"
 		cat ./$file.dat
 	elif [ -s ./$file.nc ]; then
 		netcdf2dat ./$file.nc

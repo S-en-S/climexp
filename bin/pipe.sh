@@ -1,4 +1,4 @@
-#!/bin/ksh
+#!/bin/bash
 
 prog=`basename $1`
 shift

@@ -38,8 +38,7 @@ if [ $c = 0 -a $EMAIL != someone@somewhere ]; then
             id=someone@somewhere
             FORM_id=someone@somewhere
             . ./myvinkhead.cgi "User $string unknown" "" "noindex,follow"
-            echo "Please <a href=\"registerform.cgi\">register or log in</a> or use the Climate Explorer <a href=\"/start.cgi?id=someone@somewhere\">anonymously</a> (with restrictions)"
-            . ./myvinkfoot.cgi
+            echo "Please <a href=\"registerform.cgi\">register or log in</a>, default is to use the site anonymously (with restrictions)"
         fi
         if [ $EMAIL != someone@somewhere ]; then
             . ./email2md5.cgi

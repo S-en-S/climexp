@@ -3,9 +3,10 @@
 . ./getargs.cgi
 # check email address
 . ./checkemail.cgi
+. ./nosearchenginewithheader.cgi
 export DIR=`pwd`
 
-if [ "$EMAIL" = oldenborgh@knmi.nl ]; then
+if [ "$EMAIL" = ec8907341dfc63c526d08e36d06b7ed8 ]; then
     lwrite=false # true
 fi
 
@@ -15,22 +16,7 @@ if [ "$hiresmap" = true ]; then
 else
 	doublesize="x902 y697"
 fi
-grads=grads
-config=`$grads -b -l -c quit| fgrep Config`
-gradsver=`echo $config | cut -f 2 -d ' '`
-if [ ${gradsver#v2.1} != $gradsver ]; then
-	grads20=true
-	gxprint=gxprint
-	gxprintoptions=white
-elif [ ${gradsver#v2.0} != $gradsver ]; then
-	grads20=true
-	gxprint=print
-else
-	if [ "$FORM_mapformat" = geotiff ]; then
-		echo "geotiff export is not supported by GrADS 1.8"
-		exit
-	fi
-fi
+. ./config_grads.cgi
 [ -z "$FORM_mapformat" ] && FORM_mapformat=png
 
 if [ -z "$plotlist" ]; then
@@ -40,7 +26,7 @@ if [ -z "$plotlist" ]; then
 
   # to find netpbm on MacOS X
   # fix title...
-  FORM_title=`echo "$FORM_title" | sed -e 's/with /\\\\with /'`
+  ###FORM_title=`echo "$FORM_title" | sed -e 's/with /\\\\with /'`
   title=`echo "$FORM_title" | sed -e 's/\\\\/ /'`
   . ./myvinkhead.cgi "Map of stations" "$title" "noindex,nofollow"
 
@@ -169,7 +155,7 @@ export GADDIR=$DIR/grads
 f=data/g$$
 id=$$
 if [ -z "$FORM_col" ]; then
-  FORM_col = bw
+  FORM_col=bw
 fi
 size8=`echo "${scale}*0.8/2" | bc -l -q`
 size5=`echo "${scale}*0.5/2" | bc -l -q`

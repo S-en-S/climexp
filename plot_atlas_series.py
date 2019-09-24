@@ -849,8 +849,13 @@ plot \\\n""".format(yr1s=yr1s, yr2s=yr2s)
             os.remove(epsfile_temp)
 
             ###self.logOut.info("generating %s.pdf" % epsfile.rstrip('.eps'))
-            cmd = 'epstopdf {epsfile}'.format(epsfile=epsfile)
-            subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT)
+            # defult Ubuntu gs does not support transparency extensions
+            cmd = 'epstopdf --gscmd=./bin/gs {epsfile}'.format(epsfile=epsfile)
+            # works but does does not give the correct boundingbox...
+            ###pdffile = epsfile.rstrip('.eps') + '.pdf'
+            ###cmd='gs -q -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile={pdffile} {epsfile} -c quit'.format(epsfile=epsfile,pdffile=pdffile)
+            # does not work, I do not know why, no PDF for the time being
+            ###subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT)
 
         # epsfile already exists ?
         pngfile = epsfile.rstrip('.eps') + '.png'

@@ -16,20 +16,21 @@ if [ "$EMAIL" = "someone@somewhere" ]; then
   . ./myvinkfoot.cgi
   exit
 fi
-if [ $EMAIL = oldenbor@knmi.nl ]; then
-    lwrite=false # true
-fi
 
 . ./queryfield.cgi
 
 . ./myvinkhead.cgi "Computing derived field" "$kindname $climfield" "noindex,nofollow"
 
+if [ $EMAIL = ec8907341dfc63c526d08e36d06b7ed8 ]; then
+    lwrite=true
+fi
 # prevent abuse...
 if [ "$NPERYEAR" = "$FORM_nperyearnew" -a "$FORM_oper" != "number" ]; then
    echo "The data is already at this time resolution.  Nothing to do, nothing done."
    . ./myvinkfoot.cgi
    exit
 fi
+[ "$lwrite" = true ] && echo "Debug output on<br>"
 
 if [ -z "$FORM_oper" ]; then
   FORM_oper="mean"
@@ -54,6 +55,10 @@ else
   NAME="$NAME"
 fi
 NAME="$FORM_oper of $NAME"
+. ./nperyear2timescale.cgi
+if [ -n "$FORM_sum" -a "$FORM_sum" != 0 -a "$FORM_sum" != 1 ]; then
+    NAME="${FORM_sum}-$month $NAME"
+fi
 [ "$lwrite" = true ] && echo "FORM_nperyearnew = $FORM_nperyearnew<br>"
 if [ "$FORM_nperyearnew" = 366 -o "$FORM_nperyearnew" = 365 -o "$FORM_nperyearnew" = 360 ]; then
   NAME="daily $NAME"
@@ -127,7 +132,12 @@ if [ -n "$ENSEMBLE" ]; then
     done
 else
     testfile=$outfile.nc
-    if [ ! -s $outfile -o $outfile -ot $file ]; then
+    if [ -n "$splitfield" ]; then
+        firstfile=`ls -t $file | head -1`
+    else
+        firstfile=$file
+    fi
+    if [ ! -s $outfile -o $outfile -ot $firstfile ]; then
         doit=true
     else
         doit=false

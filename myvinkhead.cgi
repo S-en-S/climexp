@@ -45,28 +45,5 @@ cat <<EOF
          <div class="subkop">$2</div>
 <div class="kalelink">
 EOF
-
-# For safety only use type=number for Opera and mobile browsers
-# In Safari this is buggy, and AFAIK not used in Firefox & Internet Explorer
-c1=`echo "$HTTP_USER_AGENT" | egrep -i -c mobile`
-c2=`echo "$HTTP_USER_AGENT" | egrep -i -c opera`
-if [ $c1 = 1 -o $c2 = 1 ]; then
-    number=number
-    textsize2='style="width: 4em;"'
-    textsize3='style="width: 5em;"'
-    textsize4='style="width: 6em;"'
-    textsize6='style="width: 7em;"'
-    textsize10='style="width: 13em;"'
-else
-    number=text
-    textsize2='size=2'
-    textsize3='size=3'
-    textsize4='size=4'
-    textsize6='size=6'
-    textsize10='size=10'
-fi
-###echo "HTTP_USER_AGENT = $HTTP_USER_AGENT<br>"
-###echo "c1,c2,number=$c1,$c2,$number<br>"
-
 fi
 . ./init.cgi

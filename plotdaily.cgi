@@ -4,7 +4,7 @@
 # http://www.cpc.ncep.noaa.gov/products/global_monitoring/temperature/global_temp_accum.shtml
 #
 . ./init.cgi
-. ./nosearchengine.cgi
+. ./nosearchenginewithheader.cgi
 echo 'Content-Type: text/html'
 echo
 echo
@@ -146,7 +146,7 @@ else
     else
         timefmt="'%Y%m'"
     fi
-    if [ \( "$NEWUNITS" = "mm/dy" -a "${VAR#ev}" = "$VAR" \) -o "$VAR" = "soilw" ]; then
+    if [ \( \( "$NEWUNITS" = "mm/day" -o "$NEWUNITS" = "mm/dy" \) -a "${VAR#ev}" = "$VAR" \) -o "$VAR" = "soilw" ]; then
         above=3
         below=1
     else

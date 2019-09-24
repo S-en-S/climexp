@@ -178,10 +178,10 @@ cat <<EOF
 </form>
 </div>
 <p>De resultaten komen beschikbaar op de Engelstalige KNMI Climate Explorer web site, die de gelegenheid geeft de tijdreeks te downloaden, te analyseren of verder te bewerken.
-<p><div class="bijschrift">Ligging van de neerslagstations (links; <a href="KNMI14/rr_map.kml">Google Earth</a>) en temperatuurstations (rechts; <a href="KNM14/t_map.kml">Google Earth</a>). Klik op de kaarten om een grotere en duidelijk leesbare versie te verkrijgen.</div>
+<p><div class="bijschrift">Ligging van de neerslagstations (links; <a href="KNMI14/rr_map.kml">Google Earth</a>) en temperatuurstations (rechts). Klik op de kaarten om een grotere en duidelijk leesbare versie te verkrijgen.</div>
 <center>
-<a href="javascript:pop_picture('http://www6.knmi.nl/klimatologie/images_algemeen/stations_neerslag.png', 'print')">
-<img src="http://www6.knmi.nl/klimatologie/images_algemeen/stations_neerslag.png" alt="Neerslagstations" border=0 class="realimage" hspace=0 vspace=0 width="27.5"></a>
+<a href="javascript:pop_picture('/KNMI14/images/stations_neerslag.png', 'print')">
+<img src="/KNMI14/images/stations_neerslag.png" alt="Neerslagstations" border=0 class="realimage" hspace=0 vspace=0 width="27.5%"></a>
 <a href="javascript:pop_picture('http://www.klimaatscenarios.nl/toekomstig_weer/transformatie/stations.jpg', 'print')">
 <img src="http://www.klimaatscenarios.nl/toekomstig_weer/transformatie/stations.jpg" alt="Temperatuurstations" border=0 class="realimage" hspace=0 vspace=0 width="27.5%"></a>
 </center><br clear=all>

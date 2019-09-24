@@ -4,6 +4,13 @@
 User-agent: * 
 Crawl-delay: 5
 
+# no multilingual content...
+User-agent: Linguee
+Disallow: /
+
+# slightly impolite, no documentation
+User-agent: MauiBot
+Disallow: /
 # too active
 User-agent: MJ12bot
 Disallow: /
@@ -39,6 +46,9 @@ User-agent: e-SocietyRobot
 Disallow: /
 # follows links that it should not follow
 User-agent: discobot
+Disallow: /
+# follows links that it should not follow, no advertisements anyway
+User-agent: SemrushBot
 Disallow: /
 
 # Google was busy indexing the data files, also images disappear after 3 days

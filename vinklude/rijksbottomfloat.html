@@ -1,0 +1,84 @@
+<!-- 21-07-2009: begin toevoeging voor de template -->
+
+<!--Afsluiting van de buitenste tabel-->
+</td>
+</tr>
+</table>
+<p><br>
+
+</div> <!-- EINDE 'content' div -->
+</div></div> <!-- EINDE 'c1', 'c2' div -->
+
+<div class="func_links" id="service_menu">
+   <h3>Service menu</h3>
+   <ul class="right">
+      <li><span id = "printertje">
+             <a href="javascript:printpage();"><img src="/images/rijksprintertje.gif" border=0 alt="Print deze pagina" title="Print deze pagina"></a>
+          </span>
+      </li>
+      <li><a href="/faq" title="Veelgestelde vragen">Veelgestelde vragen</a></li>
+      <li><a href="/contact/" title="Contact">Contact</a></li>
+      <li><a href="/links/" title="Links">Links</a></li>
+      <li><a href="/index_en.html" title="English">English</a></li>
+   </ul>
+   <ul class="left">
+      <!--li><a href="/rss_feeds/" title="Abonneer op de RSS nieuws feed" class="rss">RSS</a></li-->
+      <li><a href="/rss_feeds/"><img src="/images/rssgrey.png" border=0 alt="RSS feeds" title="RSS feeds"></a></li>
+      <li>Tekstgrootte</li>
+      <li><a href="javascript:changeFontSize(-1);"><img src="/images/tsizemin.png" border=0 alt="Kleinere letters" title="Kleinere letters"></a>&nbsp;</li>
+      <li><a href="javascript:resetFontSize();"><img src="/images/tsizenul.png" border=0 alt="Standaardlettergrootte" title="Standaardlettergrootte"></a>&nbsp;</li>
+      <li><a href="javascript:changeFontSize(+1);"><img src="/images/tsizeplus.png" border=0 alt="Grotere letters" title="Grotere letters"></a></li>
+            <!--<a href="javascript:changeFontSize(-1);"><span class="minnulplus"> - </span></a>&nbsp;-->
+            <!--<a href="javascript:resetFontSize();"><span class="minnulplus"> 0 </span></a>&nbsp;-->
+            <!--<a href="javascript:changeFontSize(+1);"><span class="minnulplus"> + </span></a>--> 
+      
+   </ul>
+</div>
+
+<div class="footer">
+   <div class="ref"><img src="/images/RO_footer.png" alt="" height="25" width="500" /></div>
+<span></span>
+   </div>
+
+
+</div> <!-- EINDE 'container' DIV -->
+
+<!-- einde toevoeging voor de template -->
+
+
+<!-- EINDE FOOTER INCLUDE -->
+<script type="text/javascript">
+<!-- cloaking
+
+function printpage() {
+  newwindow = window.open("","Printje","toolbar=0,location=0,status=0,menubar=0,scrollbars=1,width=600,height=600")
+  newwindow.document.open();
+  newwindow.focus();
+  newwindow.document.write("\<html\>\<head\>\<link rel='stylesheet' ");
+  newwindow.document.write("href='\/styles\/rijksvinkstyle.css' type='text\/css'\>\<\/head\>");
+  newwindow.document.write("\<body style='background-color: #ffffff;' onLoad='this.print();'\>");
+  var body = document.getElementById('printable').innerHTML;
+  newwindow.document.write(body);
+  newwindow.document.write("<\/body\>\<\/html\>");
+  newwindow.document.close();
+}
+
+   if (document.getElementById('printable')) {
+      var kiekeboe = document.getElementById('printertje');
+      kiekeboe.style.display = "inline";
+   }
+   if (document.getElementById('engelse_taal')) {
+      var kiekeboe = document.getElementById('engelse_taal');
+	  var newStr = "href=\""+kiekeboe.innerHTML+"\"";
+	  
+      var kiekeboe = document.getElementById('english-language');
+	  kiekeboe.style.display = "inline";
+	  
+	  var oldStr = kiekeboe.innerHTML;
+ 	  kiekeboe.innerHTML = oldStr.replace(/href=\"\"/g,newStr); 
+	  //alert(kiekeboe.innerHTML + "\n" + newStr);
+   }
+
+// uncloaking -->
+</script>
+

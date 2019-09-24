@@ -51,11 +51,6 @@ elif [ $NPERYEAR = 360 -o $NPERYEAR = 365 -o $NPERYEAR = 366 ]; then
     cat selectdailyfield_rea.html
     echo '</table>'
   fi
-  if [ -z "$NO_CSM" ]; then
-    echo '<table class="realtable" width="100%" border=0 cellpadding=0 cellspacing=0>'
-    cat selectdailyfield_ipcc.html
-    echo '</table>'
-  fi
 else
   echo "No system-defined $NPERYEAR fields available yet"
 fi # NPERYEAR

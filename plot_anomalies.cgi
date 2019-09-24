@@ -81,7 +81,8 @@ set xtics add ("Jan" "20000115", "Feb" "20000214", "Mar" "20000315", "Apr" "2000
             bijschriftbegin="(Jan-Dec: "
             bijschrifteind=","
         fi
-        echo "$bijschriftbegin<a href=\"${base}_$suffix.eps.gz\">eps</a>, <a href=\"ps2pdf.cgi?file=${base}_$suffix.eps.gz\">pdf</a>, 
+        safe_epsfile=`echo ${base}_$suffix.eps.gz | tr '+' '%'`
+        echo "$bijschriftbegin<a href=\"${base}_$suffix.eps.gz\">eps</a>, <a href=\"ps2pdf.cgi?file=$safe_epsfile\">pdf</a>, 
 <a href=\"${base}_yr.txt\">raw data</a>$bijschrifteind."
 ylabel=`echo "$VAR $plotunits" | tr '_' ' '`
         if [ \( ! -s ${base}_$suffix.png \) -o ${base}_$suffix.png -ot ${base}_yr.plt ]; then
@@ -177,7 +178,7 @@ EOF
     datafile=`echo ${base}a.txt | tr '+' '%'`
     cat << EOF 
 <div class="bijschrift">Anomalies $wrt $period
-(<a href="${base}a.eps.gz">eps</a>, <a href="ps2pdf.cgi?file=${base}a.eps.gz">pdf</a>,
+(<a href="${base}a.eps.gz">eps</a>, <a href="ps2pdf.cgi?file=${datafile%.txt}.eps.gz">pdf</a>,
 <a href="${base}a.txt">raw data</a>, 
 <a href="dat2nc.cgi?datafile=${datafile}&type=$TYPE&station=$STATION&id=$EMAIL">netcdf</a>,
 <a href="analyse_anomaly.cgi?datafile=$datafile&STATION=${STATION}_anomalies&TYPE=$TYPE&NPERYEAR=$NPERYEAR&id=$EMAIL">analyse this time series</a>)</div>

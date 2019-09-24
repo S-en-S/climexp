@@ -1,0 +1,2171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<name>data/plotlist16648.txt</name>
+<LookAt>
+<longitude>   5.500</longitude>
+<latitude>  52.000</latitude>
+<range>    500000.000</range>
+</LookAt>
+<Placemark>
+<name>Hollum</name>
+<Point><coordinates>
+    5.6300,   53.4500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=010&STATION=Hollum&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>West Terschelling</name>
+<Point><coordinates>
+    5.2200,   53.3700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=011&STATION=West Terschelling&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Schiermonnikoog</name>
+<Point><coordinates>
+    6.1600,   53.4800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=012&STATION=Schiermonnikoog&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Oost-Vlieland</name>
+<Point><coordinates>
+    5.0600,   53.3000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=015&STATION=Oost-Vlieland&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Petten</name>
+<Point><coordinates>
+    4.6600,   52.7600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=016&STATION=Petten&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Den Burg</name>
+<Point><coordinates>
+    4.8000,   53.0500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=017&STATION=Den Burg&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Nes /Ameland/</name>
+<Point><coordinates>
+    5.7700,   53.4500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=018&STATION=Nes /Ameland/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>De Cocksdorp</name>
+<Point><coordinates>
+    4.8700,   53.1600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=019&STATION=De Cocksdorp&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Callantsoog</name>
+<Point><coordinates>
+    4.7000,   52.8300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=021&STATION=Callantsoog&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>De Koog</name>
+<Point><coordinates>
+    4.7800,   53.0900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=022&STATION=De Koog&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Sneek</name>
+<Point><coordinates>
+    5.6400,   53.0300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=064&STATION=Sneek&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Makkum</name>
+<Point><coordinates>
+    5.4000,   53.0600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=065&STATION=Makkum&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Harlingen</name>
+<Point><coordinates>
+    5.4200,   53.1800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=066&STATION=Harlingen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Dokkum</name>
+<Point><coordinates>
+    5.9800,   53.3200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=067&STATION=Dokkum&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Sint Annaparochie</name>
+<Point><coordinates>
+    5.6600,   53.2800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=068&STATION=Sint Annaparochie&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Appelscha</name>
+<Point><coordinates>
+    6.3500,   52.9600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=069&STATION=Appelscha&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Drachten</name>
+<Point><coordinates>
+    6.0900,   53.1200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=073&STATION=Drachten&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Oldeholtpade</name>
+<Point><coordinates>
+    6.0300,   52.8900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=075&STATION=Oldeholtpade&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Kornwerderzand</name>
+<Point><coordinates>
+    5.3400,   53.0700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=076&STATION=Kornwerderzand&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Kollum</name>
+<Point><coordinates>
+    6.1400,   53.2800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=077&STATION=Kollum&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Heeg</name>
+<Point><coordinates>
+    5.6000,   52.9700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=079&STATION=Heeg&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Stavoren</name>
+<Point><coordinates>
+    5.3600,   52.8900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=080&STATION=Stavoren&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Joure</name>
+<Point><coordinates>
+    5.8100,   52.9800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=081&STATION=Joure&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Gorredijk</name>
+<Point><coordinates>
+    6.0600,   53.0000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=082&STATION=Gorredijk&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Ezumazijl</name>
+<Point><coordinates>
+    6.1500,   53.3600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=084&STATION=Ezumazijl&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Leeuwarden /Vb/</name>
+<Point><coordinates>
+    5.7300,   53.2200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=085&STATION=Leeuwarden /Vb/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Nijbeets</name>
+<Point><coordinates>
+    6.0000,   53.0600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=086&STATION=Nijbeets&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Bergumerdam</name>
+<Point><coordinates>
+    6.0100,   53.1800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=087&STATION=Bergumerdam&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Eernewoude</name>
+<Point><coordinates>
+    5.9300,   53.1400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=090&STATION=Eernewoude&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Groningen</name>
+<Point><coordinates>
+    6.5600,   53.2200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=139&STATION=Groningen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Assen</name>
+<Point><coordinates>
+    6.5700,   52.9900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=140&STATION=Assen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Delfzijl</name>
+<Point><coordinates>
+    6.9400,   53.3200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=141&STATION=Delfzijl&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Warffum</name>
+<Point><coordinates>
+    6.5600,   53.4000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=142&STATION=Warffum&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Finsterwolde</name>
+<Point><coordinates>
+    7.1000,   53.2000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=143&STATION=Finsterwolde&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Ter Apel</name>
+<Point><coordinates>
+    7.0800,   52.8800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=144&STATION=Ter Apel&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Zoutkamp</name>
+<Point><coordinates>
+    6.2800,   53.3300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=145&STATION=Zoutkamp&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Veendam</name>
+<Point><coordinates>
+    6.8300,   53.1000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=147&STATION=Veendam&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Sappemeer</name>
+<Point><coordinates>
+    6.7400,   53.1600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=148&STATION=Sappemeer&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Uithuizen</name>
+<Point><coordinates>
+    6.6500,   53.4100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=150&STATION=Uithuizen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Roodeschool</name>
+<Point><coordinates>
+    6.7900,   53.4400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=151&STATION=Roodeschool&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Gieterveen</name>
+<Point><coordinates>
+    6.8400,   53.0300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=152&STATION=Gieterveen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Winschoten</name>
+<Point><coordinates>
+    7.0500,   53.1300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=153&STATION=Winschoten&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Eenrum</name>
+<Point><coordinates>
+    6.4600,   53.3700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=154&STATION=Eenrum&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Eext</name>
+<Point><coordinates>
+    6.7300,   53.0000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=155&STATION=Eext&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Vlagtwedde</name>
+<Point><coordinates>
+    7.1100,   53.0300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=156&STATION=Vlagtwedde&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Onnen</name>
+<Point><coordinates>
+    6.6500,   53.1400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=158&STATION=Onnen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Nieuw-Buinen</name>
+<Point><coordinates>
+    6.9500,   52.9700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=159&STATION=Nieuw-Buinen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Veenhuizen</name>
+<Point><coordinates>
+    6.3900,   53.0500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=160&STATION=Veenhuizen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Eelde</name>
+<Point><coordinates>
+    6.5700,   53.1200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=161&STATION=Eelde&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Niekerk</name>
+<Point><coordinates>
+    6.3500,   53.2200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=162&STATION=Niekerk&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Roden</name>
+<Point><coordinates>
+    6.4300,   53.1500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=163&STATION=Roden&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Zeerijp</name>
+<Point><coordinates>
+    6.7300,   53.3500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=164&STATION=Zeerijp&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Marum</name>
+<Point><coordinates>
+    6.2800,   53.1400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=166&STATION=Marum&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Enkhuizen</name>
+<Point><coordinates>
+    5.2900,   52.7100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=221&STATION=Enkhuizen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Hoorn</name>
+<Point><coordinates>
+    5.0500,   52.6500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=222&STATION=Hoorn&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Schellingwoude</name>
+<Point><coordinates>
+    4.9900,   52.3900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=223&STATION=Schellingwoude&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Edam</name>
+<Point><coordinates>
+    5.0500,   52.5100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=224&STATION=Edam&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Overveen</name>
+<Point><coordinates>
+    4.5900,   52.3900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=225&STATION=Overveen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Wijk Aan Zee</name>
+<Point><coordinates>
+    4.6000,   52.4700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=226&STATION=Wijk Aan Zee&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Anna Paulowna</name>
+<Point><coordinates>
+    4.8400,   52.8600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=227&STATION=Anna Paulowna&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Schagen</name>
+<Point><coordinates>
+    4.8100,   52.7900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=228&STATION=Schagen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Zandvoort</name>
+<Point><coordinates>
+    4.5100,   52.3400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=229&STATION=Zandvoort&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Zaandijk</name>
+<Point><coordinates>
+    4.8100,   52.4800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=230&STATION=Zaandijk&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Zaandam /Hembrug/</name>
+<Point><coordinates>
+    4.8300,   52.4200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=233&STATION=Zaandam /Hembrug/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Castricum</name>
+<Point><coordinates>
+    4.6500,   52.5500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=235&STATION=Castricum&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Medemblik /Gemaal Le</name>
+<Point><coordinates>
+    5.1100,   52.7600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=236&STATION=Medemblik /Gemaal Le&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>De Haukes</name>
+<Point><coordinates>
+    4.9400,   52.8800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=238&STATION=De Haukes&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Den Oever</name>
+<Point><coordinates>
+    5.0300,   52.9300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=239&STATION=Den Oever&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Kreileroord</name>
+<Point><coordinates>
+    5.1000,   52.8600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=240&STATION=Kreileroord&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Purmerend</name>
+<Point><coordinates>
+    4.9500,   52.5100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=242&STATION=Purmerend&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Hoogkarspel</name>
+<Point><coordinates>
+    5.1600,   52.6900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=249&STATION=Hoogkarspel&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Kolhorn /Groetpolder</name>
+<Point><coordinates>
+    4.8900,   52.7900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=252&STATION=Kolhorn /Groetpolder&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Frederiksoord</name>
+<Point><coordinates>
+    6.1900,   52.8500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=326&STATION=Frederiksoord&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Dwingeloo</name>
+<Point><coordinates>
+    6.3700,   52.8400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=327&STATION=Dwingeloo&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Heerde</name>
+<Point><coordinates>
+    6.0400,   52.3800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=328&STATION=Heerde&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Wapenveld</name>
+<Point><coordinates>
+    6.0800,   52.4300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=329&STATION=Wapenveld&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Zwolle</name>
+<Point><coordinates>
+    6.1400,   52.5300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=330&STATION=Zwolle&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Denekamp</name>
+<Point><coordinates>
+    7.0300,   52.3800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=331&STATION=Denekamp&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Hoogeveen</name>
+<Point><coordinates>
+    6.4800,   52.7100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=332&STATION=Hoogeveen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Emmen</name>
+<Point><coordinates>
+    6.8900,   52.7800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=333&STATION=Emmen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Ijsselmuiden</name>
+<Point><coordinates>
+    5.9500,   52.5700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=335&STATION=Ijsselmuiden&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Oldebroek</name>
+<Point><coordinates>
+    5.9100,   52.3900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=336&STATION=Oldebroek&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Schoonlo</name>
+<Point><coordinates>
+    6.7000,   52.9000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=337&STATION=Schoonlo&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Giethoorn</name>
+<Point><coordinates>
+    6.0700,   52.7200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=338&STATION=Giethoorn&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Rheezerveen</name>
+<Point><coordinates>
+    6.5600,   52.5600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=339&STATION=Rheezerveen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Heino</name>
+<Point><coordinates>
+    6.2600,   52.4400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=340&STATION=Heino&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Zweeloo</name>
+<Point><coordinates>
+    6.7300,   52.7900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=341&STATION=Zweeloo&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Vilsteren</name>
+<Point><coordinates>
+    6.3600,   52.5300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=342&STATION=Vilsteren&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Oud Schoonebeek</name>
+<Point><coordinates>
+    6.9000,   52.6800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=343&STATION=Oud Schoonebeek&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Vroomshoop</name>
+<Point><coordinates>
+    6.5700,   52.4500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=345&STATION=Vroomshoop&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Emmeloord</name>
+<Point><coordinates>
+    5.7700,   52.7000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=348&STATION=Emmeloord&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Klazienaveen</name>
+<Point><coordinates>
+    7.0000,   52.7400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=349&STATION=Klazienaveen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Elburg</name>
+<Point><coordinates>
+    5.8300,   52.4400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=350&STATION=Elburg&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Nagele</name>
+<Point><coordinates>
+    5.7200,   52.6200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=352&STATION=Nagele&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Blokzijl</name>
+<Point><coordinates>
+    5.9600,   52.7300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=353&STATION=Blokzijl&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Dedemsvaart</name>
+<Point><coordinates>
+    6.4400,   52.5900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=354&STATION=Dedemsvaart&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Nop /Kavel L76/</name>
+<Point><coordinates>
+    5.8400,   52.7900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=356&STATION=Nop /Kavel L76/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Rouveen</name>
+<Point><coordinates>
+    6.1900,   52.6100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=358&STATION=Rouveen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Lemmer /Gemaal Buma/</name>
+<Point><coordinates>
+    5.7100,   52.8400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=359&STATION=Lemmer /Gemaal Buma/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Groot Ammers</name>
+<Point><coordinates>
+    4.8300,   51.9300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=434&STATION=Groot Ammers&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Heemstede /Cruquius/</name>
+<Point><coordinates>
+    4.6300,   52.3300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=435&STATION=Heemstede /Cruquius/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Lijnden /Nh/</name>
+<Point><coordinates>
+    4.7600,   52.3500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=437&STATION=Lijnden /Nh/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Hoofddorp</name>
+<Point><coordinates>
+    4.6700,   52.2900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=438&STATION=Hoofddorp&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Roelofarendsveen</name>
+<Point><coordinates>
+    4.6300,   52.2200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=439&STATION=Roelofarendsveen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Scheveningen</name>
+<Point><coordinates>
+    4.3100,   52.1100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=440&STATION=Scheveningen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Amsterdam /Hortus Botanic</name>
+<Point><coordinates>
+    4.9100,   52.3700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=441&STATION=Amsterdam /Hortus Botanic&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Boskoop</name>
+<Point><coordinates>
+    4.6900,   52.0800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=442&STATION=Boskoop&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Gouda</name>
+<Point><coordinates>
+    4.7200,   52.0100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=443&STATION=Gouda&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Katwijk Aan Den Rijn</name>
+<Point><coordinates>
+    4.4100,   52.1900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=444&STATION=Katwijk Aan Den Rijn&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Den Bommel</name>
+<Point><coordinates>
+    4.3000,   51.7200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=447&STATION=Den Bommel&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Delft</name>
+<Point><coordinates>
+    4.3700,   52.0100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=449&STATION=Delft&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Numansdorp</name>
+<Point><coordinates>
+    4.4200,   51.7300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=450&STATION=Numansdorp&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Ijsselmonde</name>
+<Point><coordinates>
+    4.5500,   51.8900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=451&STATION=Ijsselmonde&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Bergschenhoek</name>
+<Point><coordinates>
+    4.4900,   51.9800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=453&STATION=Bergschenhoek&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Lisse</name>
+<Point><coordinates>
+    4.5500,   52.2600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=454&STATION=Lisse&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Strijen</name>
+<Point><coordinates>
+    4.5800,   51.7600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=455&STATION=Strijen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Oostvoorne</name>
+<Point><coordinates>
+    4.0900,   51.9100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=456&STATION=Oostvoorne&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Aalsmeer</name>
+<Point><coordinates>
+    4.7700,   52.2600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=458&STATION=Aalsmeer&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Barendrecht</name>
+<Point><coordinates>
+    4.5400,   51.8600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=461&STATION=Barendrecht&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Dirksland</name>
+<Point><coordinates>
+    4.0900,   51.7500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=462&STATION=Dirksland&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Nieuw-Helvoet</name>
+<Point><coordinates>
+    4.1200,   51.8400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=463&STATION=Nieuw-Helvoet&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Brielle</name>
+<Point><coordinates>
+    4.1600,   51.9000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=464&STATION=Brielle&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Oud Alblas</name>
+<Point><coordinates>
+    4.6900,   51.8600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=465&STATION=Oud Alblas&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Poortugaal</name>
+<Point><coordinates>
+    4.3900,   51.8500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=467&STATION=Poortugaal&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Leiden</name>
+<Point><coordinates>
+    4.4800,   52.1400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=469&STATION=Leiden&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Zegveld</name>
+<Point><coordinates>
+    4.8400,   52.1400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=470&STATION=Zegveld&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Ouddorp</name>
+<Point><coordinates>
+    3.8900,   51.8200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=471&STATION=Ouddorp&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Weurt</name>
+<Point><coordinates>
+    5.8100,   51.8600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=539&STATION=Weurt&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Arnhem</name>
+<Point><coordinates>
+    5.9000,   51.9800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=541&STATION=Arnhem&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Putten</name>
+<Point><coordinates>
+    5.6000,   52.2400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=542&STATION=Putten&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Apeldoorn</name>
+<Point><coordinates>
+    5.9400,   52.2200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=543&STATION=Apeldoorn&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Woudenberg</name>
+<Point><coordinates>
+    5.4600,   52.0800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=546&STATION=Woudenberg&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Nijkerk</name>
+<Point><coordinates>
+    5.4700,   52.2300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=547&STATION=Nijkerk&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Loenen Aan De Vecht</name>
+<Point><coordinates>
+    5.0400,   52.2100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=548&STATION=Loenen Aan De Vecht&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Culemborg</name>
+<Point><coordinates>
+    5.2200,   51.9300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=549&STATION=Culemborg&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>De Bilt</name>
+<Point><coordinates>
+    5.1800,   52.1000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=550&STATION=De Bilt&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Eerbeek</name>
+<Point><coordinates>
+    6.0700,   52.1100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=557&STATION=Eerbeek&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Lunteren</name>
+<Point><coordinates>
+    5.6000,   52.0900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=558&STATION=Lunteren&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Vleuten</name>
+<Point><coordinates>
+    5.0000,   52.0900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=559&STATION=Vleuten&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Amerongen</name>
+<Point><coordinates>
+    5.4500,   52.0000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=560&STATION=Amerongen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Benschop</name>
+<Point><coordinates>
+    4.9400,   52.0000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=561&STATION=Benschop&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Tiel</name>
+<Point><coordinates>
+    5.4400,   51.9300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=562&STATION=Tiel&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Weesp</name>
+<Point><coordinates>
+    5.0400,   52.3000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=563&STATION=Weesp&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Hulshorst</name>
+<Point><coordinates>
+    5.6900,   52.3600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=564&STATION=Hulshorst&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Voorthuizen</name>
+<Point><coordinates>
+    5.6100,   52.1800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=565&STATION=Voorthuizen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Kootwijk-Radio</name>
+<Point><coordinates>
+    5.8300,   52.1800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=567&STATION=Kootwijk-Radio&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Elspeet</name>
+<Point><coordinates>
+    5.7800,   52.3000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=570&STATION=Elspeet&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Harskamp</name>
+<Point><coordinates>
+    5.7300,   52.1500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=571&STATION=Harskamp&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Abcoude</name>
+<Point><coordinates>
+    4.9800,   52.2600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=572&STATION=Abcoude&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Beekbergen</name>
+<Point><coordinates>
+    5.9600,   52.1700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=573&STATION=Beekbergen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Spakenburg</name>
+<Point><coordinates>
+    5.3900,   52.2500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=576&STATION=Spakenburg&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Oosterbeek</name>
+<Point><coordinates>
+    5.8400,   52.0100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=578&STATION=Oosterbeek&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Veenendaal</name>
+<Point><coordinates>
+    5.5900,   52.0300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=579&STATION=Veenendaal&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Barneveld</name>
+<Point><coordinates>
+    5.5700,   52.1400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=580&STATION=Barneveld&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Hamersveld</name>
+<Point><coordinates>
+    5.4200,   52.1400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=582&STATION=Hamersveld&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Wageningen /Pd/</name>
+<Point><coordinates>
+    5.6500,   51.9700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=583&STATION=Wageningen /Pd/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Geldermalsen</name>
+<Point><coordinates>
+    5.2700,   51.8700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=584&STATION=Geldermalsen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Lochem /Boekhorst/</name>
+<Point><coordinates>
+    6.3600,   52.1500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=663&STATION=Lochem /Boekhorst/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Almelo</name>
+<Point><coordinates>
+    6.6700,   52.3600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=664&STATION=Almelo&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Enschede</name>
+<Point><coordinates>
+    6.9200,   52.2100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=665&STATION=Enschede&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Winterswijk</name>
+<Point><coordinates>
+    6.6800,   51.9600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=666&STATION=Winterswijk&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Doetinchem</name>
+<Point><coordinates>
+    6.2900,   51.9700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=667&STATION=Doetinchem&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Hengelo</name>
+<Point><coordinates>
+    6.7600,   52.2700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=668&STATION=Hengelo&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Borculo</name>
+<Point><coordinates>
+    6.5300,   52.0900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=669&STATION=Borculo&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Enschede /Vliegveld/</name>
+<Point><coordinates>
+    6.9000,   52.2700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=670&STATION=Enschede /Vliegveld/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Hellendoorn</name>
+<Point><coordinates>
+    6.4500,   52.3900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=672&STATION=Hellendoorn&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Gendringen</name>
+<Point><coordinates>
+    6.3500,   51.8600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=673&STATION=Gendringen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Rekken</name>
+<Point><coordinates>
+    6.7200,   52.0900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=674&STATION=Rekken&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Almen</name>
+<Point><coordinates>
+    6.3200,   52.1700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=678&STATION=Almen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Aalten</name>
+<Point><coordinates>
+    6.5700,   51.9100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=680&STATION=Aalten&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Lettele</name>
+<Point><coordinates>
+    6.2700,   52.2700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=681&STATION=Lettele&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Vlissingen</name>
+<Point><coordinates>
+    3.6000,   51.4400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=733&STATION=Vlissingen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Kapelle</name>
+<Point><coordinates>
+    3.9500,   51.4800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=735&STATION=Kapelle&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Brouwershaven</name>
+<Point><coordinates>
+    3.8800,   51.7400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=736&STATION=Brouwershaven&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Kerkwerve</name>
+<Point><coordinates>
+    3.8600,   51.6800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=737&STATION=Kerkwerve&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Biervliet</name>
+<Point><coordinates>
+    3.6900,   51.3300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=738&STATION=Biervliet&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>St Kruis</name>
+<Point><coordinates>
+    3.5000,   51.2700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=740&STATION=St Kruis&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Stavenisse</name>
+<Point><coordinates>
+    4.0200,   51.5900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=741&STATION=Stavenisse&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Terneuzen</name>
+<Point><coordinates>
+    3.8300,   51.3400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=742&STATION=Terneuzen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Noordgouwe</name>
+<Point><coordinates>
+    3.9600,   51.7000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=743&STATION=Noordgouwe&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Anna Jacobapolder</name>
+<Point><coordinates>
+    4.1200,   51.6400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=744&STATION=Anna Jacobapolder&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Westkapelle</name>
+<Point><coordinates>
+    3.4400,   51.5300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=746&STATION=Westkapelle&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Krabbendijke</name>
+<Point><coordinates>
+    4.1000,   51.4300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=747&STATION=Krabbendijke&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Wilhelminapolder</name>
+<Point><coordinates>
+    3.9000,   51.5300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=749&STATION=Wilhelminapolder&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Rilland-Bath</name>
+<Point><coordinates>
+    4.1700,   51.4200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=750&STATION=Rilland-Bath&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Pompstation Oranjezo</name>
+<Point><coordinates>
+    3.5800,   51.5900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=751&STATION=Pompstation Oranjezo&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Haamstede /De Blinker/</name>
+<Point><coordinates>
+    3.7100,   51.6900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=752&STATION=Haamstede /De Blinker/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Ovezande</name>
+<Point><coordinates>
+    3.8200,   51.4300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=754&STATION=Ovezande&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Kortgene</name>
+<Point><coordinates>
+    3.8300,   51.5700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=755&STATION=Kortgene&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Middelburg</name>
+<Point><coordinates>
+    3.5900,   51.4900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=756&STATION=Middelburg&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Tholen</name>
+<Point><coordinates>
+    4.2100,   51.5300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=757&STATION=Tholen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Wolphaartsdijk</name>
+<Point><coordinates>
+    3.7400,   51.5300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=758&STATION=Wolphaartsdijk&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name> S-Heerenhoek</name>
+<Point><coordinates>
+    3.7700,   51.4700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=760&STATION= S-Heerenhoek&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Schoondijke</name>
+<Point><coordinates>
+    3.5500,   51.3600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=762&STATION=Schoondijke&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Cadzand</name>
+<Point><coordinates>
+    3.4000,   51.3700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=763&STATION=Cadzand&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Kloosterzande</name>
+<Point><coordinates>
+    4.0300,   51.3800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=764&STATION=Kloosterzande&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Tilburg</name>
+<Point><coordinates>
+    5.0800,   51.5600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=827&STATION=Tilburg&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Oudenbosch</name>
+<Point><coordinates>
+    4.5300,   51.5800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=828&STATION=Oudenbosch&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Zundert</name>
+<Point><coordinates>
+    4.6600,   51.4700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=829&STATION=Zundert&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Herwijnen</name>
+<Point><coordinates>
+    5.1400,   51.8300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=830&STATION=Herwijnen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Esbeek</name>
+<Point><coordinates>
+    5.1300,   51.4600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=831&STATION=Esbeek&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Bergen Op Zoom</name>
+<Point><coordinates>
+    4.2500,   51.5100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=832&STATION=Bergen Op Zoom&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Oosterhout</name>
+<Point><coordinates>
+    4.8800,   51.6400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=833&STATION=Oosterhout&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Chaam</name>
+<Point><coordinates>
+    4.8700,   51.5100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=834&STATION=Chaam&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Andel</name>
+<Point><coordinates>
+    5.0600,   51.7800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=835&STATION=Andel&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Gorinchem</name>
+<Point><coordinates>
+    4.9800,   51.8400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=836&STATION=Gorinchem&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Steenbergen /Nb/</name>
+<Point><coordinates>
+    4.3300,   51.5900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=837&STATION=Steenbergen /Nb/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Ginneken</name>
+<Point><coordinates>
+    4.7500,   51.5500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=838&STATION=Ginneken&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Hoogerheide</name>
+<Point><coordinates>
+    4.3100,   51.4300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=839&STATION=Hoogerheide&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Nieuwendijk /Nb/</name>
+<Point><coordinates>
+    4.9300,   51.7700,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=840&STATION=Nieuwendijk /Nb/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Klundert</name>
+<Point><coordinates>
+    4.5300,   51.6600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=841&STATION=Klundert&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Gilze-Rijen /Vb/</name>
+<Point><coordinates>
+    4.9300,   51.5600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=843&STATION=Gilze-Rijen /Vb/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Capelle /Nb/</name>
+<Point><coordinates>
+    4.9800,   51.6800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=844&STATION=Capelle /Nb/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Helmond</name>
+<Point><coordinates>
+    5.6000,   51.4600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=896&STATION=Helmond&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Gemert</name>
+<Point><coordinates>
+    5.6800,   51.5500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=899&STATION=Gemert&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Nuland</name>
+<Point><coordinates>
+    5.4100,   51.7200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=901&STATION=Nuland&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Eindhoven</name>
+<Point><coordinates>
+    5.4800,   51.4200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=902&STATION=Eindhoven&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Megen</name>
+<Point><coordinates>
+    5.5600,   51.8200,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=903&STATION=Megen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Someren</name>
+<Point><coordinates>
+    5.6900,   51.4000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=904&STATION=Someren&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Sint Anthonis</name>
+<Point><coordinates>
+    5.8800,   51.6300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=905&STATION=Sint Anthonis&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Oirschot</name>
+<Point><coordinates>
+    5.3300,   51.5100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=906&STATION=Oirschot&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Boxtel</name>
+<Point><coordinates>
+    5.3300,   51.5800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=907&STATION=Boxtel&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Deurne</name>
+<Point><coordinates>
+    5.7700,   51.4500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=908&STATION=Deurne&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Mill</name>
+<Point><coordinates>
+    5.7900,   51.6800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=909&STATION=Mill&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Ammerzoden</name>
+<Point><coordinates>
+    5.2200,   51.7500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=910&STATION=Ammerzoden&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Dinther</name>
+<Point><coordinates>
+    5.4900,   51.6500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=911&STATION=Dinther&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Leende</name>
+<Point><coordinates>
+    5.5300,   51.3300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=912&STATION=Leende&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Oss</name>
+<Point><coordinates>
+    5.5400,   51.7600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=914&STATION=Oss&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Eersel</name>
+<Point><coordinates>
+    5.2500,   51.3500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=915&STATION=Eersel&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Maarheeze</name>
+<Point><coordinates>
+    5.5900,   51.3100,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=918&STATION=Maarheeze&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Roermond</name>
+<Point><coordinates>
+    5.9600,   51.1800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=961&STATION=Roermond&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Valkenburg</name>
+<Point><coordinates>
+    5.8400,   50.8600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=963&STATION=Valkenburg&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Weert</name>
+<Point><coordinates>
+    5.7000,   51.2500,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=964&STATION=Weert&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Schaesberg</name>
+<Point><coordinates>
+    6.0200,   50.9000,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=965&STATION=Schaesberg&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Schinnen</name>
+<Point><coordinates>
+    5.8700,   50.9400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=966&STATION=Schinnen&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Vaals</name>
+<Point><coordinates>
+    6.0100,   50.7800,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=968&STATION=Vaals&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Stein /L/</name>
+<Point><coordinates>
+    5.7600,   50.9600,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=969&STATION=Stein /L/&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Stramproy</name>
+<Point><coordinates>
+    5.7200,   51.1900,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=970&STATION=Stramproy&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Beek</name>
+<Point><coordinates>
+    5.8100,   50.9300,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=973&STATION=Beek&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+<Placemark>
+<name>Buchten</name>
+<Point><coordinates>
+    5.8100,   51.0400,    0.0000
+</coordinates></Point>
+<description><![CDATA[
+<a href="http://climexp.knmi.nl/getdutchprecip_hom_1951-2009.cgi?id=oldenbor@knmi.nl&WMO=974&STATION=Buchten&extraargs=">homogenised precipitation</a>
+]]></description>
+</Placemark>
+</Document>
+</kml>

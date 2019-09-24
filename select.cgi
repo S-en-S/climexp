@@ -305,6 +305,15 @@ if [ $extended = true ]; then
     echo "<a href=\"select.cgi?id=$EMAIL&field=${FORM_field}_e\">extended version</a>"
 fi
 
+if [ "$splitfield" = true ]; then
+    echo "<div class=\"alineakop\"><a name=\"separate\">Analyse $kindname $climfield per file</a></div>"
+    for onefile in `ls $file`; do
+        if [ -s $onefile ]; then
+            echo "<a href=select.cgi?id=$id&field=$onefile&kindname=$kindname>$onefile</a><br>"
+        fi
+    done
+fi
+
 echo "<div class=\"alineakop\"><a name=\"download\">Download $kindname $climfield</a></div>"
 
 ###echo "FORM_field=$FORM_field<br>"
@@ -322,7 +331,7 @@ elif [ ${file#EUCLEIA/Had} != $file ]; then
 elif [ "${FORM_field#ecmwf}" != "${FORM_field}" -o "${FORM_field#ens_ecmwf}" != "${FORM_field}" ]; then
   echo "The ECMWF member states do not permit us to give you access to the raw data."
   echo "Please consult the ECMWF <a href=\"http://www.ecmwf.int/research/era/\" target="_new">ERA</a> or <a href=\"http://www.ecmwf.int/services/seasonal/\" target="_new">seasonal forecasting</a> website for further information."
-elif [ "${FORM_field#era}" != "${FORM_field}" ]; then
+elif [ "${FORM_field#era}" != "${FORM_field}" -o "${FORM_field#copernicus}" != "${FORM_field}" ]; then
 echo "Contains modified Copernicus Climate Change Service information."
   echo "Please read and agree to the <a href="http://apps.ecmwf.int/datasets/licences/copernicus/" target=\"_new\">Copernicus license</a> before downloading.<p>"
   download=OK
@@ -355,7 +364,7 @@ elif [ "${FORM_field#tamsat}" != "${FORM_field}" ]; then
 elif [  "${FORM_field#cmip5_yr}" != "${FORM_field}" ]; then
     echo "Please download the CMIP5 fields from the <a href=\"http://www.cccma.ec.gc.ca/data/climdex/climdex.shtml\">CCCMA ETCCDI site</a>."
 elif [  "${FORM_field#cmip5}" != "${FORM_field}" ]; then
-    echo "Please download the CMIP5 fields from the Earth System Grid servers, eg at <a href=\"http://cmip-pcmdi.llnl.gov/cmip5/data_getting_started.html\">PCMDI</a>. Contact <a href="mailto:oldenborgh@knmi.nl">me</a> if you need access via this site."
+    echo "Please download the CMIP5 fields from the Earth System Grid servers, eg at <a href=\"https://esgf-node.llnl.gov/projects/esgf-llnl/\">PCMDI</a>. Contact <a href="mailto:oldenborgh@knmi.nl">me</a> if you need access via this site."
 else
   download=OK
 fi

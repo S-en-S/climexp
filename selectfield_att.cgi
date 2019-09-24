@@ -57,43 +57,6 @@ Choose a field and press this button</td></tr>
 <td><input type=radio class=formradio name=field value=knmi14_sfcWind_Amon_ECEARTH23_rcp85>
 <td>&nbsp;
 <td><input type=radio class=formradio name=field value=knmi14_psl_Amon_ECEARTH23_rcp85>
-EOF
-if [   $EMAIL = ec8907341dfc63c526d08e36d06b7ed8 \
-    -o $EMAIL = e279dd4de035b5fd9edc95ba4df755f7 \
-    -o $EMAIL = bd113ded9265e569c369d53ff59bf69a \
-    -o $EMAIL = f9646e78b5dbcaee3d001eb713252e3e ]; then
-    cat << EOF
-<tr><th>with PCGLOB
-<th>&nbsp;
-<th>&nbsp;
-<th>&nbsp;
-<th>&nbsp;
-<th>&nbsp;
-<th>pot evap
-<th>soil moist.
-<th>&nbsp;
-<th>&nbsp;
-<th>&nbsp;
-<th>&nbsp;
-<th>&nbsp;
-<th>&nbsp;
-<tr><td>&nbsp;
-<td>RCP8.5
-<td>&nbsp;
-<td>&nbsp;
-<td>&nbsp;
-<td>&nbsp;
-<td><input type=radio class=formradio name=field value=knmi14pcglob_evappot_Amon_ECEARTH23_rcp85>
-<td><input type=radio class=formradio name=field value=knmi14pcglob_soilmoisture_Lmon_ECEARTH23_rcp85>
-<td>&nbsp;
-<td>&nbsp;
-<td>&nbsp;
-<td>&nbsp;
-<td>&nbsp;
-<td>&nbsp;
-EOF
-fi
-cat << EOF
 <tr><td>&nbsp;
 <td>RCP8.5
 <td colspan=12>
@@ -134,6 +97,34 @@ if [   $EMAIL = ec8907341dfc63c526d08e36d06b7ed8 \
     -o $EMAIL = bd113ded9265e569c369d53ff59bf69a \
     -o $EMAIL = f9646e78b5dbcaee3d001eb713252e3e ]; then
     cat << EOF
+<tr><th>with PCGLOB
+<th>&nbsp;
+<th>&nbsp;
+<th>&nbsp;
+<th>&nbsp;
+<th>&nbsp;
+<th>pot evap
+<th>soil moist.
+<th>&nbsp;
+<th>&nbsp;
+<th>&nbsp;
+<th>&nbsp;
+<th>&nbsp;
+<th>&nbsp;
+<tr><td>&nbsp;
+<td>RCP8.5
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td><input type=radio class=formradio name=field value=knmi14pcglob_evappot_Amon_ECEARTH23_rcp85>
+<td><input type=radio class=formradio name=field value=knmi14pcglob_soilmoisture_Lmon_ECEARTH23_rcp85>
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
 <tr><th>EC-Earth 2.3<br>T159 coupled time slices
 <th>scenario
 <th>tas
@@ -465,9 +456,9 @@ cat <<EOF
 <th>tas<br>max
 <th>pr
 <th>&nbsp;
-<th>&nbsp;
-<th>&nbsp;
-<th>&nbsp;
+<th>mrso
+<th>mrso1m
+<th>mrso10cm
 <th>&nbsp;
 <th>psl
 <tr><td>16 daily
@@ -475,7 +466,7 @@ cat <<EOF
 <td><input type=radio class=formradio name=field value=knmi14_t2m_day_RACMO22E_rcp85>
 <td>&nbsp;
 <td>&nbsp;
-<td>&nbsp;
+<td><input type=radio class=formradio name=field value=knmi14_pr_day_RACMO22E_rcp85>
 <td>&nbsp;
 <td>&nbsp;
 <td>&nbsp;
@@ -487,11 +478,11 @@ cat <<EOF
 <td><input type=radio class=formradio name=field value=knmi14_t2m_mon_RACMO22E_rcp85>
 <td>&nbsp;
 <td>&nbsp;
+<td><input type=radio class=formradio name=field value=knmi14_pr_mon_RACMO22E_rcp85>
 <td>&nbsp;
-<td>&nbsp;
-<td>&nbsp;
-<td>&nbsp;
-<td>&nbsp;
+<td><input type=radio class=formradio name=field value=knmi14_mrso_mon_RACMO22E_rcp85>
+<td><input type=radio class=formradio name=field value=knmi14_mrso1m_mon_RACMO22E_rcp85>
+<td><input type=radio class=formradio name=field value=knmi14_mrso10cm_mon_RACMO22E_rcp85>
 <td>&nbsp;
 <td>&nbsp;
 <tr><th>&nbsp;
@@ -550,6 +541,54 @@ cat <<EOF
 <td><input type=radio class=formradio name=field value=knmi14_TN3x_yr_RACMO22E_rcp85_AMJJAS>
 <td><input type=radio class=formradio name=field value=knmi14_TNn_yr_RACMO22E_rcp85_AMJJAS>
 <td><input type=radio class=formradio name=field value=knmi14_TN3n_yr_RACMO22E_rcp85_AMJJAS>
+<tr><th>EURO-CORDEX 11km
+<th>scenario
+<th>tas<br>bias-corrected
+<th>&nbsp;
+<th>&nbsp;
+<th>pr<br>bias-corrected
+<th>&nbsp;
+<th>&nbsp;
+<th>&nbsp;
+<th>&nbsp;
+<th>&nbsp;
+<th>&nbsp;
+<tr><td>10 daily
+<td>RCP4.5
+<td><input type=radio class=formradio name=field value=eurocordex_tasAdjust_day_ens_rcp45>
+<td>&nbsp;
+<td>&nbsp;
+<td><input type=radio class=formradio name=field value=eurocordex_prAdjust_day_ens_rcp45>
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<tr><td>10 daily
+<td>RCP8.5
+<td><input type=radio class=formradio name=field value=eurocordex_tasAdjust_day_ens_rcp85>
+<td>&nbsp;
+<td>&nbsp;
+<td><input type=radio class=formradio name=field value=eurocordex_prAdjust_day_ens_rcp85>
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<tr><td>10 monthly
+<td>RCP4.5
+<td><input type=radio class=formradio name=field value=eurocordex_tasAdjust_mon_ens_rcp45>
+<td>&nbsp;
+<td>&nbsp;
+<td><input type=radio class=formradio name=field value=eurocordex_prAdjust_mon_ens_rcp45>
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
+<td>&nbsp;
 <tr><th>ISIMIP 1861-2099<th>scenario<th>potevap<th colspan=3>&nbsp<th>soilmoist<th colspan=7>&nbsp
 <tr><td>16 monthly<td>RCP6.0
 <td><input type=radio class=formradio name=field value=isimip_potevap_all_all_rcp60>
@@ -603,444 +642,11 @@ cat <<EOF
 Resources not listed are either easily accessible through  other Climate Explorer pages
 or available from the authors (except for non-public data such as the IMD analyses).
 
+<div class=alineakop>Summer 2019 European heat waves</div>
+<a href="FranceHeat2019_timeseries.cgi?id=$EMAIL">Separate page</a>
+
 <div class=alineakop>East African droughts</div>
-<i><b>Box I (34-38E, 7-14N)</b></i><br>
-BoxI_WE, PR:  
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/pr_icmip5_Amon_GFDL-ESM2M_rcp60_34-38E_7-14N_n_5lan_su_000&STATION=pr_icmip5_Amon_GFDL-ESM2M_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">GFDL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/pr_icmip5_Amon_HadGEM2-ES_rcp60_34-38E_7-14N_n_5lan_su_%%%&STATION=pr_icmip5_Amon_HadGEM2-ES_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">HadGEM</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/pr_icmip5_Amon_IPSL-CM5A-LR_rcp60_34-38E_7-14N_n_5lan_su_000&STATION=pr_icmip5_Amon_IPSL-CM5A-LR_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">IPSL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/pr_icmip5_Amon_MIROC5_rcp60_34-38E_7-14N_n_5lan_su_%%%&STATION=pr_icmip5_Amon_MIROC5_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">MIROC</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/pr_adj_GFDL_34-38E_7-14N_n_su&STATION=pr_adj_GFDL_34-38E_7-14N&TYPE=i&id=$EMAIL">GFDL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/pr_adj_HadGEM_34-38E_7-14N_n_su&STATION=pr_adj_HadGEM_34-38E_7-14N&TYPE=i&id=$EMAIL">HadGEM-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/pr_adj_IPSL_34-38E_7-14N_n_su&STATION=pr_adj_IPSL_34-38E_7-14N&TYPE=i&id=$EMAIL">IPSL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/pr_adj_MIROC_34-38E_7-14N_n_su&STATION=pr_adj_MIROC_34-38E_7-14N&TYPE=i&id=$EMAIL">MIROC-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/pr_iCenTrendsv1_34-38E_7-14N_n_su&STATION=pr_iCenTrendsv1_34-38E_7-14N&TYPE=i&id=$EMAIL">CenTrends</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/pr_icru4_34-38E_7-14N_n_5lan_su.nc&STATION=pr_icru4_34-38E_7-14N&TYPE=i&id=$EMAIL">CRU</a><br>
-
-BoxI_WE, T: 
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/T_icmip5_Amon_GFDL-ESM2M_rcp60_34-38E_7-14N_n_5lan_su_000&STATION=T_icmip5_Amon_GFDL-ESM2M_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">GFDL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/T_icmip5_Amon_HadGEM2-ES_rcp60_34-38E_7-14N_n_5lan_su_%%%&STATION=T_icmip5_Amon_HadGEM2-ES_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">HadGEM</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/T_icmip5_Amon_IPSL-CM5A-LR_rcp60_34-38E_7-14N_n_5lan_su_000&STATION=T_icmip5_Amon_IPSL-CM5A-LR_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">IPSL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/T_icmip5_Amon_MIROC5_rcp60_34-38E_7-14N_n_5lan_su_%%%&STATION=T_icmip5_Amon_MIROC5_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">MIROC</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/T_adj_GFDL_34-38E_7-14N_n_su&STATION=T_adj_GFDL_34-38E_7-14N&TYPE=i&id=$EMAIL">GFDL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/T_adj_HadGEM_34-38E_7-14N_n_su&STATION=T_adj_HadGem_34-38E_7-14N&TYPE=i&id=$EMAIL">HadGEM-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/T_adj_IPSL_34-38E_7-14N_n_su&STATION=T_adj_IPSL_34-38E_7-14N&TYPE=i&id=$EMAIL">IPSL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/T_adj_MIROC_34-38E_7-14N_n_su&STATION=T_adj_MIROC_34-38E_7-14N&TYPE=i&id=$EMAIL">MIROC-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/T_iberkeley_34-38E_7-14N_n_su&STATION=T_iberkeley_34-38E_7-14N&TYPE=i&id=$EMAIL">Berkeley</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/T_icru4_34-38E_7-14N_n_5lan_su&STATION=T_icru4_34-38E_7-14N&TYPE=i&id=$EMAIL">CRU</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/T_ierai_34-38E_7-14N_n_5lan_su&STATION=T_ierai_34-389E_7-14N&TYPE=i&id=$EMAIL">ERA-I</a><br>
-
-BoxI_WE, PET: 
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_GFDL_H08_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_GFDL_H08_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">GFDL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_GFDL_LPJML_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_GFDL_LPJML_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">GFDL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_GFDL_PCR-globwb_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_GFDL_PCR-globwb_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">GFDL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_GFDL_watergap_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_GFDL_watergap_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">GFDL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_HadGEM_H08_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_HadGEM_H08_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">HadGEM_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_HadGEM_LPJML_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_HadGEM_LPJML_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">HadGEM_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_HadGEM_PCR-globwb_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_HadGEM_PCR-globwb_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">HadGEM_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_HadGEM_watergap_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_HadGEM_watergap_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">HadGEM_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_IPSL_H08_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_IPSL_H08_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">IPSL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_IPSL_LPJML_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_IPSL_LPJML_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">IPSL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_IPSL_PCR-globwb_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_IPSL_PCR-globwb_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">IPSL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_IPSL_watergap_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_IPSL_watergap_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">IPSL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_MIROC5_H08_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_MIROC5_H08_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">MIROC5_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_MIROC5_LPJML_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_MIROC5_LPJML_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">MIROC5_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_MIROC5_PCR-globwb_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_MIROC5_PCR-globwb_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">MIROC5_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iisimip_MIROC5_watergap_rcp60_34-38E_7-14N_n_su&STATION=PET_iisimip_MIROC5_watergap_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">MIROC5_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iknmi14pcglob_Amon_ECEARTH23_rcp85_34-38E_7-14N_n_su_%%&STATION=PET_iknmi14pcglob_Amon_ECEARTH23_rcp85_34-38E_7-14N&TYPE=i&id=$EMAIL">ECEARTH23</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iclm_era_34-38E_7-14N_n_su&STATION=PET_iclm_era_34-38E_7-14N&TYPE=i&id=$EMAIL">CLM-ERA</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_iclm_wfdei_34-38E_7-14N_n_su&STATION=PET_iclm_wfdei_34-38E_7-14N&TYPE=i&id=$EMAIL">CLM-WFDEI</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_ierai_34-38E_7-14N_n_5lan_su&STATION=PET_ierai_34-38E_7-14N&TYPE=i&id=$EMAIL">ERA-I</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/PET_imerra_refet_34-38E_7-14N_n_su&STATION=PET_imerra_refet_34-38E_7-14N&TYPE=i&id=$EMAIL">MERRA</a><br>
-
-BoxI_WE, SM:  
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_GFDL_H08_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_GFDL_H08_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">GFDL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_GFDL_LPJMLlev1_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_GFDL_LPJML_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">GFDL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_GFDL_PCR-globwb_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_GFDL_PCR-globwb_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">GFDL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_GFDL_watergap_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_GFDL_watergap_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">GFDL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_HadGEM_H08_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_HadGEM_H08_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">HadGEM_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_HadGEM_LPJMLlev1_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_HadGEM_LPJML_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">HadGEM_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_HadGEM_PCR-globwb_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_HadGEM_PCR-globwb_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">HadGEM_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_HadGEM_watergap_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_HadGEM_watergap_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">HadGEM_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_IPSL_H08_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_IPSL_H08_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">IPSL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_IPSL_LPJMLlev1_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_IPSL_LPJML_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">IPSL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_IPSL_PCR-globwb_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_IPSL_PCR-globwb_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">IPSL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_IPSL_watergap_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_IPSL_watergap_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">IPSL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_MIROC5_H08_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_MIROC5_H08_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">MIROC5_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_MIROC5_LPJMLlev1_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_MIROC5_LPJML_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">MIROC5_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_MIROC5_PCR-globwb_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_MIROC5_PCR-globwb_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">MIROC5_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iisimip_MIROC5_watergap_rcp60_34-38E_7-14N_n_su&STATION=soilmoist_iisimip_MIROC5_watergap_rcp60_34-38E_7-14N&TYPE=i&id=$EMAIL">MIROC5_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_iknmi14pcglob_Lmon_ECEARTH23_rcp85_34-38E_7-14N_n_su_%%&STATION=soilmoist_iknmi14pcglob_Lmon_ECEARTH23_rcp85_34-38E_7-14N&TYPE=i&id=$EMAIL">ECEARTH23</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist01_iclm_era_34-38E_7-14N_n_su&STATION=soilmoist01_iclm_era_34-38E_7-14N&TYPE=i&id=$EMAIL">CLM-ERA</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist01_iclm_wfdei_34-38E_7-14N_n_su&STATION=soilmoist01_iclm_wfdei_34-38E_7-14N&TYPE=i&id=$EMAIL">CLM-WFDEI</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist01_ifldas_34-38E_7-14N_n_su&STATION=soilmoist01_ifldas_34-38E_7-14N&TYPE=i&id=$EMAIL">FLDAS</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_isimip_WFDEI_LPJmL_34-38E_7-14N_n&STATION=soilmoist_isimip_WFDEI_LPJmL_34-38E_7-14N&TYPE=i&id=$EMAIL">WFDEI_LPJmL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxI_WE/soilmoist_isimip_WFDEI_PCR-globwb_34-38E_7-14N_n&STATION=soilmoist_isimip_WFDEI_PCR-globwb_34-38E_7-14N&TYPE=i&id=$EMAIL">WFDEI_PCR-globwb</a><br>
-
-<i><b>Box II (38-43E, 8-13N)</b></i><br>
-BoxII_EE, PR:  
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/pr_icmip5_Amon_GFDL-ESM2M_rcp60_38-43E_8-13N_n_5lan_su_000&STATION=pr_icmip5_Amon_GFDL-ESM2M_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">GFDL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/pr_icmip5_Amon_HadGEM2-ES_rcp60_38-43E_8-13N_n_5lan_su_%%%&STATION=pr_icmip5_Amon_HadGEM2-ES_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">HadGEM</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/pr_icmip5_Amon_IPSL-CM5A-LR_rcp60_38-43E_8-13N_n_5lan_su_000&STATION=pr_icmip5_Amon_IPSL-CM5A-LR_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">IPSL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/pr_icmip5_Amon_MIROC5_rcp60_38-43E_8-13N_n_5lan_su_%%%&STATION=pr_icmip5_Amon_MIROC5_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">MIROC</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/pr_adj_GFDL_38-43E_8-13N_n_su&STATION=pr_adj_GFDL_38-43E_8-13N&TYPE=i&id=$EMAIL">GFDL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/pr_adj_HadGEM_38-43E_8-13N_n_su&STATION=pr_adj_HadGEM_38-43E_8-13N&TYPE=i&id=$EMAIL">HadGEM-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/pr_adj_IPSL_38-43E_8-13N_n_su&STATION=pr_adj_IPSL_38-43E_8-13N&TYPE=i&id=$EMAIL">IPSL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/pr_adj_MIROC_38-43E_8-13N_n_su&STATION=pr_adj_MIROC_38-43E_8-13N&TYPE=i&id=$EMAIL">MIROC-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/pr_iCenTrendsv1_38-43E_8-13N_n_su&STATION=pr_iCenTrendsv1_38-43E_8-13N&TYPE=i&id=$EMAIL">CenTrends</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/pr_icru4_38-43E_8-13N_n_5lan_su.nc&STATION=pr_icru4_38-43E_8-13N&TYPE=i&id=$EMAIL">CRU</a><br>
-
-BoxII_EE, T: 
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/T_icmip5_Amon_GFDL-ESM2M_rcp60_38-43E_8-13N_n_5lan_su_000&STATION=T_icmip5_Amon_GFDL-ESM2M_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">GFDL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/T_icmip5_Amon_HadGEM2-ES_rcp60_38-43E_8-13N_n_5lan_su_%%%&STATION=T_icmip5_Amon_HadGEM2-ES_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">HadGEM</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/T_icmip5_Amon_IPSL-CM5A-LR_rcp60_38-43E_8-13N_n_5lan_su_000&STATION=T_icmip5_Amon_IPSL-CM5A-LR_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">IPSL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/T_icmip5_Amon_MIROC5_rcp60_38-43E_8-13N_n_5lan_su_%%%&STATION=T_icmip5_Amon_MIROC5_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">MIROC</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/T_adj_GFDL_38-43E_8-13N_n_su&STATION=T_adj_GFDL_38-43E_8-13N&TYPE=i&id=$EMAIL">GFDL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/T_adj_HadGEM_38-43E_8-13N_n_su&STATION=T_adj_HadGem_38-43E_8-13N&TYPE=i&id=$EMAIL">HadGEM-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/T_adj_IPSL_38-43E_8-13N_n_su&STATION=T_adj_IPSL_38-43E_8-13N&TYPE=i&id=$EMAIL">IPSL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/T_adj_MIROC_38-43E_8-13N_n_su&STATION=T_adj_MIROC_38-43E_8-13N&TYPE=i&id=$EMAIL">MIROC-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/T_iberkeley_38-43E_8-13N_n_5lan_su&STATION=T_iberkeley_38-43E_8-13N&TYPE=i&id=$EMAIL">Berkeley</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/T_icru4_38-43E_8-13N_n_5lan_su&STATION=T_icru4_38-43E_8-13N&TYPE=i&id=$EMAIL">CRU</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/T_ierai_38-43E_8-13N_n_5lan_su&STATION=T_ierai_34-389E_7-14N&TYPE=i&id=$EMAIL">ERA-I</a><br>
-
-BoxII_EE, PET: 
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_GFDL_H08_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_GFDL_H08_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">GFDL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_GFDL_LPJML_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_GFDL_LPJML_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">GFDL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_GFDL_PCR-globwb_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_GFDL_PCR-globwb_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">GFDL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_GFDL_watergap_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_GFDL_watergap_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">GFDL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_HadGEM_H08_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_HadGEM_H08_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">HadGEM_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_HadGEM_LPJML_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_HadGEM_LPJML_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">HadGEM_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_HadGEM_PCR-globwb_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_HadGEM_PCR-globwb_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">HadGEM_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_HadGEM_watergap_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_HadGEM_watergap_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">HadGEM_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_IPSL_H08_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_IPSL_H08_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">IPSL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_IPSL_LPJML_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_IPSL_LPJML_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">IPSL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_IPSL_PCR-globwb_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_IPSL_PCR-globwb_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">IPSL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_IPSL_watergap_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_IPSL_watergap_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">IPSL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_MIROC5_H08_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_MIROC5_H08_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">MIROC5_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_MIROC5_LPJML_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_MIROC5_LPJML_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">MIROC5_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_MIROC5_PCR-globwb_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_MIROC5_PCR-globwb_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">MIROC5_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iisimip_MIROC5_watergap_rcp60_38-43E_8-13N_n_su&STATION=PET_iisimip_MIROC5_watergap_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">MIROC5_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iknmi14pcglob_Amon_ECEARTH23_rcp85_38-43E_8-13N_n_su_%%&STATION=PET_iknmi14pcglob_Amon_ECEARTH23_rcp85_38-43E_8-13N&TYPE=i&id=$EMAIL">ECEARTH23</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iclm_era_38-43E_8-13N_n_su&STATION=PET_iclm_era_38-43E_8-13N&TYPE=i&id=$EMAIL">CLM-ERA</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_iclm_wfdei_38-43E_8-13N_n_su&STATION=PET_iclm_wfdei_38-43E_8-13N&TYPE=i&id=$EMAIL">CLM-WFDEI</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_ierai_38-43E_8-13N_n_5lan_su&STATION=PET_ierai_38-43E_8-13N&TYPE=i&id=$EMAIL">ERA-I</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/PET_imerra_refet_38-43E_8-13N_n_su&STATION=PET_imerra_refet_38-43E_8-13N&TYPE=i&id=$EMAIL">MERRA</a><br>
-
-BoxII_EE, SM:  
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_GFDL_H08_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_GFDL_H08_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">GFDL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_GFDL_LPJMLlev1_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_GFDL_LPJML_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">GFDL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_GFDL_PCR-globwb_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_GFDL_PCR-globwb_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">GFDL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_GFDL_watergap_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_GFDL_watergap_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">GFDL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_HadGEM_H08_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_HadGEM_H08_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">HadGEM_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_HadGEM_LPJMLlev1_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_HadGEM_LPJML_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">HadGEM_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_HadGEM_PCR-globwb_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_HadGEM_PCR-globwb_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">HadGEM_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_HadGEM_watergap_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_HadGEM_watergap_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">HadGEM_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_IPSL_H08_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_IPSL_H08_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">IPSL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_IPSL_LPJMLlev1_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_IPSL_LPJML_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">IPSL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_IPSL_PCR-globwb_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_IPSL_PCR-globwb_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">IPSL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_IPSL_watergap_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_IPSL_watergap_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">IPSL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_MIROC5_H08_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_MIROC5_H08_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">MIROC5_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_MIROC5_LPJMLlev1_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_MIROC5_LPJML_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">MIROC5_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_MIROC5_PCR-globwb_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_MIROC5_PCR-globwb_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">MIROC5_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iisimip_MIROC5_watergap_rcp60_38-43E_8-13N_n_su&STATION=soilmoist_iisimip_MIROC5_watergap_rcp60_38-43E_8-13N&TYPE=i&id=$EMAIL">MIROC5_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_iknmi14pcglob_Lmon_ECEARTH23_rcp85_38-43E_8-13N_n_su_%%&STATION=soilmoist_iknmi14pcglob_Lmon_ECEARTH23_rcp85_38-43E_8-13N&TYPE=i&id=$EMAIL">ECEARTH23</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist01_iclm_era_38-43E_8-13N_n_su&STATION=soilmoist01_iclm_era_38-43E_8-13N&TYPE=i&id=$EMAIL">CLM-ERA</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist01_iclm_wfdei_38-43E_8-13N_n_su&STATION=soilmoist01_iclm_wfdei_38-43E_8-13N&TYPE=i&id=$EMAIL">CLM-WFDEI</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist01_ifldas_38-43E_8-13N_n_su&STATION=soilmoist01_ifldas_38-43E_8-13N&TYPE=i&id=$EMAIL">FLDAS</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_isimip_WFDEI_LPJmL_38-43E_8-13N_n&STATION=soilmoist_isimip_WFDEI_LPJmL_38-43E_8-13N&TYPE=i&id=$EMAIL">WFDEI_LPJmL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxII_EE/soilmoist_isimip_WFDEI_PCR-globwb_38-43E_8-13N_n&STATION=soilmoist_isimip_WFDEI_PCR-globwb_38-43E_8-13N&TYPE=i&id=$EMAIL">WFDEI_PCR-globwb</a><br>
-
-<i><b>Box III (43-52E, 5-12N)</b></i><br>
-BoxIII_NS, PR:  
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/pr_icmip5_Amon_GFDL-ESM2M_rcp60_43-52E_5-12N_n_5lan_su_000&STATION=pr_icmip5_Amon_GFDL-ESM2M_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">GFDL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/pr_icmip5_Amon_HadGEM2-ES_rcp60_43-52E_5-12N_n_5lan_su_%%%&STATION=pr_icmip5_Amon_HadGEM2-ES_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">HadGEM</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/pr_icmip5_Amon_IPSL-CM5A-LR_rcp60_43-52E_5-12N_n_5lan_su_000&STATION=pr_icmip5_Amon_IPSL-CM5A-LR_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">IPSL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/pr_icmip5_Amon_MIROC5_rcp60_43-52E_5-12N_n_5lan_su_%%%&STATION=pr_icmip5_Amon_MIROC5_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">MIROC</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/pr_adj_GFDL_43-52E_5-12N_n_su&STATION=pr_adj_GFDL_43-52E_5-12N&TYPE=i&id=$EMAIL">GFDL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/pr_adj_HadGEM_43-52E_5-12N_n_su&STATION=pr_adj_HadGEM_43-52E_5-12N&TYPE=i&id=$EMAIL">HadGEM-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/pr_adj_IPSL_43-52E_5-12N_n_su&STATION=pr_adj_IPSL_43-52E_5-12N&TYPE=i&id=$EMAIL">IPSL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/pr_adj_MIROC_43-52E_5-12N_n_su&STATION=pr_adj_MIROC_43-52E_5-12N&TYPE=i&id=$EMAIL">MIROC-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/pr_iCenTrendsv1_43-52E_5-12N_n_su&STATION=pr_iCenTrendsv1_43-52E_5-12N&TYPE=i&id=$EMAIL">CenTrends</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/pr_icru4_43-52E_5-12N_n_5lan_su.nc&STATION=pr_icru4_43-52E_5-12N&TYPE=i&id=$EMAIL">CRU</a><br>
-
-boxIII_NS, T: 
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/T_icmip5_Amon_GFDL-ESM2M_rcp60_43-52E_5-12N_n_5lan_su_000&STATION=T_icmip5_Amon_GFDL-ESM2M_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">GFDL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/T_icmip5_Amon_HadGEM2-ES_rcp60_43-52E_5-12N_n_5lan_su_%%%&STATION=T_icmip5_Amon_HadGEM2-ES_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">HadGEM</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/T_icmip5_Amon_IPSL-CM5A-LR_rcp60_43-52E_5-12N_n_5lan_su_000&STATION=T_icmip5_Amon_IPSL-CM5A-LR_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">IPSL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/T_icmip5_Amon_MIROC5_rcp60_43-52E_5-12N_n_5lan_su_%%%&STATION=T_icmip5_Amon_MIROC5_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">MIROC</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/T_adj_GFDL_43-52E_5-12N_n_su&STATION=T_adj_GFDL_43-52E_5-12N&TYPE=i&id=$EMAIL">GFDL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/T_adj_HadGEM_43-52E_5-12N_n_su&STATION=T_adj_HadGem_43-52E_5-12N&TYPE=i&id=$EMAIL">HadGEM-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/T_adj_IPSL_43-52E_5-12N_n_su&STATION=T_adj_IPSL_43-52E_5-12N&TYPE=i&id=$EMAIL">IPSL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/T_adj_MIROC_43-52E_5-12N_n_su&STATION=T_adj_MIROC_43-52E_5-12N&TYPE=i&id=$EMAIL">MIROC-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/T_iberkeley_43-52E_5-12N_n_5lan_su&STATION=T_iberkeley_43-52E_5-12N&TYPE=i&id=$EMAIL">Berkeley</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/T_icru4_43-52E_5-12N_n_5lan_su&STATION=T_icru4_43-52E_5-12N&TYPE=i&id=$EMAIL">CRU</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/T_ierai_43-52E_5-12N_n_5lan_su&STATION=T_ierai_34-389E_7-14N&TYPE=i&id=$EMAIL">ERA-I</a><br>
-
-boxIII_NS, PET: 
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_GFDL_H08_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_GFDL_H08_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">GFDL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_GFDL_LPJML_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_GFDL_LPJML_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">GFDL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_GFDL_PCR-globwb_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_GFDL_PCR-globwb_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">GFDL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_GFDL_watergap_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_GFDL_watergap_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">GFDL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_HadGEM_H08_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_HadGEM_H08_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">HadGEM_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_HadGEM_LPJML_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_HadGEM_LPJML_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">HadGEM_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_HadGEM_PCR-globwb_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_HadGEM_PCR-globwb_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">HadGEM_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_HadGEM_watergap_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_HadGEM_watergap_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">HadGEM_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_IPSL_H08_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_IPSL_H08_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">IPSL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_IPSL_LPJML_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_IPSL_LPJML_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">IPSL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_IPSL_PCR-globwb_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_IPSL_PCR-globwb_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">IPSL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_IPSL_watergap_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_IPSL_watergap_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">IPSL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_MIROC5_H08_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_MIROC5_H08_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">MIROC5_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_MIROC5_LPJML_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_MIROC5_LPJML_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">MIROC5_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_MIROC5_PCR-globwb_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_MIROC5_PCR-globwb_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">MIROC5_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iisimip_MIROC5_watergap_rcp60_43-52E_5-12N_n_su&STATION=PET_iisimip_MIROC5_watergap_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">MIROC5_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iknmi14pcglob_Amon_ECEARTH23_rcp85_43-52E_5-12N_n_5lan_su_%%&STATION=PET_iknmi14pcglob_Amon_ECEARTH23_rcp85_43-52E_5-12N&TYPE=i&id=$EMAIL">ECEARTH23</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iclm_era_43-52E_5-12N_n_su&STATION=PET_iclm_era_43-52E_5-12N&TYPE=i&id=$EMAIL">CLM-ERA</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_iclm_wfdei_43-52E_5-12N_n_su&STATION=PET_iclm_wfdei_43-52E_5-12N&TYPE=i&id=$EMAIL">CLM-WFDEI</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_ierai_43-52E_5-12N_n_5lan_su&STATION=PET_ierai_43-52E_5-12N&TYPE=i&id=$EMAIL">ERA-I</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/PET_imerra_refet_43-52E_5-12N_n_su&STATION=PET_imerra_refet_43-52E_5-12N&TYPE=i&id=$EMAIL">MERRA</a><br>
-
-boxIII_NS, SM:  
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_GFDL_H08_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_GFDL_H08_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">GFDL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_GFDL_LPJMLlev1_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_GFDL_LPJML_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">GFDL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_GFDL_PCR-globwb_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_GFDL_PCR-globwb_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">GFDL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_GFDL_watergap_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_GFDL_watergap_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">GFDL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_HadGEM_H08_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_HadGEM_H08_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">HadGEM_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_HadGEM_LPJMLlev1_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_HadGEM_LPJML_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">HadGEM_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_HadGEM_PCR-globwb_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_HadGEM_PCR-globwb_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">HadGEM_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_HadGEM_watergap_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_HadGEM_watergap_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">HadGEM_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_IPSL_H08_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_IPSL_H08_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">IPSL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_IPSL_LPJMLlev1_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_IPSL_LPJML_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">IPSL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_IPSL_PCR-globwb_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_IPSL_PCR-globwb_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">IPSL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_IPSL_watergap_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_IPSL_watergap_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">IPSL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_MIROC5_H08_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_MIROC5_H08_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">MIROC5_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_MIROC5_LPJMLlev1_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_MIROC5_LPJML_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">MIROC5_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_MIROC5_PCR-globwb_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_MIROC5_PCR-globwb_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">MIROC5_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iisimip_MIROC5_watergap_rcp60_43-52E_5-12N_n_su&STATION=soilmoist_iisimip_MIROC5_watergap_rcp60_43-52E_5-12N&TYPE=i&id=$EMAIL">MIROC5_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_iknmi14pcglob_Lmon_ECEARTH23_rcp85_43-52E_5-12N_n_su_%%&STATION=soilmoist_iknmi14pcglob_Lmon_ECEARTH23_rcp85_43-52E_5-12N&TYPE=i&id=$EMAIL">ECEARTH23</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist01_iclm_era_43-52E_5-12N_n_su&STATION=soilmoist01_iclm_era_43-52E_5-12N&TYPE=i&id=$EMAIL">CLM-ERA</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist01_iclm_wfdei_43-52E_5-12N_n_su&STATION=soilmoist01_iclm_wfdei_43-52E_5-12N&TYPE=i&id=$EMAIL">CLM-WFDEI</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist01_ifldas_43-52E_5-12N_n_su&STATION=soilmoist01_ifldas_43-52E_5-12N&TYPE=i&id=$EMAIL">FLDAS</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_isimip_WFDEI_LPJmL_43-52E_5-12N_n&STATION=soilmoist_isimip_WFDEI_LPJmL_43-52E_5-12N&TYPE=i&id=$EMAIL">WFDEI_LPJmL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIII_NS/soilmoist_isimip_WFDEI_PCR-globwb_43-52E_5-12N_n&STATION=soilmoist_isimip_WFDEI_PCR-globwb_43-52E_5-12N&TYPE=i&id=$EMAIL">WFDEI_PCR-globwb</a><br>
-
-<i><b>Box IV (34-41E, 2-4.5N)</b></i><br>
-boxIV_NK, PR:  
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/pr_icmip5_Amon_GFDL-ESM2M_rcp60_34-41E_2-4.5N_n_5lan_su_000&STATION=pr_icmip5_Amon_GFDL-ESM2M_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">GFDL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/pr_icmip5_Amon_HadGEM2-ES_rcp60_34-41E_2-4.5N_n_5lan_su_%%%&STATION=pr_icmip5_Amon_HadGEM2-ES_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">HadGEM</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/pr_icmip5_Amon_IPSL-CM5A-LR_rcp60_34-41E_2-4.5N_n_5lan_su_000&STATION=pr_icmip5_Amon_IPSL-CM5A-LR_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">IPSL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/pr_icmip5_Amon_MIROC5_rcp60_34-41E_2-4.5N_n_5lan_su_%%%&STATION=pr_icmip5_Amon_MIROC5_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MIROC</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/pr_adj_GFDL_34-41E_2-4.5N_n_su&STATION=pr_adj_GFDL_34-41E_2-4.5N&TYPE=i&id=$EMAIL">GFDL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/pr_adj_HadGEM_34-41E_2-4.5N_n_su&STATION=pr_adj_HadGEM_34-41E_2-4.5N&TYPE=i&id=$EMAIL">HadGEM-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/pr_adj_IPSL_34-41E_2-4.5N_n_su&STATION=pr_adj_IPSL_34-41E_2-4.5N&TYPE=i&id=$EMAIL">IPSL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/pr_adj_MIROC_34-41E_2-4.5N_n_su&STATION=pr_adj_MIROC_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MIROC-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/pr_iCenTrendsv1_34-41E_2-4.5N_n_su&STATION=pr_iCenTrendsv1_34-41E_2-4.5N&TYPE=i&id=$EMAIL">CenTrends</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/pr_icru4_34-41E_2-4.5N_n_5lan_su.nc&STATION=pr_icru4_34-41E_2-4.5N&TYPE=i&id=$EMAIL">CRU</a><br>
-
-boxIV_NK, T: 
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/T_icmip5_Amon_GFDL-ESM2M_rcp60_34-41E_2-4.5N_n_5lan_su_000&STATION=T_icmip5_Amon_GFDL-ESM2M_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">GFDL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/T_icmip5_Amon_HadGEM2-ES_rcp60_34-41E_2-4.5N_n_5lan_su_%%%&STATION=T_icmip5_Amon_HadGEM2-ES_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">HadGEM</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/T_icmip5_Amon_IPSL-CM5A-LR_rcp60_34-41E_2-4.5N_n_5lan_su_000&STATION=T_icmip5_Amon_IPSL-CM5A-LR_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">IPSL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/T_icmip5_Amon_MIROC5_rcp60_34-41E_2-4.5N_n_5lan_su_%%%&STATION=T_icmip5_Amon_MIROC5_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MIROC</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/T_adj_GFDL_34-41E_2-4.5N_n_su&STATION=T_adj_GFDL_34-41E_2-4.5N&TYPE=i&id=$EMAIL">GFDL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/T_adj_HadGEM_34-41E_2-4.5N_n_su&STATION=T_adj_HadGem_34-41E_2-4.5N&TYPE=i&id=$EMAIL">HadGEM-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/T_adj_IPSL_34-41E_2-4.5N_n_su&STATION=T_adj_IPSL_34-41E_2-4.5N&TYPE=i&id=$EMAIL">IPSL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/T_adj_MIROC_34-41E_2-4.5N_n_su&STATION=T_adj_MIROC_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MIROC-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/T_iberkeley_34-41E_2-4.5N_n_5lan_su&STATION=T_iberkeley_34-41E_2-4.5N&TYPE=i&id=$EMAIL">Berkeley</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/T_icru4_34-41E_2-4.5N_n_5lan_su&STATION=T_icru4_34-41E_2-4.5N&TYPE=i&id=$EMAIL">CRU</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/T_ierai_34-41E_2-4.5N_n_5lan_su&STATION=T_ierai_34-389E_7-14N&TYPE=i&id=$EMAIL">ERA-I</a><br>
-
-boxIV_NK, PET: 
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_GFDL_H08_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_GFDL_H08_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">GFDL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_GFDL_LPJML_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_GFDL_LPJML_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">GFDL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_GFDL_PCR-globwb_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_GFDL_PCR-globwb_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">GFDL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_GFDL_watergap_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_GFDL_watergap_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">GFDL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_HadGEM_H08_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_HadGEM_H08_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">HadGEM_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_HadGEM_LPJML_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_HadGEM_LPJML_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">HadGEM_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_HadGEM_PCR-globwb_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_HadGEM_PCR-globwb_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">HadGEM_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_HadGEM_watergap_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_HadGEM_watergap_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">HadGEM_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_IPSL_H08_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_IPSL_H08_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">IPSL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_IPSL_LPJML_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_IPSL_LPJML_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">IPSL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_IPSL_PCR-globwb_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_IPSL_PCR-globwb_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">IPSL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_IPSL_watergap_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_IPSL_watergap_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">IPSL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_MIROC5_H08_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_MIROC5_H08_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MIROC5_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_MIROC5_LPJML_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_MIROC5_LPJML_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MIROC5_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_MIROC5_PCR-globwb_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_MIROC5_PCR-globwb_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MIROC5_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iisimip_MIROC5_watergap_rcp60_34-41E_2-4.5N_n_su&STATION=PET_iisimip_MIROC5_watergap_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MIROC5_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iknmi14pcglob_Amon_ECEARTH23_rcp85_34-41E_2-4.5N_n_su_%%&STATION=PET_iknmi14pcglob_Amon_ECEARTH23_rcp85_34-41E_2-4.5N&TYPE=i&id=$EMAIL">ECEARTH23</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iclm_era_34-41E_2-4.5N_n_su&STATION=PET_iclm_era_34-41E_2-4.5N&TYPE=i&id=$EMAIL">CLM-ERA</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_iclm_wfdei_34-41E_2-4.5N_n_su&STATION=PET_iclm_wfdei_34-41E_2-4.5N&TYPE=i&id=$EMAIL">CLM-WFDEI</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_ierai_34-41E_2-4.5N_n_5lan_su&STATION=PET_ierai_34-41E_2-4.5N&TYPE=i&id=$EMAIL">ERA-I</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/PET_imerra_refet_34-41E_2-4.5N_n_su&STATION=PET_imerra_refet_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MERRA</a><br>
-
-boxIV_NK, SM:  
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_GFDL_H08_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_GFDL_H08_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">GFDL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_GFDL_LPJMLlev1_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_GFDL_LPJML_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">GFDL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_GFDL_PCR-globwb_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_GFDL_PCR-globwb_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">GFDL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_GFDL_watergap_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_GFDL_watergap_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">GFDL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_HadGEM_H08_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_HadGEM_H08_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">HadGEM_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_HadGEM_LPJMLlev1_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_HadGEM_LPJML_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">HadGEM_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_HadGEM_PCR-globwb_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_HadGEM_PCR-globwb_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">HadGEM_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_HadGEM_watergap_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_HadGEM_watergap_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">HadGEM_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_IPSL_H08_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_IPSL_H08_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">IPSL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_IPSL_LPJMLlev1_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_IPSL_LPJML_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">IPSL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_IPSL_PCR-globwb_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_IPSL_PCR-globwb_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">IPSL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_IPSL_watergap_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_IPSL_watergap_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">IPSL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_MIROC5_H08_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_MIROC5_H08_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MIROC5_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_MIROC5_LPJMLlev1_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_MIROC5_LPJML_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MIROC5_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_MIROC5_PCR-globwb_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_MIROC5_PCR-globwb_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MIROC5_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iisimip_MIROC5_watergap_rcp60_34-41E_2-4.5N_n_su&STATION=soilmoist_iisimip_MIROC5_watergap_rcp60_34-41E_2-4.5N&TYPE=i&id=$EMAIL">MIROC5_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_iknmi14pcglob_Lmon_ECEARTH23_rcp85_34-41E_2-4.5N_n_su_%%&STATION=soilmoist_iknmi14pcglob_Lmon_ECEARTH23_rcp85_34-41E_2-4.5N&TYPE=i&id=$EMAIL">ECEARTH23</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist01_iclm_era_34-41E_2-4.5N_n_su&STATION=soilmoist01_iclm_era_34-41E_2-4.5N&TYPE=i&id=$EMAIL">CLM-ERA</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist01_iclm_wfdei_34-41E_2-4.5N_n_su&STATION=soilmoist01_iclm_wfdei_34-41E_2-4.5N&TYPE=i&id=$EMAIL">CLM-WFDEI</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist01_ifldas_34-41E_2-4.5N_n_su&STATION=soilmoist01_ifldas_34-41E_2-4.5N&TYPE=i&id=$EMAIL">FLDAS</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_isimip_WFDEI_LPJmL_34-41E_2-4.5N_n&STATION=soilmoist_isimip_WFDEI_LPJmL_34-41E_2-4.5N&TYPE=i&id=$EMAIL">WFDEI_LPJmL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxIV_NK/soilmoist_isimip_WFDEI_PCR-globwb_34-41E_2-4.5N_n&STATION=soilmoist_isimip_WFDEI_PCR-globwb_34-41E_2-4.5N&TYPE=i&id=$EMAIL">WFDEI_PCR-globwb</a><br>
-
-<i><b>Box V (35-38.5E, -1.5-1.5N)</b></i><br>
-boxV_SK, PR:  
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/pr_icmip5_Amon_GFDL-ESM2M_rcp60_35-38.5E_-1.5-1.5N_n_5lan_su_000&STATION=pr_icmip5_Amon_GFDL-ESM2M_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">GFDL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/pr_icmip5_Amon_HadGEM2-ES_rcp60_35-38.5E_-1.5-1.5N_n_5lan_su_%%%&STATION=pr_icmip5_Amon_HadGEM2-ES_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">HadGEM</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/pr_icmip5_Amon_IPSL-CM5A-LR_rcp60_35-38.5E_-1.5-1.5N_n_5lan_su_000&STATION=pr_icmip5_Amon_IPSL-CM5A-LR_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">IPSL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/pr_icmip5_Amon_MIROC5_rcp60_35-38.5E_-1.5-1.5N_n_5lan_su_%%%&STATION=pr_icmip5_Amon_MIROC5_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MIROC</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/pr_adj_GFDL_35-38.5E_-1.5-1.5N_n_su&STATION=pr_adj_GFDL_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">GFDL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/pr_adj_HadGEM_35-38.5E_-1.5-1.5N_n_su&STATION=pr_adj_HadGEM_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">HadGEM-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/pr_adj_IPSL_35-38.5E_-1.5-1.5N_n_su&STATION=pr_adj_IPSL_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">IPSL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/pr_adj_MIROC_35-38.5E_-1.5-1.5N_n_su&STATION=pr_adj_MIROC_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MIROC-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/pr_iCenTrendsv1_35-38.5E_-1.5-1.5N_n_su&STATION=pr_iCenTrendsv1_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">CenTrends</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/pr_icru4_35-38.5E_-1.5-1.5N_n_5lan_su.nc&STATION=pr_icru4_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">CRU</a><br>
-
-boxV_SK, T: 
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/T_icmip5_Amon_GFDL-ESM2M_rcp60_35-38.5E_-1.5-1.5N_n_5lan_su_000&STATION=T_icmip5_Amon_GFDL-ESM2M_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">GFDL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/T_icmip5_Amon_HadGEM2-ES_rcp60_35-38.5E_-1.5-1.5N_n_5lan_su_%%%&STATION=T_icmip5_Amon_HadGEM2-ES_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">HadGEM</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/T_icmip5_Amon_IPSL-CM5A-LR_rcp60_35-38.5E_-1.5-1.5N_n_5lan_su_000&STATION=T_icmip5_Amon_IPSL-CM5A-LR_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">IPSL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/T_icmip5_Amon_MIROC5_rcp60_35-38.5E_-1.5-1.5N_n_5lan_su_%%%&STATION=T_icmip5_Amon_MIROC5_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MIROC</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/T_adj_GFDL_35-38.5E_-1.5-1.5N_n_su&STATION=T_adj_GFDL_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">GFDL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/T_adj_HadGEM_35-38.5E_-1.5-1.5N_n_su&STATION=T_adj_HadGem_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">HadGEM-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/T_adj_IPSL_35-38.5E_-1.5-1.5N_n_su&STATION=T_adj_IPSL_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">IPSL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/T_adj_MIROC_35-38.5E_-1.5-1.5N_n_su&STATION=T_adj_MIROC_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MIROC-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/T_iberkeley_35-38.5E_-1.5-1.5N_n_5lan_su&STATION=T_iberkeley_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">Berkeley</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/T_icru4_35-38.5E_-1.5-1.5N_n_5lan_su&STATION=T_icru4_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">CRU</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/T_ierai_35-38.5E_-1.5-1.5N_n_5lan_su&STATION=T_ierai_34-389E_7-14N&TYPE=i&id=$EMAIL">ERA-I</a><br>
-
-boxV_SK, PET: 
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_GFDL_H08_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_GFDL_H08_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">GFDL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_GFDL_LPJML_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_GFDL_LPJML_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">GFDL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_GFDL_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_GFDL_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">GFDL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_GFDL_watergap_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_GFDL_watergap_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">GFDL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_HadGEM_H08_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_HadGEM_H08_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">HadGEM_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_HadGEM_LPJML_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_HadGEM_LPJML_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">HadGEM_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_HadGEM_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_HadGEM_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">HadGEM_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_HadGEM_watergap_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_HadGEM_watergap_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">HadGEM_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_IPSL_H08_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_IPSL_H08_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">IPSL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_IPSL_LPJML_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_IPSL_LPJML_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">IPSL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_IPSL_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_IPSL_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">IPSL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_IPSL_watergap_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_IPSL_watergap_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">IPSL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_MIROC5_H08_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_MIROC5_H08_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MIROC5_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_MIROC5_LPJML_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_MIROC5_LPJML_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MIROC5_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_MIROC5_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_MIROC5_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MIROC5_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iisimip_MIROC5_watergap_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iisimip_MIROC5_watergap_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MIROC5_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iknmi14pcglob_Amon_ECEARTH23_rcp85_35-38.5E_-1.5-1.5N_n_su_%%&STATION=PET_iknmi14pcglob_Amon_ECEARTH23_rcp85_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">ECEARTH23</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iclm_era_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iclm_era_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">CLM-ERA</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_iclm_wfdei_35-38.5E_-1.5-1.5N_n_su&STATION=PET_iclm_wfdei_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">CLM-WFDEI</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_ierai_35-38.5E_-1.5-1.5N_n_5lan_su&STATION=PET_ierai_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">ERA-I</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/PET_imerra_refet_35-38.5E_-1.5-1.5N_n_su&STATION=PET_imerra_refet_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MERRA</a><br>
-
-boxV_SK, SM:  
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_GFDL_H08_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_GFDL_H08_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">GFDL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_GFDL_LPJMLlev1_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_GFDL_LPJML_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">GFDL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_GFDL_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_GFDL_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">GFDL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_GFDL_watergap_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_GFDL_watergap_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">GFDL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_HadGEM_H08_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_HadGEM_H08_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">HadGEM_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_HadGEM_LPJMLlev1_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_HadGEM_LPJML_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">HadGEM_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_HadGEM_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_HadGEM_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">HadGEM_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_HadGEM_watergap_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_HadGEM_watergap_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">HadGEM_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_IPSL_H08_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_IPSL_H08_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">IPSL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_IPSL_LPJMLlev1_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_IPSL_LPJML_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">IPSL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_IPSL_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_IPSL_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">IPSL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_IPSL_watergap_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_IPSL_watergap_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">IPSL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_MIROC5_H08_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_MIROC5_H08_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MIROC5_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_MIROC5_LPJMLlev1_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_MIROC5_LPJML_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MIROC5_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_MIROC5_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_MIROC5_PCR-globwb_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MIROC5_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iisimip_MIROC5_watergap_rcp60_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist_iisimip_MIROC5_watergap_rcp60_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">MIROC5_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_iknmi14pcglob_Lmon_ECEARTH23_rcp85_35-38.5E_-1.5-1.5N_n_su_%%&STATION=soilmoist_iknmi14pcglob_Lmon_ECEARTH23_rcp85_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">ECEARTH23</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist01_iclm_era_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist01_iclm_era_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">CLM-ERA</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist01_iclm_wfdei_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist01_iclm_wfdei_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">CLM-WFDEI</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist01_ifldas_35-38.5E_-1.5-1.5N_n_su&STATION=soilmoist01_ifldas_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">FLDAS</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_isimip_WFDEI_LPJmL_35-38.5E_-1.5-1.5N_n&STATION=soilmoist_isimip_WFDEI_LPJmL_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">WFDEI_LPJmL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxV_SK/soilmoist_isimip_WFDEI_PCR-globwb_35-38.5E_-1.5-1.5N_n&STATION=soilmoist_isimip_WFDEI_PCR-globwb_35-38.5E_-1.5-1.5N&TYPE=i&id=$EMAIL">WFDEI_PCR-globwb</a><br>
-
-<i><b>Box VI (41-48E, -2-5N)</b></i><br>
-boxVI_SS, PR:  
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/pr_icmip5_Amon_GFDL-ESM2M_rcp60_41-48E_-2-5N_n_5lan_su_000&STATION=pr_icmip5_Amon_GFDL-ESM2M_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">GFDL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/pr_icmip5_Amon_HadGEM2-ES_rcp60_41-48E_-2-5N_n_5lan_su_%%%&STATION=pr_icmip5_Amon_HadGEM2-ES_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">HadGEM</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/pr_icmip5_Amon_IPSL-CM5A-LR_rcp60_41-48E_-2-5N_n_5lan_su_000&STATION=pr_icmip5_Amon_IPSL-CM5A-LR_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">IPSL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/pr_icmip5_Amon_MIROC5_rcp60_41-48E_-2-5N_n_5lan_su_%%%&STATION=pr_icmip5_Amon_MIROC5_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">MIROC</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/pr_adj_GFDL_41-48E_-2-5N_n_su&STATION=pr_adj_GFDL_41-48E_-2-5N&TYPE=i&id=$EMAIL">GFDL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/pr_adj_HadGEM_41-48E_-2-5N_n_su&STATION=pr_adj_HadGEM_41-48E_-2-5N&TYPE=i&id=$EMAIL">HadGEM-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/pr_adj_IPSL_41-48E_-2-5N_n_su&STATION=pr_adj_IPSL_41-48E_-2-5N&TYPE=i&id=$EMAIL">IPSL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/pr_adj_MIROC_41-48E_-2-5N_n_su&STATION=pr_adj_MIROC_41-48E_-2-5N&TYPE=i&id=$EMAIL">MIROC-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/pr_iCenTrendsv1_41-48E_-2-5N_n_su&STATION=pr_iCenTrendsv1_41-48E_-2-5N&TYPE=i&id=$EMAIL">CenTrends</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/pr_icru4_41-48E_-2-5N_n_5lan_su.nc&STATION=pr_icru4_41-48E_-2-5N&TYPE=i&id=$EMAIL">CRU</a><br>
-
-boxVI_SS, T: 
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/T_icmip5_Amon_GFDL-ESM2M_rcp60_41-48E_-2-5N_n_5lan_su_000&STATION=T_icmip5_Amon_GFDL-ESM2M_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">GFDL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/T_icmip5_Amon_HadGEM2-ES_rcp60_41-48E_-2-5N_n_5lan_su_%%%&STATION=T_icmip5_Amon_HadGEM2-ES_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">HadGEM</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/T_icmip5_Amon_IPSL-CM5A-LR_rcp60_41-48E_-2-5N_n_5lan_su_000&STATION=T_icmip5_Amon_IPSL-CM5A-LR_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">IPSL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/T_icmip5_Amon_MIROC5_rcp60_41-48E_-2-5N_n_5lan_su_%%%&STATION=T_icmip5_Amon_MIROC5_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">MIROC</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/T_adj_GFDL_41-48E_-2-5N_n_su&STATION=T_adj_GFDL_41-48E_-2-5N&TYPE=i&id=$EMAIL">GFDL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/T_adj_HadGEM_41-48E_-2-5N_n_su&STATION=T_adj_HadGem_41-48E_-2-5N&TYPE=i&id=$EMAIL">HadGEM-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/T_adj_IPSL_41-48E_-2-5N_n_su&STATION=T_adj_IPSL_41-48E_-2-5N&TYPE=i&id=$EMAIL">IPSL-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/T_adj_MIROC_41-48E_-2-5N_n_su&STATION=T_adj_MIROC_41-48E_-2-5N&TYPE=i&id=$EMAIL">MIROC-adj</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/T_iberkeley_41-48E_-2-5N_n_5lan_su&STATION=T_iberkeley_41-48E_-2-5N&TYPE=i&id=$EMAIL">Berkeley</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/T_icru4_41-48E_-2-5N_n_5lan_su&STATION=T_icru4_41-48E_-2-5N&TYPE=i&id=$EMAIL">CRU</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/T_ierai_41-48E_-2-5N_n_5lan_su&STATION=T_ierai_34-389E_7-14N&TYPE=i&id=$EMAIL">ERA-I</a><br>
-
-boxVI_SS, PET: 
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_GFDL_H08_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_GFDL_H08_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">GFDL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_GFDL_LPJML_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_GFDL_LPJML_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">GFDL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_GFDL_PCR-globwb_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_GFDL_PCR-globwb_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">GFDL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_GFDL_watergap_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_GFDL_watergap_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">GFDL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_HadGEM_H08_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_HadGEM_H08_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">HadGEM_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_HadGEM_LPJML_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_HadGEM_LPJML_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">HadGEM_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_HadGEM_PCR-globwb_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_HadGEM_PCR-globwb_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">HadGEM_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_HadGEM_watergap_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_HadGEM_watergap_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">HadGEM_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_IPSL_H08_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_IPSL_H08_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">IPSL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_IPSL_LPJML_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_IPSL_LPJML_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">IPSL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_IPSL_PCR-globwb_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_IPSL_PCR-globwb_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">IPSL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_IPSL_watergap_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_IPSL_watergap_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">IPSL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_MIROC5_H08_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_MIROC5_H08_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">MIROC5_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_MIROC5_LPJML_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_MIROC5_LPJML_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">MIROC5_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_MIROC5_PCR-globwb_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_MIROC5_PCR-globwb_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">MIROC5_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iisimip_MIROC5_watergap_rcp60_41-48E_-2-5N_n_su&STATION=PET_iisimip_MIROC5_watergap_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">MIROC5_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iknmi14pcglob_Amon_ECEARTH23_rcp85_41-48E_-2-5N_n_5lan_su_%%&STATION=PET_iknmi14pcglob_Amon_ECEARTH23_rcp85_41-48E_-2-5N&TYPE=i&id=$EMAIL">ECEARTH23</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iclm_era_41-48E_-2-5N_n_su&STATION=PET_iclm_era_41-48E_-2-5N&TYPE=i&id=$EMAIL">CLM-ERA</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_iclm_wfdei_41-48E_-2-5N_n_su&STATION=PET_iclm_wfdei_41-48E_-2-5N&TYPE=i&id=$EMAIL">CLM-WFDEI</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_ierai_41-48E_-2-5N_n_5lan_su&STATION=PET_ierai_41-48E_-2-5N&TYPE=i&id=$EMAIL">ERA-I</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/PET_imerra_refet_41-48E_-2-5N_n_su&STATION=PET_imerra_refet_41-48E_-2-5N&TYPE=i&id=$EMAIL">MERRA</a><br>
-
-boxVI_SS, SM:  
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_GFDL_H08_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_GFDL_H08_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">GFDL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_GFDL_LPJMLlev1_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_GFDL_LPJML_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">GFDL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_GFDL_PCR-globwb_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_GFDL_PCR-globwb_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">GFDL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_GFDL_watergap_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_GFDL_watergap_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">GFDL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_HadGEM_H08_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_HadGEM_H08_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">HadGEM_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_HadGEM_LPJMLlev1_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_HadGEM_LPJML_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">HadGEM_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_HadGEM_PCR-globwb_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_HadGEM_PCR-globwb_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">HadGEM_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_HadGEM_watergap_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_HadGEM_watergap_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">HadGEM_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_IPSL_H08_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_IPSL_H08_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">IPSL_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_IPSL_LPJMLlev1_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_IPSL_LPJML_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">IPSL_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_IPSL_PCR-globwb_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_IPSL_PCR-globwb_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">IPSL_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_IPSL_watergap_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_IPSL_watergap_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">IPSL_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_MIROC5_H08_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_MIROC5_H08_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">MIROC5_H08</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_MIROC5_LPJMLlev1_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_MIROC5_LPJML_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">MIROC5_LPJML</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_MIROC5_PCR-globwb_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_MIROC5_PCR-globwb_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">MIROC5_PCR-globwb</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iisimip_MIROC5_watergap_rcp60_41-48E_-2-5N_n_su&STATION=soilmoist_iisimip_MIROC5_watergap_rcp60_41-48E_-2-5N&TYPE=i&id=$EMAIL">MIROC5_watergap</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_iknmi14pcglob_Lmon_ECEARTH23_rcp85_41-48E_-2-5N_n_su_%%&STATION=soilmoist_iknmi14pcglob_Lmon_ECEARTH23_rcp85_41-48E_-2-5N&TYPE=i&id=$EMAIL">ECEARTH23</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist01_iclm_era_41-48E_-2-5N_n_su&STATION=soilmoist01_iclm_era_41-48E_-2-5N&TYPE=i&id=$EMAIL">CLM-ERA</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist01_iclm_wfdei_41-48E_-2-5N_n_su&STATION=soilmoist01_iclm_wfdei_41-48E_-2-5N&TYPE=i&id=$EMAIL">CLM-WFDEI</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist01_ifldas_41-48E_-2-5N_n_su&STATION=soilmoist01_ifldas_41-48E_-2-5N&TYPE=i&id=$EMAIL">FLDAS</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_isimip_WFDEI_LPJmL_41-48E_-2-5N_n&STATION=soilmoist_isimip_WFDEI_LPJmL_41-48E_-2-5N&TYPE=i&id=$EMAIL">WFDEI_LPJmL</a>,
-<a href="getindices.cgi?WMO=EastAfrica/boxVI_SS/soilmoist_isimip_WFDEI_PCR-globwb_41-48E_-2-5N_n&STATION=soilmoist_isimip_WFDEI_PCR-globwb_41-48E_-2-5N&TYPE=i&id=$EMAIL">WFDEI_PCR-globwb</a><br>
+<a href="EastAfrica_timeseries.cgi?id=$EMAIL">Separate page</a>
 
 <div class=alineakop>Heat waves summer 2018</div>
 Daily SLP 65-75N, 10-30E <a href="getindices.cgi?WMO=KNMI14Data/Blocking/ierai_slp_daily_10-30E_65-75N_n&STATION=ERAi_slp_scandinavia&TYPE=i&id=$EMAIL&NPERYEAR=366">ERA-interim</a>, <a href="getindices.cgi?WMO=KNMI14Data/Blocking/iknmi14_psl_Aday_ECEARTH23_rcp85_10-30E_65-75N_n_%%&STATION=ECEARTH23medres_rcp85_slp_scandinavia&TYPE=i&id=$EMAIL&NPERYEAR=366">EC-Earth 2.3 T159 coupled transient runs</a>,<br>

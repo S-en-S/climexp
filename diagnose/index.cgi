@@ -397,7 +397,7 @@ ja) anomalienaam=$ano;anderenaam=$vol;andere=nee;;
 nee) anomalienaam=$vol;anderenaam=$ano;andere=ja;;
 *) echo "interne fout, anomalie=$anomalie<br>"
 esac
-if [ "$anomalie" = ja -a \( "$var" = prcp_gpcc -o "$var" = prcp_cmorph \) ]; then
+if [ "$anomalie" = ja -a \( "$var" = prcp_gpcc -o "$var" = prcp_cmorph -o "$var" = rr_eobs \) ]; then
   anomalienaam=$relanomalie
   units=""
 fi

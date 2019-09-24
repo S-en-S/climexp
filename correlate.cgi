@@ -452,27 +452,27 @@ EOF
       echo "<input type=\"submit\" class=\"formbutton\" value=\"and create new timeseries\">"
       echo "</form>"
     else
-      taillines=16
+        taillines=16
     fi
     if [ -n "$FORM_log" ]; then
-	y='(10**$2)'
-	axb='10**(a+b*x*(1+c*x))'
+        y='(10**$2)'
+        axb='10**(a+b*x*(1+c*x))'
     elif [ -n "$FORM_sqrt" ]; then
-	y='($2**2)'
-	axb='(a+b*x*(1+c*x))**2'
+       y='($2**2)'
+       axb='(a+b*x*(1+c*x))**2'
     else
-	y='($2)'
-	axb="a+b*x*(1+c*x)"
+        y='($2)'
+       axb="a+b*x*(1+c*x)"
     fi
     yy='2'
     if [ "$FORM_fitfunc" = "fittime" ]; then
-	ylabel="$ylabel minus fitted tendency"
+        ylabel="$ylabel minus fitted tendency"
         fitfunc="a+b*x+c*y"
         fitpars="a,b,c"
         taillines=18
         yy="3:2:(1)"
         y="(\$2-c*\$3)"
-	axb='a+b*x'
+        axb='a+b*x'
     elif [ "$FORM_fitfunc" = "quadratic" ]; then
         fitfunc="a+b*x*(1+c*x)"
         fitpars="a,b,c"
@@ -486,19 +486,22 @@ EOF
         fitfunc=""
         fitpars=""
         taillines=1
-	withlines="with linespoints #"
+        withlines="with linespoints #"
     else
         fitfunc="a+b*x"
         fitpars="a,b"
         ciszero="c=0"
     fi
     if [ -n "$fitfunc" ]; then
-      fitit="fit $fitfunc 'data/$TYPE$WMO${FORM_num}.dump$ext1' using 1:$yy via $fitpars"
-      echo "<p>$fitit"
+        fitit="fit $fitfunc 'data/$TYPE$WMO${FORM_num}.dump$ext1' using 1:$yy via $fitpars"
+        echo "<p>$fitit"
+    fi
+    if [ -n "$FORM_rank" ]; then
+        rank="rank "
     fi
     echo "<pre>"
 ###    cat <<EOF
-    gnuplot << EOF 2>&1 | sed -e '/^ *$/d' -e '/====/d' | tail -$taillines
+    gnuplot << EOF 2>&1 | sed -e '/^ *$/d' -e '/====/d' | tail -n $taillines
 $gnuplot_init
 set size 0.7,0.93
 set size square
@@ -510,12 +513,13 @@ $fitit
 set term postscript epsf color solid
 set output "$corrroot.eps"
 set title "`echo $title | tr '_' ' '`"
-set xlabel "`echo $indexmonth $xlabel$added | tr '_' ' '`"
-set ylabel "`echo $seriesmonth $CLIM $ylabel | tr '_' ' '`"
+set xlabel "`echo $rank$indexmonth $xlabel$added | tr '_' ' '`"
+set ylabel "`echo $rank$seriesmonth $CLIM $ylabel | tr '_' ' '`"
 set key left samplen -1
 $xrange
 $yrange
-plot "data/$TYPE$WMO${FORM_num}.dump$ext1" using 1:$y notitle $withlines, $axb title "$corrval" with lines lt 4
+plot "data/$TYPE$WMO${FORM_num}.dump$ext1" using 1:$y notitle $withlines, \
+     $axb title "$corrval" with lines lt 4
 set term png $gnuplot_png_font_hires
 set output "$corrroot.png"
 replot
@@ -539,11 +543,12 @@ set size 0.7,0.5
 $xrange
 set yrange [0:100]
 set title "`echo $seriesmonth $title | tr '_' ' '`"
-set xlabel "`echo $indexmonth $xlabel$added | tr '_' ' '`"
+set xlabel "`echo $rank$indexmonth $xlabel$added | tr '_' ' '`"
 set ylabel "probability [%]"
 set term postscript epsf color solid
 set output "$corrroot.trc.eps"
-plot "data/$TYPE$WMO${FORM_num}.dump$ext1.trc" u 1:2 title 'below normal' with lines, "data/$TYPE$WMO${FORM_num}.dump$ext1.trc" u 1:3 title 'not above normal' with lines
+plot "data/$TYPE$WMO${FORM_num}.dump$ext1.trc" u 1:3 title 'not above normal' with lines lt 1, \
+     "data/$TYPE$WMO${FORM_num}.dump$ext1.trc" u 1:2 title 'below normal' with lines lt 3
 set term png $gnuplot_png_font_hires
 set output "$corrroot.trc.png"
 replot

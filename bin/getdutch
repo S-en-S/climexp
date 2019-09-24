@@ -34,10 +34,11 @@ if [ ! -s $infile ]; then
     exit -1
 fi
 if [ -z "$outfile" -o ! -s "$outfile" -o "$outfile" -ot "$infile" ]; then
+    echo "# scripturl01 :: $SCRIPTURL" > $outfile
     if [ ${infile%.gz} != $infile ]; then
-        gunzip -c $infile > $outfile
+        gunzip -c $infile >> $outfile
     else
-        cp $infile $outfile
+        cat $infile >> $outfile
     fi
 fi
 if [ -n "$outfile" ]; then
@@ -47,6 +48,9 @@ if [ -n "$outfile" ]; then
         maybefile=${maybefile%.dat}.nc
         if [ -s $maybefile ]; then
             cp $maybefile $ncfile
+            if [ -n "$SCRIPTURL" ]; then
+                ncatted -h -a scripturl01,global,a,c,"$SCRIPTURL" $ncfile
+            fi
         else
             dat2nc $outfile $TYPE $WMO $ncfile
         fi

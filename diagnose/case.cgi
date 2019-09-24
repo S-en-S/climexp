@@ -307,20 +307,20 @@ case $var in
         climyear1=
         climyear2=
         ;;
-  pr)   field=gpcc
+  pr)   field=gpccall_10
         name=prcp_gpcc
         mproj=latlon
         colour=12
         c1=0
-        c2=720
+        c2=25
         lat1=-90
         lat2=90
         plotanomaly=
-        climyear1=
-        climyear2=
+        climyear1=1981
+        climyear2=2010
         ;;
   pr_frac)
-        field=gpcc
+        field=gpccall_10
         name=prcp_gpcc
         mproj=latlon
         colour=11
@@ -331,8 +331,8 @@ case $var in
         lat2=90
         plotanomaly=on
         plotanomalykind=relative
-        climyear1=
-        climyear2=
+        climyear1=1981
+        climyear2=2010
         ;;
   tg|tg_f)
         field=ensembles_025_tg_mo

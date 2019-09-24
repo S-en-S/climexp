@@ -5,7 +5,7 @@
 echo "Content-Type: text/html"
 echo
 
-if [ -z "$FORM_plotfile" -o ! -f "$FORM_plotfile" -o "${FORM_plotfile%.gnuplot}" "$FORM_plotfile" ]; then
+if [ -z "$FORM_plotfile" -o ! -f "$FORM_plotfile" -o "${FORM_plotfile%.gnuplot}" = "$FORM_plotfile" ]; then
     . ./myvinkhead.cgi "Error" ""
     echo "Cannot locate plotfile $FORM_plotfile"
     exit -1

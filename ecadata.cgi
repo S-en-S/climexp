@@ -29,7 +29,8 @@ if [ -z "$extraargs" ]; then
 else
   NPERYEAR=`echo "$extraargs" | cut -f 1 -d ' '`
   NAME="`echo "$extraargs" | cut -f 2- -d ' '` $NAME"
-  PROG="pipe.sh $PROG \"$extraargs\""
+  # this is done explicitly in getdata.cgi, so not needed here (and in fact does not work)
+  ###PROG="pipe.sh $PROG \"$extraargs\""
 fi
 export DIR=`pwd`
 FROM="from <a href="http://www.ecad.eu/" target="_new">ECA&amp;D v1.1 database</a>"

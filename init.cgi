@@ -66,6 +66,28 @@ if [ -z "$init_done" ]; then
             halfwidth="100%"
         fi
     }
+
+    function check_url {
+        if [ -n "$checkfile" -a -s $checkfile ]; then
+            url=http://localhost/$checkfile
+            ###echo "checking $url...<br>"
+            if [ ${checkfile%.png} != $checkfile ]; then
+                type="image/png"
+            elif [ ${checkfile%.nc} != $checkfile ]; then
+                type="application/x-netcdf"
+            else
+                type="text/plain"
+            fi
+            c=`curl --head $url | fgrep -c $type`
+            n=0
+            while [ $c != "1" -a $n -lt 5 ]; do
+                ((n++))
+                # not yet there
+                sleep 0.5 # works on macOS and linux...
+                c=`curl --head $url | fgrep -c $type`
+            done
+        fi
+    }
     # netcdf libraries on bhlclim, bvlclim - hard-coded
     export LD_LIBRARY_PATH=/home/oldenbor/lib:/usr/local/free/lib:$LD_LIBRARY_PATH
     # for a few routines this seems needed
@@ -98,4 +120,26 @@ if [ -z "$init_done" ]; then
     export gnuplot_png_font="size 640,480 crop font DejaVuSansCondensed 8.5"
     # R libraries
     export R_LIBS=`pwd`/rpacks
+    # For safety only use type=number for Opera and mobile browsers
+    # In Safari this is buggy, and AFAIK not used in Firefox & Internet Explorer
+    c1=`echo "$HTTP_USER_AGENT" | egrep -i -c mobile`
+    c2=`echo "$HTTP_USER_AGENT" | egrep -i -c opera`
+    if [ $c1 = 1 -o $c2 = 1 ]; then
+        number=number
+        textsize2='style="width: 4em;"'
+        textsize3='style="width: 5em;"'
+        textsize4='style="width: 6em;"'
+        textsize6='style="width: 7em;"'
+        textsize10='style="width: 13em;"'
+    else
+        number=text
+        textsize2='size=2'
+        textsize3='size=3'
+        textsize4='size=4'
+        textsize6='size=6'
+        textsize10='size=10'
+    fi
+    ###echo "HTTP_USER_AGENT = $HTTP_USER_AGENT<br>"
+    ###echo "c1,c2,number=$c1,$c2,$number<br>"
+    ###echo "textsize4=$textsize4<br>"
 fi

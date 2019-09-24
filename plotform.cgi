@@ -40,6 +40,7 @@ case ${FORM_plotsum:-1} in
 14) sum_14_selected=selected;;
 15) sum_15_selected=selected;;
 18) sum_18_selected=selected;;
+19) sum_19_selected=selected;;
 24) sum_24_selected=selected;;
 30) sum_30_selected=selected;;
 48) sum_48_selected=selected;;
@@ -296,6 +297,8 @@ cat <<EOF
 <option $sum_12_selected>12
 <option $sum_13_selected>13
 <option $sum_14_selected>14
+<option $sum_18_selected>18
+<option $sum_19_selected>19
 <option $sum_24_selected>24
 <option $sum_36_selected>36
 <option $sum_48_selected>48

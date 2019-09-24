@@ -147,7 +147,7 @@
 </table></div>
 </tr><tr>
 <th width=25%><a href="javascript:hidden_info_switch('era5');">show/hide</a></th>
-<th colspan="7"><div class="kalelink"><a href="http://apps.ecmwf.int/data-catalogues/era5/?class=ea" target="_new"><img src="images/info-i.gif" alt="more information" border="0" align="right"></a>ERA5 2010-"now"</div> earlier data will become available later</th>
+<th colspan="7"><div class="kalelink"><a href="http://apps.ecmwf.int/data-catalogues/era5/?class=ea" target="_new"><img src="images/info-i.gif" alt="more information" border="0" align="right"></a>ERA5 1979-"now"</div> earlier data will become available later</th>
 </tr>
 <tr><td colspan=8>
 <div id="era5" hiddenstyle_era5>
@@ -615,6 +615,176 @@
 <td>&nbsp;</td>
 </table>
 </div></td></tr>
+<tr>
+<th width=15%><a href="javascript:hidden_info_switch('gldas');">show/hide</a></th>
+<th colspan="7"><div class="kalelink"><a href="http://www.energy-a.eu/71-climate-extreme-indices-in-1-dataset/?cn-reloaded=1" target="_new"><img src="images/info-i.gif" alt="more information" border="0" align="right"></a>ETCCDI/ET-SCI 
+extreme indices from GLDAS, <a href="https://res.mdpi.com/data/data-04-00041/article_deploy/data-04-00041-s001.pdf?filename=&attachment=1">list of abbreviations</a></div></th>
+</tr>
+<tr><td colspan=8>
+<div id="gldas" hiddenstyle_gldas>
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+<tr><th colspan=12>Annual</th></tr>
+<tr><th align="right" width=14.5%><small>temperature</small></th>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_txx">txx</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_txm">txm</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_txn">txn</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tx90p">tx90p</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tx10p">tx10p</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_txgt50p">txgt50p</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_txge35">txge35</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_txge30">txge30</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_su">su</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_id">id</td>
+<td>&nbsp;</td>
+</tr><tr><th>&nbsp;</th>
+<td>&nbsp;</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tmm">tmm</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tmge10">tmge10</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tmge5">tmge5</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tmlt5">tmlt5</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tmlt10">tmlt10</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tx3tn3">tx3tn3</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_dtr">dtr</td>
+</tr><tr><th>&nbsp;</th>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tnx">tnx</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tnm">tnm</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tnn">tnn</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tn90p">tn90p</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tn10p">tn10p</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tr">tr</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tnlt2">tnlt2</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_fd">fd</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tnltm2">tnltm2</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_tnltm20">tnltm20</td>
+<td>&nbsp;</td>
+</tr><tr><th>&nbsp;</th>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_gsl">gsl</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_gddgrow10">gdd</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_wsdi">wsdi</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_wsdi5">wsdi5</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_csdi">csdi</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_csdi5">csdi5</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_txb3tnb3">txb3tnb3</td>
+<td>&nbsp;</td>
+</tr><tr><th>&nbsp;</th>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwn_tx90">hwn tx90</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwf_tx90">hwf tx90</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwd_tx90">hwd tx90</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwm_tx90">hwm tx90</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwa_tx90">hwa tx90</td>
+<td>&nbsp;</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwn_ehf">hwn ehf</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwf_ehf">hwf ehf</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwd_ehf">hwd ehf</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwm_ehf">hwm ehf</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwa_ehf">hwa ehf</td>
+</tr><tr><th>&nbsp;</th>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwn_tn90">hwn tn90</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwf_tn90">hwf tn90</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwd_tn90">hwd tn90</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwm_tn90">hwm tn90</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_hwa_tn90">hwa tn90</td>
+<td>&nbsp;</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_cwf_ecn">cwf ecn</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_cwf_ecm">cwf ecm</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_cwf_ecf">cwf ecf</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_cwd_ecf">cwd ecf</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_cwa_ecf">cwa ecf</td>
+</tr><tr><th align="right" width=14.5%><small>precipitation</small></th>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_sdii">sdii</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_r95p">r95p</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_r99p">r99p</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_r95ptot">r95ptot</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_r99ptot">r99ptot</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_rx1day">Rx1day</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_rx5day">Rx5day</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_rx7day">Rx7day</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_r10mm">r10mm</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_r20mm">r20mm</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_r30mm">r30mm</td>
+</tr><tr><th>&nbsp;</th>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_cdd">cdd</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_cwd">cwd</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_ann_prcptot">prcptot</td>
+<tr><th colspan=12>Monthly</th></tr>
+<tr><th align="right" width=14.5%><small>temperature</small></th>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_txx">txx</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_txm">txm</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_txn">txn</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tx90p">tx90p</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tx10p">tx10p</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_txgt50p">txgt50p</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_txge35">txge35</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_txge30">txge30</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_su">su</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_id">id</td>
+<td>&nbsp;</td>
+</tr><tr><th>&nbsp;</th>
+<td>&nbsp;</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tmm">tmm</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tmge10">tmge10</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tmge5">tmge5</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tmlt5">tmlt5</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tmlt10">tmlt10</td>
+<td>&nbsp;</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_dtr">dtr</td>
+</tr><tr><th>&nbsp;</th>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tnx">tnx</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tnm">tnm</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tnn">tnn</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tn90p">tn90p</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tn10p">tn10p</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tnlt2">tnlt2</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_fd">fd</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tnltm2">tnltm2</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tnltm20">tnltm20</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_tr">tr</td>
+<td>&nbsp;</td>
+<tr><th align="right" width=14.5%><small>precipitation</small></th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_rx1day">Rx1day</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_rx5day">Rx5day</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_rx7day">Rx7day</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_r10mm">r10mm</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_r20mm">r20mm</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_r30mm">r30mm</td>
+</tr><tr><th>&nbsp;</th>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_cdd">cdd</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_cwd">cwd</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_spi12">spi12</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_spi48">spi48</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_spei12">spei12</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_spei48">spei48</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><input type="radio" class="formradio" name="field" value="gldas_mon_prcptot">prcptot</td>
+</tr>
+</table>
+</div></td></tr>
+
 <tr>
 <th width=15%><a href="javascript:hidden_info_switch('ncepncar');">show/hide</a></th>
 <th colspan="7"><div class="kalelink"><a href="http://www.cdc.noaa.gov/cdc/reanalysis/reanalysis.shtml" target="_new"><img src="images/info-i.gif" alt="more information" border="0" align="right"></a>NCEP/NCAR R1

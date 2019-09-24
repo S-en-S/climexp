@@ -6,9 +6,9 @@ then
   exit -1
 fi
 i=0
-while [ `ps $EOFID | wc -l` -gt 1 ]
+while [ `ps $EOFID | fgrep -v ' Z ' | wc -l` -gt 1 ]
 do
   i=$(($i+1))
-  sleep 1
-  echo "Still computing, $i/$1<p>"
+  sleep 30
+  echo "Uploading $i/$1<p>"
 done

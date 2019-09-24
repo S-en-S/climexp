@@ -3,7 +3,7 @@
 # print an ensemble of time series
 . ./init.cgi
 . ./getargs.cgi
-. ./nosearchengine.cgi
+. ./nosearchenginewithheader.cgi
 export DIR=`pwd`
 
 # no ensemble member selection yet

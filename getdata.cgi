@@ -44,6 +44,30 @@ if [ -n "$warning" ]; then
     echo "$warning<p>"
 fi
 
+if [ ${file#data/uploaded} != $file -a ${file%.nc} != $file ]; then # uploaded netcdf file
+    [ "$lwrite" = true ] && echo "investigating $file<br>"
+    describefield $file > /tmp/getdata$$.txt 2>&1
+    line=`fgrep "ound ensemble members" /tmp/getdata$$.txt`
+    if [ -n "$line" ]; then
+        echo $line
+        nens1=`echo $line | awk '{print $4}'`
+        nens2=`echo $line | awk '{print $6}'`
+        nens2=${nens2%<*}
+        if [ $nens1 != $nens2 ]; then
+            i=0
+            newfile=data/iuploaded@@@_$i.nc
+            while [ -s $newfile -a $i -lt 1000 ]; do
+                ((i++))
+                newfile=data/iuploaded@@@_$i.nc
+            done
+            mv $file $newfile
+            file=$newfile
+            WMO=data/uploaded@@@_$i
+            PROG="netcdf2dat $file"
+        fi
+    fi
+fi
+
 if [ "$lwrite" = true ]; then
     echo "WMO=$WMO<br>"
     echo "PROG=$PROG<br>"
@@ -152,6 +176,9 @@ EOF
       cp $ncfile ./data/$TYPE$WMO.nc.$$
       mv ./data/$TYPE$WMO.nc.$$ ./data/$TYPE$WMO.nc
     fi
+  elif [ "${PROG#netcdf2dat}" != "$PROG" ]; then
+    # do not regenerate .nc file
+    touch $file
   fi
   return=$?
   return=0
@@ -166,7 +193,7 @@ EOF
   fi
   rm -f pid/$$.$EMAIL
   # in case two people retrieve the same data at the same time - make atomic
-  [ -s $DIR/data/$TYPE$WMO.dat.$$ ] && mv $DIR/data/$TYPE$WMO.dat.$$ $DIR/data/$TYPE$WMO.dat
+  [ -s ./data/$TYPE$WMO.dat.$$ ] && mv ./data/$TYPE$WMO.dat.$$ ./data/$TYPE$WMO.dat
   fgrep 'annot locate' $DIR/data/$TYPE$WMO.dat
   if [ $? = 0 ]; then
 	echo '<pre>'
@@ -269,7 +296,7 @@ else
         # also generate netcdf files for the rest of the ensemble
         ensfile=$firstfile
         i=0
-        while [ -s $ensfile ]; do
+        while [ -s $ensfile -a $i -lt 1000 ]; do
             ncfile=${ensfile%.dat}.nc
             if [ ! -s $ncfile -o $ncfile -ot $ensfile ]; then
                 if [ "$netcdf_ok" = true ]; then
@@ -321,7 +348,7 @@ if [ -s $firstfile ]; then
 ###  echo "Plotting data:"
   echo '<div class="bijschrift">'
   egrep '^#' data/$TYPE$WMO.dat | fgrep -v 'bin/' | egrep -v -i '( ::)|(jan *feb)|(VRIJ WORDEN GEBRUIKT)|(CAN BE USED)|(ROYAL NETHERLANDS METEOROLOGICAL INSTITUTE)|(^# Searching )|(non-commercial )|(any commercial)|(intentionally)|(coauthors)|(1441-1453)' | grep -v '^ *$' | sed -e 's/^#//' -e 's/^.#//' -e 's/$/,/' -e 's/^ *, *//' | tr '_' ' ' | sed -e 's/antieke wrn/antieke_wrn/' -e 's/daily a/daily_a/' -e 's/o index/o_index/'
-  [ -n "$UNITS" ] && plotunits="[$UNITS]"
+  [ -n "$UNITS" ] && plotunits=`echo "[$UNITS]" | tr '_' ' '`
   if [ \( ! -s ./data/$TYPE$WMO.png \) -o \( ! -s ./data/$TYPE$WMO.eps.gz \) -o ./data/$TYPE$WMO.png -ot $firstfile ]; then
     wmo_=`echo $WMO | tr '_' ' '`
     var_=`echo $VAR | tr '_' ' '`
@@ -702,5 +729,5 @@ Ensemble members: <input type="$number" min=0 step=1 size="3" style="width: 4em;
 
 EOF
 fi
-
+FORM_field=""
 . ./myvinkfoot.cgi

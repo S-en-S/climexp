@@ -561,10 +561,10 @@ case "$var" in
 	rr_eobs)
 		if [ "$FORM_lang" = nl ]; then	
 			naam="neerslag"
-			units="[mm/maand]"
+			units="[mm/dag]"
 		else
 			naam="precipitation"
-			units="[mm/month]"
+			units="[mm/dy]"
 		fi
 		bron="ECA&amp;D E-OBS"
 		url="http://eca.knmi.nl/download/ensembles/ensembles.php"

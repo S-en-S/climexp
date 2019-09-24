@@ -15,6 +15,10 @@ export DIR=`pwd`
 eval `bin/getunits.sh $file`
 # better hack
 FORM_var=`./bin/describefield.sh $file | tail -1 | awk '{print $2}' | cut -b 1-15`
+c=`describefield.sh $file | fgrep 'Z at' | fgrep -c ' Pa '`
+if [ "$c" = 1 ]; then # workaround for bug in GrADS
+    FORM_var="${FORM_var}(z=1)"
+fi
 if [ "${FORM_field#erai}" != "$FORM_field" -o "${FORM_field#era5}" != "$FORM_field" -o \
     "${FORM_field#data/erai}" != "$FORM_field" -o "${FORM_field#data/era5}" != "$FORM_field" -o \
     "${FORM_field#ct}" != "$FORM_field" -o "${FORM_field#data/ct}" != "$FORM_field" ]; then

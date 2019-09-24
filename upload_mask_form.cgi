@@ -54,18 +54,21 @@ South Pole:
 <li><a href="upload_mask.cgi?id=$EMAIL&field=$FORM_field&set=SREX">27 IPCC SREX land regions</a>
 <a href="SREX/SREX-Ch3-Supplement_FINAL.pdf" target=_new><img align=right src="images/info-i.gif" alt="help" border="0"></a>
 <a href="download_masks.cgi?id=$EMAIL&field=$FORM_field&set=SREX"><img align=right src="images/download.gif" alt="download" border="0"></a>
+<li><a href="upload_mask.cgi?id=$EMAIL&field=$FORM_field&set=IPBES">22 IPBES regions</a>
+<a href="http://ipbes.net" target="_new"><img align=right src="images/info-i.gif" alt="help" border="0"></a>
+<a href="download_masks.cgi?id=$EMAIL&field=$FORM_field&set=IPBES"><img align=right src="images/download.gif" alt="download" border="0"></a>
+<li><a href="upload_mask.cgi?id=$EMAIL&field=$FORM_field&set=countries">235 countries</a>
+<a href="http://www.rjruss.info/2010/12/free-countries-of-world-in-polygon-kml.html" target="_new"><img align=right src="images/info-i.gif" alt="help" border="0"></a>
+<a href="download_masks.cgi?id=$EMAIL&field=$FORM_field&set=countries"><img align=right src="images/download.gif" alt="download" border="0"></a>
 <li><a href="upload_mask.cgi?id=$EMAIL&field=$FORM_field&set=eu_rivers_big">14 European river catchments</a>
 <a href="download_masks.cgi?id=$EMAIL&field=$FORM_field&set=eu_rivers_big"><img align=right src="images/download.gif" alt="download"
  border="0"></a>
 <li><a href="upload_mask.cgi?id=$EMAIL&field=$FORM_field&set=eu_rivers">215 European river basins</a>
 <a href="http://www.eea.europa.eu/data-and-maps/data/wise-river-basin-districts-rbds" target=_new><img align=right src="images/info-i.gif" alt="help" border="0"></a>
 <a href="download_masks.cgi?id=$EMAIL&field=$FORM_field&set=eu_rivers"><img align=right src="images/download.gif" alt="download" border="0"></a>
-<li><a href="upload_mask.cgi?id=$EMAIL&field=$FORM_field&set=countries">235 countries</a>
-<a href="http://www.rjruss.info/2010/12/free-countries-of-world-in-polygon-kml.html" target="_new"><img align=right src="images/info-i.gif" alt="help" border="0"></a>
-<a href="download_masks.cgi?id=$EMAIL&field=$FORM_field&set=countries"><img align=right src="images/download.gif" alt="download" border="0"></a>
-<li><a href="upload_mask.cgi?id=$EMAIL&field=$FORM_field&set=IPBES">22 IPBES regions</a>
-<a href="http://ipbes.net" target="_new"><img align=right src="images/info-i.gif" alt="help" border="0"></a>
-<a href="download_masks.cgi?id=$EMAIL&field=$FORM_field&set=IPBES"><img align=right src="images/download.gif" alt="download" border="0"></a>
+<li><a href="upload_mask.cgi?id=$EMAIL&field=$FORM_field&set=whymap">37 WHYMAP aquifers</a>
+<a href="https://www.whymap.org/whymap/EN/Maps_Data/Additional_maps/addimaps_node_en.html" target=_new><img align=right src="images/info-i.gif" alt="help" border="0"></a>
+<a href="download_masks.cgi?id=$EMAIL&field=$FORM_field&set=whymap"><img align=right src="images/download.gif" alt="download" border="0"></a>
 </ul>
 Note that the IPCC masks do <b>not</b> include the land/sea mask, this has to be added on the next page. 
 EOF

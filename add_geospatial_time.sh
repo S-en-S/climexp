@@ -3,6 +3,7 @@
 # add geospatial* metadata variables to netcdf metadata
 [ -z "$file" ] && echo "$0: error: set variable file" && exit -1
 [ ! -s "$file" ] && echo "$0: error: cannot find file $file" && exit -1
+tmpfile=""
 c=`ncdump -h $file | fgrep -v _resolution | fgrep -c ":geospatial_"`
 if [ $c != 0 ]; then
     echo "$0: geospatial information already in $file, do nothing"
@@ -51,7 +52,7 @@ else
     fi
     lonline=`cat $tmpfile | fgrep "X axis"`
     gridtype=`echo $lonline | awk '{print $3}'`
-    if [ $gridtype = irregular ]; then
+    if [ "$gridtype" = irregular ]; then
         lon1=`echo $lonline | awk '{print $9}'`
         n=8
         l=start
@@ -61,7 +62,7 @@ else
             l=`echo $lonline | awk "{print \$"$n"}"`
             ###echo "l=$l"
         done
-    else
+    elif [ -n "$gridtype" ]; then
         lonstep=`echo $lonline | awk '{print $7}' | sed -e 's/&deg;//' | tr -d ' -'`
         lonline=`cat $tmpfile | fgrep 'first point' | head -n 1`
         lon1=`echo $lonline | awk '{print $4}' | sed -e 's/&deg;//'`
@@ -104,7 +105,15 @@ else
     stopdate=`cat $tmpfile | fgrep 'available from' | awk '{print $7}'`
     c=`cat $tmpfile | fgrep available | fgrep -c Monthly`
     d=`cat $tmpfile | fgrep available | fgrep -c daily`
-    if [ $c = 1 ]; then
+    y=`cat $tmpfile | fgrep available | fgrep -c Yearly`
+    if [ $y = 1 ]; then
+        startyr=$startdate
+        startmon=Jan
+        stopyr=$stopdate
+        stopmon=Dec
+        startday=01
+        stopday=31
+    elif [ $c = 1 ]; then
         startyr=${startdate#???}
         startmon=${startdate%????}
         stopyr=${stopdate#???}
@@ -119,7 +128,7 @@ else
         stopyr=${stopdate#?????}
         stopmon=${stopdate%????}
         stopmon=${stopmon#??}
-        startday=${stopdate%???????}    
+        stopday=${stopdate%???????}    
     else
         echo "$0: cannot handle this time scale yet"
         exit
@@ -146,6 +155,7 @@ else
         [ $i = 2 ] && stopmo=$mo
     done
     ncatted -h -a time_coverage_start,global,c,c,"${startyr}-${startmo}-${startday}" \
-           -a time_coverage_end,global,c,c,"${stopyr}-${stopmo}-${startday}" \
+           -a time_coverage_end,global,c,c,"${stopyr}-${stopmo}-${stopday}" \
                 $file
+    [ -f $tmpfile ] && rm $tmpfile
 fi

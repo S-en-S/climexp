@@ -1,5 +1,5 @@
 #!/bin/bash
-
+. ./init.cgi
 . ./getargs.cgi
 export DIR=`pwd`
 

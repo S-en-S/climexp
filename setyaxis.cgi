@@ -23,6 +23,9 @@ else
   setformaty="set format y \"%5.2f\""
   setyrange=
 fi
+if [ -n "$FORM_rank" ]; then
+    ylabel="" # no units
+fi
 ### [ -n "$FORM_log" ] && ylabel="log $ylabel"
 ### [ -n "$FORM_sqrt" ] && ylabel="sqrt $ylabel"
 [ -n "$FORM_detrend" ] && ylabel="$ylabel (detrended)"
@@ -42,3 +45,4 @@ else
     ylabel="$ylabel (anomalies)"
   fi
 fi
+ylabel=`echo "$ylabel" | tr '_' ' '`
