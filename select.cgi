@@ -181,8 +181,25 @@ if [ "$field_type" = Pressure ]; then
   echo "<p><a href=\"geowind.cgi?id=$EMAIL&field=$FORM_field\">Compute geostrophic wind components from this field</a>"
 fi
 
-if [ -z "$ENSEMBLE" ]; then
+if [ -z "$ENSEMBLE" -a $NPERYEAR -le 12 ]; then
   echo "<p><a href=\"statmodelform.cgi?id=$EMAIL&field=$FORM_field\">Construct a statistical forecast model from this field</a>"
+fi
+if [ $NPERYEAR -ge 360 ]; then
+    cat <<EOF
+<p><div class="formheader">Area with extremes</div>
+<div class='formbody'>
+<form action="compute_area.cgi" method="POST">
+<input type="hidden" name="EMAIL" value="$EMAIL">
+<input type="hidden" name="field" value="$FORM_field">
+Compute area with annual
+<input type="$number" min="1" max="90" step=1 name="ave" $textsize2>-day average
+<input type="radio" class="formradio" name="minmax" value="min">minimum or
+<input type="radio" class="formradio" name="minmax" value="max">maximum
+extreme beyond 1 in 10 yr return values.
+<input type="submit" class="formbutton" value="Compute">
+</form>
+</div>
+EOF
 fi
 
 if [ "$field_type" = SST ]; then

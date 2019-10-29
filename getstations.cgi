@@ -44,6 +44,7 @@ FORM_lat1=$FORM_lat1;
 FORM_lon1=$FORM_lon1;
 FORM_lat2=$FORM_lat2;
 FORM_lon2=$FORM_lon2;
+FORM_coast=$FORM_coast;
 FORM_yr1=$FORM_yr1;
 FORM_yr2=$FORM_yr2;
 FORM_list=$FORM_list;
@@ -399,6 +400,20 @@ At least:
 <input type="$number" step=any class="forminput" name="lat2" $textsize4 value="$FORM_lat2">&deg;N, 
 <input type="$number" step=any class="forminput" name="lon1" $textsize4 value="$FORM_lon1">&deg;E - 
 <input type="$number" step=any class="forminput" name="lon2" $textsize4 value="$FORM_lon2">&deg;E.<br>
+EOF
+    if [ "${prog#getdutch}" != "$prog" ]; then
+        case "$FORM_coast" in
+            coast) coast_checked=checked;;
+            inland) inland_checked=checked;;
+            *) all_checked=checked;;
+        esac
+        cat <<EOF
+<input  type="radio" class="formradio" name="coast" value="all" $all_checked>all, 
+<input  type="radio" class="formradio" name="coast" value="coast" $coast_checked>coastal, 
+<input  type="radio" class="formradio" name="coast" value="inland" $inland_checked>inland.<br>
+EOF
+    fi
+    cat <<EOF
 <input type="submit" class="formbutton" value="select stations">
 </div>
 </form>

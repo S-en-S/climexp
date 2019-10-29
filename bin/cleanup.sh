@@ -34,8 +34,10 @@ fgrep -l "cannot" ./metadata/*.txt | xargs -n 20 rm -f
 fgrep -l "cannot" ./metadata/*.txt.eval | xargs -n 20 rm -f
 fgrep -l "does not exist" ./metadata/*.txt | xargs rm -f
 fgrep -l "does not exist" ./metadata/*.txt.eval | xargs rm -f
-find /tmp -group apache -atime +1 -exec rm -f {} \;
-find /var/tmp -group apache -atime +1 -exec rm -f {} \;
-find /tmp -group www -exec rm -f {} \;
-find /var/tmp -group www -atime +1 -exec rm -f {} \;
+find /tmp/ -group apache -atime +1 -exec rm -f {} \;
+find /var/tmp/ -group apache -atime +1 -exec rm -f {} \;
+find /tmp/ -group www -exec rm -f {} \;
+find /var/tmp/ -group www -atime +1 -exec rm -f {} \;
+find /tmp/ -group www-data -exec rm -f {} \;
+find /var/tmp/ -group www-data -atime +1 -exec rm -f {} \;
 echo `date`" cleanup: finished with "`ls ./data|wc -l`" files" >> log/log

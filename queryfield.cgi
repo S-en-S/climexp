@@ -148,7 +148,12 @@ cmip5*|thor*|knmi14*|eucleia*|futureweather*|hiwaves*) # expecting cmip5_var_Amo
     else
         if [ $dataset = knmi14 ]; then
             if [ $model = RACMO22E ]; then
-                period=1950-2100
+                if [ $var = evappot ]; then
+                    period=1950-2020
+                    dir=mon/land
+                else
+                    period=1950-2100
+                fi
                 file=${var}_WEU-11i_KNMI-EC-EARTH_historical-${exp}_KNMI-${model}_v1_${alttype#A}_${period}_%%.nc
                 file=KNMI14Data/CMIP5/output/KNMI/$model/$exp/$dir/$var/$file
                 LSMASK=KNMI14Data/CMIP5/output/KNMI/RACMO22E/rcp85/fixed/sftlf_WEU-11_KNMI-EC-EARTH_historical_r0i0p0_KNMI-RACMO22E_v1_fx_latlon.nc
@@ -506,31 +511,31 @@ hadex2_*) var=${FORM_field#hadex2_};file=UKMOData/HadEX2_${var}_mo.nc;kindname="
 hadcruh_q) file=CRUData/CRU_blendnewjul08_q_7303cf.nc;kindname="HadCRUH";climfield="specific humidity";flipcolor=11;;
 hadcruh_rh) file=CRUData/CRU_blendnewjul08_RH_7303cf.nc;kindname="HadCRUH";climfield="relative humidity";flipcolor=11;;
 
-ensembles_025_tg) file=ENSEMBLES/tg_0.25deg_reg_v19.0eu.nc;kindname="E-OBS 19.0e";climfield="Tmean";NPERYEAR=366;map='set lon -30 50
+ensembles_025_tg) file=ENSEMBLES/tg_0.25deg_reg_v20.0eu.nc;kindname="E-OBS 20.0e";climfield="Tmean";NPERYEAR=366;map='set lon -30 50
 set lat 30 75';;
-ensembles_025_tg_e) file=ENSEMBLES/tg_0.25deg_reg_v19.0ee.nc;kindname="E-OBS 19.0e+";climfield="Tmean";NPERYEAR=366;map='set lon -30 50
+ensembles_025_tg_e) file=ENSEMBLES/tg_0.25deg_reg_v20.0ee.nc;kindname="E-OBS 20.0e+";climfield="Tmean";NPERYEAR=366;map='set lon -30 50
 set lat 30 75';;
-ensembles_025_tg_mo) file=ENSEMBLES/tg_0.25deg_reg_v19.0eu_mo.nc;kindname="E-OBS 19.0e";climfield="Tmean";map='set lon -30 50
+ensembles_025_tg_mo) file=ENSEMBLES/tg_0.25deg_reg_v20.0eu_mo.nc;kindname="E-OBS 20.0e";climfield="Tmean";map='set lon -30 50
 set lat 30 75';;
-ensembles_025_tn) file=ENSEMBLES/tn_0.25deg_reg_v19.0eu.nc;kindname="E-OBS 19.0e";climfield="Tmin";NPERYEAR=366;map='set lon -30 50
+ensembles_025_tn) file=ENSEMBLES/tn_0.25deg_reg_v20.0eu.nc;kindname="E-OBS 20.0e";climfield="Tmin";NPERYEAR=366;map='set lon -30 50
 set lat 30 75';;
-ensembles_025_tn_e) file=ENSEMBLES/tn_0.25deg_reg_v19.0ee.nc;kindname="E-OBS 19.0e+";climfield="Tmin";NPERYEAR=366;map='set lon -30 50
+ensembles_025_tn_e) file=ENSEMBLES/tn_0.25deg_reg_v20.0ee.nc;kindname="E-OBS 20.0e+";climfield="Tmin";NPERYEAR=366;map='set lon -30 50
 set lat 30 75';;
-ensembles_025_tn_mo) file=ENSEMBLES/tn_0.25deg_reg_v19.0eu_mo.nc;kindname="E-OBS 19.0e";climfield="Tmin";map='set lon -30 50
+ensembles_025_tn_mo) file=ENSEMBLES/tn_0.25deg_reg_v20.0eu_mo.nc;kindname="E-OBS 20.0e";climfield="Tmin";map='set lon -30 50
 set lat 30 75';;
-ensembles_025_tx) file=ENSEMBLES/tx_0.25deg_reg_v19.0eu.nc;kindname="E-OBS 19.0e";climfield="Tmax";NPERYEAR=366;map='set lon -30 50
+ensembles_025_tx) file=ENSEMBLES/tx_0.25deg_reg_v20.0eu.nc;kindname="E-OBS 20.0e";climfield="Tmax";NPERYEAR=366;map='set lon -30 50
 set lat 30 75';;
-ensembles_025_tx_e) file=ENSEMBLES/tx_0.25deg_reg_v19.0ee.nc;kindname="E-OBS 19.0e+";climfield="Tmax";NPERYEAR=366;map='set lon -30 50
+ensembles_025_tx_e) file=ENSEMBLES/tx_0.25deg_reg_v20.0ee.nc;kindname="E-OBS 20.0e+";climfield="Tmax";NPERYEAR=366;map='set lon -30 50
 set lat 30 75';;
-ensembles_025_tx_mo) file=ENSEMBLES/tx_0.25deg_reg_v19.0eu_mo.nc;kindname="E-OBS 19.0e";climfield="Tmax";map='set lon -30 50
+ensembles_025_tx_mo) file=ENSEMBLES/tx_0.25deg_reg_v20.0eu_mo.nc;kindname="E-OBS 20.0e";climfield="Tmax";map='set lon -30 50
 set lat 30 75';;
-ensembles_025_rr) file=ENSEMBLES/rr_0.25deg_reg_v19.0eu.nc;kindname="E-OBS 19.0e";climfield="prcp";NPERYEAR=366;flipcolor=11;map='set lon -30 50
+ensembles_025_rr) file=ENSEMBLES/rr_0.25deg_reg_v20.0eu.nc;kindname="E-OBS 20.0e";climfield="prcp";NPERYEAR=366;flipcolor=11;map='set lon -30 50
 set lat 30 75';;
-ensembles_025_rr_e) file=ENSEMBLES/rr_0.25deg_reg_v19.0ee.nc;kindname="E-OBS 19.0e+";climfield="prcp";NPERYEAR=366;flipcolor=11;map='set lon -30 50
+ensembles_025_rr_e) file=ENSEMBLES/rr_0.25deg_reg_v20.0ee.nc;kindname="E-OBS 20.0e+";climfield="prcp";NPERYEAR=366;flipcolor=11;map='set lon -30 50
 set lat 30 75';;
-ensembles_025_rr_mo) file=ENSEMBLES/rr_0.25deg_reg_v19.0eu_mo.nc;kindname="E-OBS 19.0e";climfield="prcp";flipcolor=11;map='set lon -30 50
+ensembles_025_rr_mo) file=ENSEMBLES/rr_0.25deg_reg_v20.0eu_mo.nc;kindname="E-OBS 20.0e";climfield="prcp";flipcolor=11;map='set lon -30 50
 set lat 30 75';;
-ensembles_025_pp_mo) file=ENSEMBLES/pp_0.25deg_reg_v19.0eu_mo.nc;kindname="E-OBS 19.0e";climfield="slp";map='set lon -30 50
+ensembles_025_pp_mo) file=ENSEMBLES/pp_0.25deg_reg_v20.0eu_mo.nc;kindname="E-OBS 20.0e";climfield="slp";map='set lon -30 50
 set lat 30 75';;
 ensembles_025_elev) file=ENSEMBLES/elev_0.25deg_reg_v4.0.nc;kindname="E-OBS 4.0";climfield="elev";NPERYEAR=0;map='set lon -30 50
 set lat 30 75';;

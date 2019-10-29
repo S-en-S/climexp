@@ -459,7 +459,7 @@ cat <<EOF
 <th>mrso
 <th>mrso1m
 <th>mrso10cm
-<th>&nbsp;
+<th>evappot
 <th>psl
 <tr><td>16 daily
 <td>RCP8.5
@@ -483,7 +483,7 @@ cat <<EOF
 <td><input type=radio class=formradio name=field value=knmi14_mrso_mon_RACMO22E_rcp85>
 <td><input type=radio class=formradio name=field value=knmi14_mrso1m_mon_RACMO22E_rcp85>
 <td><input type=radio class=formradio name=field value=knmi14_mrso10cm_mon_RACMO22E_rcp85>
-<td>&nbsp;
+<td><input type=radio class=formradio name=field value=knmi14_evappot_mon_RACMO22E_rcp85>
 <td>&nbsp;
 <tr><th>&nbsp;
 <th>&nbsp;
@@ -641,6 +641,9 @@ cat <<EOF
 <p>Observations and model output used in attribution studies are listed below per project.
 Resources not listed are either easily accessible through  other Climate Explorer pages
 or available from the authors (except for non-public data such as the IMD analyses).
+
+<div class=alineakop>Dutch drought 2018</div>
+<a href="droughtNL_timeseries.cgi?id=$EMAIL">Separate page</a>
 
 <div class=alineakop>Summer 2019 European heat waves</div>
 <a href="FranceHeat2019_timeseries.cgi?id=$EMAIL">Separate page</a>
